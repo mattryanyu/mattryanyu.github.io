@@ -1,0 +1,105 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+#root {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.app {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.skills {
+  list-style-type: none;
+  padding-left: 0;
+}
+.skills li {
+  display: inline-block;
+  margin: 4px;
+  padding: 6px 10px;
+  border: 1px solid grey;
+  border-radius: 8px;
+}
+.interests {
+  list-style-type: none;
+  padding-left: 0;
+}
+.interests li {
+  display: inline-block;
+  margin: 4px;
+  padding: 6px 10px;
+  border: 1px solid grey;
+  border-radius: 8px;
+}
+.industries {
+  list-style-type: none;
+  padding-left: 0;
+}
+.industries li {
+  display: inline-block;
+  margin: 4px;
+  padding: 6px 10px;
+  border: 1px solid grey;
+  border-radius: 8px;
+}
+.experience {
+  margin: 4px;
+  margin-bottom: 20px;
+  padding: 6px 10px;
+  border: 1px solid grey;
+  border-radius: 8px;
+}
+.education {
+  display: inline-block;
+  border-radius: 8px;
+  padding: 0px 0px;
+  max-width: 350px;
+
+}
+.certifications {
+  display: inline-flex;
+  justify-content: center;
+  border: 1px solid grey;
+  border-radius: 8px;
+  padding: 16px 20px;
+  height: 200px;
+  width: 200px;
+  margin: 4px;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+
+
+
+button {
+  margin: 4px;
+}
+button:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+
+.bgimg {
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("./src/assets/img/cover.JPG");
+  height: 600px;
+  border-top-left-radius: 36px;
+  border-top-right-radius: 36px;
+}
+
+.hero {
+  max-height: 600px;
+  background-position: center center;
+}
