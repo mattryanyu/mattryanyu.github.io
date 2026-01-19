@@ -124,7 +124,7 @@ function App() {
         {resume.experience.map((experience, i) => (
           <ul className="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical">
             <li>
-              <hr />
+              <hr className="bg-white" />
               <div className="timeline-middle ">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -139,7 +139,7 @@ function App() {
                   />
                 </svg>
               </div>
-              <div className="timeline-start mb-10 md:text-end" key={i}>
+              <div className="timeline-start mb-10 text-left md:text-end" key={i}>
                 <time className="font-mono italic">{experience.year}</time>
                 <div className="text-lg font-black">{experience.role}</div>
                 {experience.company}
@@ -147,7 +147,7 @@ function App() {
                 {experience.location}
                 <br />({experience.duration})
               </div>
-              <hr />
+              <hr className="bg-white" />
             </li>
           </ul>
         ))}
