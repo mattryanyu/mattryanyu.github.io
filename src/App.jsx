@@ -69,8 +69,12 @@ function App() {
                 <h1 className="mt-2 text-4xl font-semibold tracking-tight text-pretty text-white sm:text-5xl">
                   {resume.headline}
                 </h1>
-                <p className="mt-6 text-xl/8 text-gray-300">Matt is a results-oriented and people-focused senior leader with 15+ years of experience transforming Operations and architecting IT solutions in Insurance and other industries. He is an expert in leading strategic automation and digital transformation programs utilizing low code platforms and AI document processing. Matt’s automation experience includes: UiPath, Power Platform, Celonis, Automation Anywhere, Blue Prism and Pega (OpenSpan).</p>
-                <p className="mt-6 text-xl/8 text-gray-300">Matt spent nearly 10 years at AIG in various operations roles including leading a 100+ FTE Claims Operations team. Matt also spent the first 5 years of his career delivering strategic board-level executive plans & presentations for the Global Operations & Systems function. Born and raised in New York City. Lived and worked abroad for 8+ years in Australia, Malaysia and Brazil.</p>
+
+                {resume.summaries.map((sections, i) => (
+                  <div key={i}>
+                    <p className="mt-6 text-xl/8 text-gray-300">{sections}</p>
+                  </div>
+                ))}
               </div>
             </div>
           </div>
@@ -221,15 +225,14 @@ function App() {
                   <div class="certifications" key={i}>
                     <div>
                       <FontAwesomeIcon icon={faMedal} size="2x" />
-                      <h2 className="text-1xl font-bold tracking-tight">{certifications.name}</h2>
-            
+                      <h2 className="text-1xl font-bold tracking-tight">
+                        {certifications.name}
+                      </h2>
 
                       <i>{certifications.issuer}</i>
                     </div>
                   </div>
                 ))}
-
-
 
                 <h2 className="m-16 text-2xl font-bold tracking-tight text-white">
                   Interests
@@ -254,9 +257,10 @@ function App() {
           </h2>
           {resume.education.map((education, i) => (
             <div class="education" key={i}>
-              <div >
+              <div>
                 <FontAwesomeIcon icon={faGraduationCap} size="2x" />
-                <br /><br />
+                <br />
+                <br />
                 <h2 className="mt-0 text-1xl font-bold tracking-tight text-white">
                   {education.school}
                 </h2>
