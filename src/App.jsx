@@ -142,7 +142,10 @@ function App() {
                   />
                 </svg>
               </div>
-              <div className="timeline-start mb-10 text-left md:text-end" key={i}>
+              <div
+                className="timeline-start mb-10 text-left md:text-end"
+                key={i}
+              >
                 <time className="font-mono italic">{experience.year}</time>
                 <div className="text-lg font-black">{experience.role}</div>
                 {experience.company}
@@ -214,13 +217,16 @@ function App() {
                 {resume.certifications.map((certifications, i) => (
                   <div class="certifications" key={i}>
                     <div>
-                      <p>{certifications.name}</p>
-                      <br />
-                      <hr></hr>
-                      {certifications.issuer}
+                      <h2 className="text-1xl font-bold tracking-tight">{certifications.name}</h2>
+            
+
+                      <i>{certifications.issuer}</i>
                     </div>
                   </div>
                 ))}
+
+
+
                 <h2 className="m-16 text-2xl font-bold tracking-tight text-white">
                   Interests
                 </h2>
@@ -245,20 +251,17 @@ function App() {
           {resume.education.map((education, i) => (
             <div class="education" key={i}>
               <div className="card-body">
-                <h2 className="mt-0 text-1xl font-bold tracking-tight text-white">{education.school}</h2>
-  
+                <h2 className="mt-0 text-1xl font-bold tracking-tight text-white">
+                  {education.school}
+                </h2>
                 {education.degree} | {education.major}
                 <br />
-                <i>
-                  {education.to}
-                </i>
+                <i>{education.to}</i>
               </div>
             </div>
           ))}
         </div>
       </section>
-
-    
 
       <footer className="footer sm:footer-horizontal bg-neutral text-neutral-content p-10">
         <aside>

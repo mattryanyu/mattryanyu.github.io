@@ -63,14 +63,32 @@
 }
 .certifications {
   display: inline-flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
+  vertical-align: top;
+
+
+  width: 220px;
+  height: 220px;
+  margin: 8px;
+  padding: 20px;
+
+  background: #000000;
+  border-radius: 16px;
   border: 1px solid grey;
-  border-radius: 8px;
-  padding: 16px 20px;
-  height: 200px;
-  width: 200px;
-  margin: 4px;
+
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+  cursor: pointer;
 }
+
+.certifications:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
 
 .logo {
   height: 6em;
