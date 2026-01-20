@@ -13,8 +13,9 @@ import biking from "./assets/img/biking.jpg";
 function App() {
   return (
     <>
-      <div
-        className="hero min-h-screen"
+<div
+  className="hero h-[90vh] bg-fixed bg-center bg-cover"
+
         style={{
           backgroundImage: `url(${cover})`,
         }}
@@ -273,31 +274,38 @@ function App() {
         </div>
       </section>
 
-      <footer className="footer sm:footer-horizontal bg-neutral text-neutral-content p-10">
-        <aside>
-          <p>mattyuniverse</p>
-          <p>Built on React, Vite, TailwindCSS, DaisyUI</p>
-          <p>
-            <FontAwesomeIcon
-              icon={faReact}
-              size="2x"
-              className="text-cyan-400"
-            />
-          </p>
-        </aside>
-        <nav>
-          <h6 className="footer-title">Find me on</h6>
-          <div className="grid grid-flow-col gap-4">
-            <a
-              href="https://www.linkedin.com/in/mattryanyu/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-blue-600 hover:text-blue-800"
-            >
-              <FontAwesomeIcon icon={faLinkedin} size="2x" />
-            </a>
+      <footer class="w-full px-4 py-6 bg-neutral text-white">
+        <div class="max-w-6xl mx-auto flex flex-col items-center gap-4 md:flex-row md:justify-between md:items-center">
+          <div class="text-center md:text-left">
+            <p className="text-base">mattyuniverse</p>
+            <p className="text-xs">
+              Built on React, Vite, TailwindCSS, DaisyUI
+            </p>
+            <p>
+              <FontAwesomeIcon
+                icon={faReact}
+                size="2x"
+                className="text-cyan-400"
+              />
+            </p>
           </div>
-        </nav>
+
+          <div class="flex gap-4 text-center md:text-right">
+            <nav>
+              <h6 className="footer-title">Find me on</h6>
+              <div className="grid grid-flow-col gap-4">
+                <a
+                  href="https://www.linkedin.com/in/mattryanyu/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue-600 hover:text-blue-800"
+                >
+                  <FontAwesomeIcon icon={faLinkedin} size="2x" />
+                </a>
+              </div>
+            </nav>
+          </div>
+        </div>
       </footer>
     </>
   );
