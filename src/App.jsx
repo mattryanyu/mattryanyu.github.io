@@ -200,7 +200,7 @@ function App() {
           <div className="lg:col-span-2 lg:col-start-1 lg:row-start-2 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
             <div className="lg:pr-4">
               <div className="max-w-xl text-base/7 text-gray-400 lg:max-w-lg">
-                <h2 className="mt-16 text-2xl font-bold tracking-tight text-white">
+                <h2 className="m-16 text-2xl font-bold tracking-tight text-white">
                   Industries
                 </h2>
                 <ul class="industries">
@@ -208,7 +208,7 @@ function App() {
                     <li key={i}>{s}</li>
                   ))}
                 </ul>
-                <h2 className="mt-16 text-2xl font-bold tracking-tight text-white">
+                <h2 className="m-16 text-2xl font-bold tracking-tight text-white">
                   Certifications
                 </h2>
                 {resume.certifications.map((certifications, i) => (
@@ -221,7 +221,7 @@ function App() {
                     </div>
                   </div>
                 ))}
-                <h2 className="mt-16 text-2xl font-bold tracking-tight text-white">
+                <h2 className="m-16 text-2xl font-bold tracking-tight text-white">
                   Interests
                 </h2>
                 <ul class="interests">
@@ -245,12 +245,12 @@ function App() {
           {resume.education.map((education, i) => (
             <div class="education" key={i}>
               <div className="card-body">
-                <h2>{education.school}</h2>
-                <br />
+                <h2 className="mt-0 text-1xl font-bold tracking-tight text-white">{education.school}</h2>
+  
                 {education.degree} | {education.major}
                 <br />
                 <i>
-                  {education.from} - {education.to}
+                  {education.to}
                 </i>
               </div>
             </div>
