@@ -4,6 +4,8 @@ import ResumeSection from "./components/ResumeSection";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faReact } from "@fortawesome/free-brands-svg-icons";
+import { faMedal } from "@fortawesome/free-solid-svg-icons";
+import { faGraduationCap } from "@fortawesome/free-solid-svg-icons";
 import cover from "./assets/img/cover.jpg";
 import diving from "./assets/img/diving.png";
 import biking from "./assets/img/biking.jpg";
@@ -217,6 +219,7 @@ function App() {
                 {resume.certifications.map((certifications, i) => (
                   <div class="certifications" key={i}>
                     <div>
+                      <FontAwesomeIcon icon={faMedal} size="2x" />
                       <h2 className="text-1xl font-bold tracking-tight">{certifications.name}</h2>
             
 
@@ -250,7 +253,9 @@ function App() {
           </h2>
           {resume.education.map((education, i) => (
             <div class="education" key={i}>
-              <div className="card-body">
+              <div >
+                <FontAwesomeIcon icon={faGraduationCap} size="2x" />
+                <br /><br />
                 <h2 className="mt-0 text-1xl font-bold tracking-tight text-white">
                   {education.school}
                 </h2>
