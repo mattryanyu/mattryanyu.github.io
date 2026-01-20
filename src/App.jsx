@@ -4,6 +4,9 @@ import ResumeSection from "./components/ResumeSection";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faReact } from "@fortawesome/free-brands-svg-icons";
+import cover from "./assets/img/cover.jpg";
+import diving from "./assets/img/diving.png";
+import biking from "./assets/img/biking.jpg";
 
 function App() {
   return (
@@ -11,7 +14,7 @@ function App() {
       <div
         className="hero min-h-screen"
         style={{
-          backgroundImage: "url(./src/assets/img/cover.JPG)",
+          backgroundImage: `url(${cover})`,
         }}
       >
         <div className="hero-overlay"></div>
@@ -70,8 +73,8 @@ function App() {
           </div>
           <div className="mx-auto p-6 sm:p-12 lg:sticky lg:top-4 lg:col-start-2 lg:row-span-2 lg:row-start-1">
             <img
-              alt="biking photo"
-              src="../src/assets/img/biking.jpg"
+              alt="biking"
+              src={biking}
               className="w-full max-w-full h-auto rounded-xl bg-gray-800 shadow-xl ring-1 ring-white/10"
             />
           </div>
@@ -188,8 +191,8 @@ function App() {
         <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 lg:mx-0 lg:max-w-none lg:grid-cols-2 lg:items-start lg:gap-y-10">
           <div className="mx-auto p-6 sm:p-12 lg:sticky lg:top-4 lg:col-start-2 lg:row-span-2 lg:row-start-1">
             <img
-              alt="diving photo"
-              src="./src/assets/img/diving.png"
+              alt="diving"
+              src={diving}
               className="w-full max-w-full h-auto rounded-xl bg-gray-800 shadow-xl ring-1 ring-white/10"
             />
           </div>
