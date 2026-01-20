@@ -91,16 +91,6 @@ button:hover {
   filter: drop-shadow(0 0 2em #646cffaa);
 }
 
-.bgimg {
-  background-position: right;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-image: url("./src/assets/img/cover.JPG");
-  height: 600px;
-  border-top-left-radius: 36px;
-  border-top-right-radius: 36px;
-}
-
 .hero {
   max-height: 600px;
   background-position: center center;
