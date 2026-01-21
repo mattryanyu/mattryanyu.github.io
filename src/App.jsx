@@ -1,6 +1,7 @@
 import "./App.css";
 import resume from "./data/resume.json";
 import ResumeSection from "./components/ResumeSection";
+import Reveal from "./components/Reveal";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faReact } from "@fortawesome/free-brands-svg-icons";
@@ -13,9 +14,8 @@ import biking from "./assets/img/biking.jpg";
 function App() {
   return (
     <>
-<div
-  className="hero h-[90vh] !min-h-[90vh] bg-fixed bg-center bg-cover"
-
+      <div
+        className="hero h-[90vh] !min-h-[90vh] bg-fixed bg-center bg-cover"
         style={{
           backgroundImage: `url(${cover})`,
         }}
@@ -64,48 +64,56 @@ function App() {
           <div className="lg:col-span-2 lg:col-start-1 lg:row-start-1 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
             <div className="lg:pr-4">
               <div className="lg:max-w-lg">
-                <p className="text-base/7 font-semibold text-indigo-400">
-                  {resume.location}
-                </p>
-                <h1 className="mt-2 text-4xl font-semibold tracking-tight text-pretty text-white sm:text-5xl">
-                  {resume.headline}
-                </h1>
-
+                <Reveal>
+                  <p className="text-base/7 font-semibold text-indigo-400">
+                    {resume.location}
+                  </p>
+                  <h1 className="mt-2 text-4xl font-semibold tracking-tight text-pretty text-white sm:text-5xl">
+                    {resume.headline}
+                  </h1>
+                </Reveal>
                 {resume.summaries.map((sections, i) => (
-                  <div key={i}>
-                    <p className="mt-6 text-xl/8 text-gray-300">{sections}</p>
-                  </div>
+                  <Reveal>
+                    <div key={i}>
+                      <p className="mt-6 text-xl/8 text-gray-300">{sections}</p>
+                    </div>
+                  </Reveal>
                 ))}
               </div>
             </div>
           </div>
           <div className="mx-auto p-6 sm:p-12 lg:sticky lg:top-4 lg:col-start-2 lg:row-span-2 lg:row-start-1">
-            <img
-              alt="biking"
-              src={biking}
-              className="w-full max-w-full h-auto rounded-xl bg-gray-800 shadow-xl ring-1 ring-white/10"
-            />
+            <Reveal>
+              <img
+                alt="biking"
+                src={biking}
+                className="w-full max-w-full h-auto rounded-xl bg-gray-800 shadow-xl ring-1 ring-white/10"
+              />
+            </Reveal>
           </div>
 
           <div className="lg:col-span-2 lg:col-start-1 lg:row-start-2 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
             <div className="lg:pr-4">
               <div className="max-w-xl text-base/7 text-gray-400 lg:max-w-lg">
-                <h2 className="mt-16 text-2xl font-bold tracking-tight text-white">
-                  Skills
-                </h2>
+                <Reveal>
+                  <h2 className="mt-16 text-2xl font-bold tracking-tight text-white">
+                    Skills
+                  </h2>
+                </Reveal>
                 <p>
                   {resume.skills.map((skills, i) => (
-                    <div key={i}>
-                      <p>
-                        <strong>{skills.theme}</strong>
-                      </p>
-
-                      <ul class="skills">
-                        {skills.items.map((item, j) => (
-                          <li key={j}>{item}</li>
-                        ))}
-                      </ul>
-                    </div>
+                    <Reveal>
+                      <div key={i}>
+                        <p>
+                          <strong>{skills.theme}</strong>
+                        </p>
+                        <ul class="skills">
+                          {skills.items.map((item, j) => (
+                            <li key={j}>{item}</li>
+                          ))}
+                        </ul>
+                      </div>
+                    </Reveal>
                   ))}
                 </p>
               </div>
@@ -117,15 +125,17 @@ function App() {
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <dl className="grid grid-cols-1 gap-x-8 gap-y-16 text-center lg:grid-cols-3">
             {resume.stats.map((stat) => (
-              <div
-                key={stat.id}
-                className="mx-auto flex max-w-xs flex-col gap-y-4"
-              >
-                <dt className="text-base/7 text-gray-400">{stat.name}</dt>
-                <dd className="order-first text-3xl font-semibold tracking-tight text-white sm:text-5xl">
-                  {stat.value}
-                </dd>
-              </div>
+              <Reveal>
+                <div
+                  key={stat.id}
+                  className="mx-auto flex max-w-xs flex-col gap-y-4"
+                >
+                  <dt className="text-base/7 text-gray-400">{stat.name}</dt>
+                  <dd className="order-first text-3xl font-semibold tracking-tight text-white sm:text-5xl">
+                    {stat.value}
+                  </dd>
+                </div>
+              </Reveal>
             ))}
           </dl>
         </div>
@@ -154,12 +164,14 @@ function App() {
                 className="timeline-start mb-10 text-left md:text-end"
                 key={i}
               >
-                <time className="font-mono italic">{experience.year}</time>
-                <div className="text-lg font-black">{experience.role}</div>
-                {experience.company}
-                <br />
-                {experience.location}
-                <br />({experience.duration})
+                <Reveal>
+                  <time className="font-mono italic">{experience.year}</time>
+                  <div className="text-lg font-black">{experience.role}</div>
+                  {experience.company}
+                  <br />
+                  {experience.location}
+                  <br />({experience.duration})
+                </Reveal>
               </div>
               <hr className="bg-white" />
             </li>
@@ -201,16 +213,18 @@ function App() {
         </div>
         <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 lg:mx-0 lg:max-w-none lg:grid-cols-2 lg:items-start lg:gap-y-10">
           <div className="mx-auto p-6 sm:p-12 lg:sticky lg:top-4 lg:col-start-2 lg:row-span-2 lg:row-start-1">
+           <Reveal>
             <img
               alt="diving"
               src={diving}
               className="w-full max-w-full h-auto rounded-xl bg-gray-800 shadow-xl ring-1 ring-white/10"
-            />
+            /></Reveal>
           </div>
 
           <div className="lg:col-span-2 lg:col-start-1 lg:row-start-2 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
             <div className="lg:pr-4">
               <div className="max-w-xl text-base/7 text-gray-400 lg:max-w-lg">
+                <Reveal>
                 <h2 className="m-16 text-2xl font-bold tracking-tight text-white">
                   Industries
                 </h2>
@@ -219,30 +233,35 @@ function App() {
                     <li key={i}>{s}</li>
                   ))}
                 </ul>
-                <h2 className="m-16 text-2xl font-bold tracking-tight text-white">
-                  Certifications
-                </h2>
-                {resume.certifications.map((certifications, i) => (
-                  <div class="certifications" key={i}>
-                    <div>
-                      <FontAwesomeIcon icon={faMedal} size="2x" />
-                      <h2 className="text-1xl font-bold tracking-tight">
-                        {certifications.name}
-                      </h2>
+</Reveal>
+                <Reveal>
+                  <h2 className="m-16 text-2xl font-bold tracking-tight text-white">
+                    Certifications
+                  </h2>
+                  {resume.certifications.map((certifications, i) => (
+                    <div class="certifications" key={i}>
+                      <div>
+                        <FontAwesomeIcon icon={faMedal} size="2x" />
+                        <h2 className="text-1xl font-bold tracking-tight">
+                          {certifications.name}
+                        </h2>
 
-                      <i>{certifications.issuer}</i>
+                        <i>{certifications.issuer}</i>
+                      </div>
                     </div>
-                  </div>
-                ))}
-
-                <h2 className="m-16 text-2xl font-bold tracking-tight text-white">
-                  Interests
-                </h2>
-                <ul class="interests">
-                  {resume.interests.map((s, i) => (
-                    <li key={i}>{s}</li>
                   ))}
-                </ul>
+                </Reveal>
+
+                <Reveal>
+                  <h2 className="m-16 text-2xl font-bold tracking-tight text-white">
+                    Interests
+                  </h2>
+                  <ul class="interests">
+                    {resume.interests.map((s, i) => (
+                      <li key={i}>{s}</li>
+                    ))}
+                  </ul>
+                </Reveal>
               </div>
             </div>
           </div>
@@ -252,25 +271,30 @@ function App() {
       <section class="relative isolate overflow-hidden bg-gray-900 px-6 py-24 sm:py-32 lg:px-8">
         <div class="absolute inset-0 -z-10 bg-[radial-gradient(45rem_50rem_at_top,var(--color-indigo-500),transparent)] opacity-10"></div>
         <div class="absolute inset-y-0 right-1/2 -z-10 mr-16 w-[200%] origin-bottom-left skew-x-[-30deg] bg-gray-900 shadow-xl ring-1 shadow-indigo-500/5 ring-white/5 sm:mr-28 lg:mr-0 xl:mr-16 xl:origin-center"></div>
+
         <div class="mx-auto max-w-2xl lg:max-w-4xl">
-          <h2 className="mb-6 text-2xl font-bold tracking-tight text-white">
-            Education
-          </h2>
-          {resume.education.map((education, i) => (
-            <div class="education" key={i}>
-              <div>
-                <FontAwesomeIcon icon={faGraduationCap} size="2x" />
-                <br />
-                <br />
-                <h2 className="mt-0 text-1xl font-bold tracking-tight text-white">
-                  {education.school}
-                </h2>
-                {education.degree} | {education.major}
-                <br />
-                <i>{education.to}</i>
+          <Reveal>
+            <h2 className="mb-6 text-2xl font-bold tracking-tight text-white">
+              Education
+            </h2>
+          </Reveal>
+          <Reveal>
+            {resume.education.map((education, i) => (
+              <div class="education" key={i}>
+                <div>
+                  <FontAwesomeIcon icon={faGraduationCap} size="2x" />
+                  <br />
+                  <br />
+                  <h2 className="mt-0 text-1xl font-bold tracking-tight text-white">
+                    {education.school}
+                  </h2>
+                  {education.degree} | {education.major}
+                  <br />
+                  <i>{education.to}</i>
+                </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </Reveal>
         </div>
       </section>
 

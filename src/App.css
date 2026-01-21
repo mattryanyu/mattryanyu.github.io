@@ -112,3 +112,8 @@ button:hover {
   max-height: 600px;
   background-position: center center;
 }
+
+.show {
+  opacity: 1;
+  transform: translateY(0);
+}
