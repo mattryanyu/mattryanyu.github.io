@@ -10,7 +10,8 @@ export default function Reveal({ children, className = "" }) {
       ([entry]) => {
         if (entry.isIntersecting) {
           element.classList.add("show");
-          observer.unobserve(element);
+        } else {
+          element.classList.remove("show");
         }
       },
       { threshold: 0.2 }
@@ -24,7 +25,7 @@ export default function Reveal({ children, className = "" }) {
   return (
     <div
       ref={ref}
-      className={`opacity-0 translate-y-6 transition-all duration-700 ${className}`}
+      className={`opacity-0 translate-y-6 transition-all duration-1500 ${className}`}
     >
       {children}
     </div>
