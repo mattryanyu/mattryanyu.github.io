@@ -15,7 +15,7 @@ function App() {
   return (
     <>
       <div
-        className="hero h-[90vh] !min-h-[90vh] bg-fixed bg-center bg-cover"
+        className="hero h-[90vh] !min-h-[90vh] md:bg-fixed bg-center bg-cover"
         style={{
           backgroundImage: `url(${cover})`,
         }}
