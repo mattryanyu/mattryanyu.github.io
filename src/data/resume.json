@@ -90,6 +90,13 @@
       "location": "Seattle, USA",
       "duration": "1 yrs 5 mos",
       "year": "2021"
+    },    
+    {
+      "company": "Relocation & Full-time Parenting",
+      "role": "Stay-at-home Dad",
+      "location": "Kuala Lumpur, Malaysia",
+      "duration": "2 yrs 4 mos",
+      "year": "2019"
     },
     {
       "company": "Blackbook.ai",
@@ -179,8 +186,10 @@
     "Pickleball",
     "Badminton",
     "Skiing",
-    "Scuba diving",
-    "Tennis"
+    "Scuba Diving",
+    "Tennis",
+    "Nintendo Switch",
+    "Ice Skating"
   ],
   "stats": [
     {

@@ -141,7 +141,18 @@ function App() {
         </div>
       </div>
 
-      <ResumeSection title="Experience">
+      <ResumeSection>
+        <Reveal>
+          <div class="mb-6">
+            <p>
+              <h2 className="mt-16 text-2xl font-bold tracking-tight text-white">
+                Experience
+              </h2>
+            </p>
+          </div>
+        </Reveal>
+        <br />
+
         {resume.experience.map((experience, i) => (
           <ul className="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical">
             <li>
@@ -165,12 +176,12 @@ function App() {
                 key={i}
               >
                 <Reveal>
-                  <time className="font-mono italic">{experience.year}</time>
+                  <time className="font-mono">{experience.year}</time>
                   <div className="text-lg font-black">{experience.role}</div>
                   {experience.company}
                   <br />
                   {experience.location}
-                  <br />({experience.duration})
+                  
                 </Reveal>
               </div>
               <hr className="bg-white" />
@@ -213,27 +224,28 @@ function App() {
         </div>
         <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 lg:mx-0 lg:max-w-none lg:grid-cols-2 lg:items-start lg:gap-y-10">
           <div className="mx-auto p-6 sm:p-12 lg:sticky lg:top-4 lg:col-start-2 lg:row-span-2 lg:row-start-1">
-           <Reveal>
-            <img
-              alt="diving"
-              src={diving}
-              className="w-full max-w-full h-auto rounded-xl bg-gray-800 shadow-xl ring-1 ring-white/10"
-            /></Reveal>
+            <Reveal>
+              <img
+                alt="diving"
+                src={diving}
+                className="w-full max-w-full h-auto rounded-xl bg-gray-800 shadow-xl ring-1 ring-white/10"
+              />
+            </Reveal>
           </div>
 
           <div className="lg:col-span-2 lg:col-start-1 lg:row-start-2 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
             <div className="lg:pr-4">
               <div className="max-w-xl text-base/7 text-gray-400 lg:max-w-lg">
                 <Reveal>
-                <h2 className="m-16 text-2xl font-bold tracking-tight text-white">
-                  Industries
-                </h2>
-                <ul class="industries">
-                  {resume.industries.map((s, i) => (
-                    <li key={i}>{s}</li>
-                  ))}
-                </ul>
-</Reveal>
+                  <h2 className="m-16 text-2xl font-bold tracking-tight text-white">
+                    Industries
+                  </h2>
+                  <ul class="industries">
+                    {resume.industries.map((s, i) => (
+                      <li key={i}>{s}</li>
+                    ))}
+                  </ul>
+                </Reveal>
                 <Reveal>
                   <h2 className="m-16 text-2xl font-bold tracking-tight text-white">
                     Certifications
@@ -246,7 +258,7 @@ function App() {
                           {certifications.name}
                         </h2>
 
-                        <i>{certifications.issuer}</i>
+                        {certifications.issuer}
                       </div>
                     </div>
                   ))}
@@ -290,7 +302,7 @@ function App() {
                   </h2>
                   {education.degree} | {education.major}
                   <br />
-                  <i>{education.to}</i>
+                  {education.to}
                 </div>
               </div>
             ))}
@@ -301,17 +313,28 @@ function App() {
       <footer class="w-full px-4 py-6 bg-neutral text-white">
         <div class="max-w-6xl mx-auto flex flex-col items-center gap-4 md:flex-row md:justify-between md:items-center">
           <div class="text-center md:text-left">
-            <p className="text-base">mattyuniverse</p>
-            <p className="text-xs">
-              Built on React, Vite, TailwindCSS, DaisyUI
-            </p>
-            <p>
+            <div>
+              <h6 className="footer-title">MATTYUNIVERSE</h6>
+            </div>
+
+            <div class="flex">
               <FontAwesomeIcon
                 icon={faReact}
                 size="2x"
                 className="text-cyan-400"
               />
-            </p>
+              <img src="/vite.svg"></img>
+              <svg
+                class="w-10"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 54 33"
+              >
+                <path
+                  fill="#38BDF8"
+                  d="M27 0c-7.5 0-12.2 3.7-14 11.1 2.8-3.7 6.1-5.1 10-4.2 2.2.5 3.8 2 5.6 3.8 2.9 2.9 6.3 6.3 13.4 6.3 7.5 0 12.2-3.7 14-11.1-2.8 3.7-6.1 5.1-10 4.2-2.2-.5-3.8-2-5.6-3.8C37.5 3.4 34.1 0 27 0zm-14 16.8c-7.5 0-12.2 3.7-14 11.1 2.8-3.7 6.1-5.1 10-4.2 2.2.5 3.8 2 5.6 3.8 2.9 2.9 6.3 6.3 13.4 6.3 7.5 0 12.2-3.7 14-11.1-2.8 3.7-6.1 5.1-10 4.2-2.2-.5-3.8-2-5.6-3.8-2.9-2.9-6.3-6.3-13.4-6.3z"
+                />
+              </svg>
+            </div>
           </div>
 
           <div class="flex gap-4 text-center md:text-right">
