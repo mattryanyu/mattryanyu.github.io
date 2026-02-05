@@ -104,8 +104,8 @@ function App() {
                   {resume.skills.map((skills, i) => (
                     <Reveal>
                       <div key={i}>
-                        <p>
-                          <strong>{skills.theme}</strong>
+                        <p class="text-lg mt-8 font-bold bg-gradient-to-r from-purple-500 via-indigo-500 to-blue-500 bg-clip-text text-transparent">
+                          {skills.theme}
                         </p>
                         <ul class="skills">
                           {skills.items.map((item, j) => (
@@ -143,7 +143,7 @@ function App() {
 
       <ResumeSection>
         <Reveal>
-          <div class="mb-6">
+          <div class="mb-6  bg-gray-900">
             <p>
               <h2 className="mt-16 text-2xl font-bold tracking-tight text-white">
                 Experience
@@ -154,7 +154,7 @@ function App() {
         <br />
 
         {resume.experience.map((experience, i) => (
-          <ul className="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical">
+          <ul className="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical  bg-gray-900 text-white">
             <li>
               <hr className="bg-white" />
               <div className="timeline-middle ">
@@ -181,7 +181,6 @@ function App() {
                   {experience.company}
                   <br />
                   {experience.location}
-                  
                 </Reveal>
               </div>
               <hr className="bg-white" />
@@ -246,21 +245,27 @@ function App() {
                     ))}
                   </ul>
                 </Reveal>
+
                 <Reveal>
                   <h2 className="m-16 text-2xl font-bold tracking-tight text-white">
                     Certifications
                   </h2>
                   {resume.certifications.map((certifications, i) => (
-                    <div class="certifications" key={i}>
-                      <div>
-                        <FontAwesomeIcon icon={faMedal} size="2x" />
-                        <h2 className="text-1xl font-bold tracking-tight">
-                          {certifications.name}
-                        </h2>
-
-                        {certifications.issuer}
+                    <a
+                      href="https://www.credly.com/users/mattryanyu"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <div class="certifications" key={i}>
+                        <div>
+                          <FontAwesomeIcon icon={faMedal} size="2x" />
+                          <h2 className="text-1xl font-bold tracking-tight">
+                            {certifications.name}
+                          </h2>
+                          {certifications.issuer}
+                        </div>
                       </div>
-                    </div>
+                    </a>
                   ))}
                 </Reveal>
 
@@ -292,7 +297,7 @@ function App() {
           </Reveal>
           <Reveal>
             {resume.education.map((education, i) => (
-              <div class="education" key={i}>
+              <div class="education text-white" key={i}>
                 <div>
                   <FontAwesomeIcon icon={faGraduationCap} size="2x" />
                   <br />
