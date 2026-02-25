@@ -4,24 +4,77 @@
   "location": "Seattle, WA",
   "headline": "Transforming business operations through intelligent automation and agentic AI",
   "summaries": [
-    "Matt is a results-oriented and people-focused senior leader with 15+ years of experience transforming Operations and architecting IT solutions in Insurance and other industries. He is an expert in leading strategic automation and digital transformation programs utilizing low code platforms and AI document processing. Matt’s automation experience includes: UiPath, Power Platform, Celonis, Automation Anywhere, Blue Prism and Pega (OpenSpan).",
-    "Matt spent nearly 10 years at AIG in various operations roles including leading a 100+ FTE Claims Operations team. Matt also spent the first 5 years of his career delivering strategic board-level executive plans & presentations for the Global Operations & Systems function. Born and raised in New York City. Lived and worked abroad for 8+ years in Australia, Malaysia and Brazil."
+    "Based in Seattle. Born and raised in New York City. Lived and worked abroad for 8+ years in Australia, Malaysia and Brazil.",
+    "Matt is a results-oriented and people-focused senior leader with 15+ years of experience transforming Operations and architecting IT solutions in Insurance and other industries. He is an expert in leading strategic automation and digital transformation programs utilizing low code automation and AI platforms. Matt’s automation experience includes: UiPath, Power Platform, Celonis, Automation Anywhere, Copilot Studio and Blue Prism.",
+    "Matt spent nearly 10 years at AIG in various operations roles including leading a 100+ FTE Claims Operations team. Matt also spent the first 5 years of his career delivering strategic board-level executive plans, scorecards & presentations for Global Operations & Systems."
   ],
   "skills": [
     {
-      "theme": "Area of Expertise",
+      "theme": "Tech Delivery & Execution",
       "items": [
         "Intelligent Automation",
         "RPA",
-        "Shared Services",
-        "Insurance",
-        "Operations",
-        "Business Transformation",
-        "Financial Services",
-        "Consulting",
-        "Strategy & Execution",
+        "Solution Architecture",
+        "Automation Delivery",
+        "Development",
         "Agile",
-        "Operations Excellence"
+        "PDDs",
+        "SDDs",
+        "Runbooks",
+        "Pipeline Management",
+        "Bot Monitoring",
+        "Automation Code Reviews",
+        "Automation QA",
+        "Opportunity Assessments",
+        "PXE Collaboration"
+      ]
+    },
+    {
+      "theme": "Operations & Process Excellence",
+      "items": [
+        "Shared Services",
+        "Operations Transformation",
+        "Claims Operations",
+        "Insurance Operations",
+        "First Notice of Loss",
+        "Business Operations",
+        "Business Transformation",
+        "Finance Operations",
+        "Procure-to-Pay",
+        "Order-to-Cash",
+        "Reconciliation",
+        "Target Operating Models",
+        "Operations Excellence",
+        "Business Process Reengineering",
+        "Business Analysis",
+        "Outsourcing",
+        "Service Level Agreements",
+        "Backlog Remediation",
+        "Capacity Planning",
+        "Recruitment & Training",
+        "Team Leadership",
+        "Project Management",
+        "Process Migration",
+        "Teambuilding",
+        "NPS/VOC",
+        "Call Center Operations",
+        "Change Management"
+      ]
+    },
+    {
+      "theme": "Strategy & Consulting",
+      "items": [
+        "Business Transformation",
+        "Digital Transformation",
+        "Presales Consulting",
+        "Automation Roadmaps",
+        "Scorecards",
+        "Cloud Adoption",
+        "Strategic Roadmaps",
+        "Outsourcing Strategy",
+        "Global Business Services",
+        "Strategic Planning",
+        "Strategy & Execution"
       ]
     },
     {
@@ -31,7 +84,8 @@
         "AI Center",
         "REFramework",
         "Unattended Bots",
-        "Orchestrator"
+        "Orchestrator",
+        "Action Center"
       ]
     },
     {
@@ -43,7 +97,20 @@
         "Power BI",
         "Dataverse",
         "Azure",
-        "SharePoint"
+        "SharePoint",
+        "AI Builder",
+        "Copilot Studio"
+      ]
+    },
+
+    {
+      "theme": "Soft Skills",
+      "items": [
+        "Team Collaboration",
+        "Business Communication",
+        "Dealing with Ambiguity",
+        "Team Leadership",
+        "Stakeholder Management"
       ]
     },
     {
@@ -54,13 +121,13 @@
         "Azure DevOps",
         "GitHub",
         "Bitbucket",
+        "APIs",
         "VB.net",
         "SQL",
         "Power FX",
-        "HTML",
-        "CSS",
         "Regex",
-        "APIs"
+        "HTML",
+        "CSS"
       ]
     },
     {
@@ -82,7 +149,7 @@
       "role": "General Manager, North America",
       "location": "Seattle, USA",
       "duration": "2 years 11 months",
-      "year": "2023"
+      "year": "2023 - Present"
     },
     {
       "company": "Avanade",
@@ -90,7 +157,7 @@
       "location": "Seattle, USA",
       "duration": "1 yrs 5 mos",
       "year": "2021"
-    },    
+    },
     {
       "company": "Relocation & Full-time Parenting",
       "role": "Stay-at-home Dad",
@@ -155,32 +222,80 @@
       "degree": "Bachelor of Science",
       "major": "Finance",
       "from": "September 2004",
-      "to": "May 2008"
+      "to": "Class of '08"
     }
   ],
   "certifications": [
     {
-      "name": "PL-900",
+      "name": "Azure Fundamentals (AZ-900)",
       "issuer": "Microsoft",
-      "issued": "Apr 9, 2022"
+      "url": "https://learn.microsoft.com/api/credentials/share/en-us/mattryanyu/FF0FE1E3F181E6B2?sharingId=F9FDC245EF5DD87C"
+    },
+    {
+      "name": "Power Platform Fundamentals (PL-900)",
+      "issuer": "Microsoft",
+      "url": "https://www.credly.com/badges/a0808f3c-7fc1-444d-9960-dbab2527e779/public_url"
     },
     {
       "name": "AWS Certified Cloud Practitioner",
       "issuer": "AWS",
-      "expiry": "Apr 1, 2017"
+      "url": "https://www.credly.com/badges/ebb6285e-8f23-4ef9-817a-5f802c82f61d/public_url"
+    },
+    {
+      "name": "Make Foundation",
+      "issuer": "Make",
+      "url": "https://www.credly.com/badges/e0414891-a983-4d26-9c81-1177654a88e2/public_url"
     },
     {
       "name": "Celonis Analyst",
       "issuer": "Celonis",
-      "issued": "Sep 8, 2021"
+      "url": "https://www.credly.com/badges/aa4596fa-b356-4591-bb68-a3a82e1f2247/public_url"
     },
     {
       "name": "Celonis Data Engineer",
       "issuer": "Celonis",
-      "issued": "Aug 29, 2021"
+      "url": "https://www.credly.com/badges/f011bd2d-411c-4373-9084-b77b78c33da2/public_url"
+    },
+    {
+      "name": "Open Water Diver",
+      "issuer": "PADI",
+      "url": "https://store.padi.com/en-us/courses/open-water-diver/p/60462-1B2C/"
+    },
+    {
+      "name": "Google Cloud Platform Fundamentals: Core Infrastructure",
+      "issuer": "Coursera",
+      "url": "https://www.coursera.org/account/accomplishments/verify/NE8YXC5GAFH5"
+    },
+    {
+      "name": "Microsoft AZ-900 Cert Ready",
+      "issuer": "Measure Up",
+      "url": "https://www.credly.com/badges/91e15b62-d7fc-4b41-b410-ad03088e535f/public_url"
+    },
+    {
+      "name": "RPA Developer Foundation Training",
+      "issuer": "UiPath"
+    },
+    {
+      "name": "RPA Infrastructure Engineer Foundation",
+      "issuer": "UiPath"
+    },
+    {
+      "name": "RPA Business Analyst Foundation",
+      "issuer": "UiPath"
+    },
+    {
+      "name": "RPA Implementation Manager Foundation",
+      "issuer": "UiPath"
     }
   ],
-  "industries": ["Insurance", "Financial Services", "Healthcare", "Travel"],
+  "industries": [
+    "Insurance",
+    "Financial Services",
+    "Healthcare",
+    "Travel",
+    "Airlines",
+    "Big Tech"
+  ],
   "interests": [
     "Traveling",
     "Pickleball",

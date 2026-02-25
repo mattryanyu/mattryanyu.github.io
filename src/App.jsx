@@ -14,6 +14,9 @@ import biking from "./assets/img/biking.jpg";
 function App() {
   return (
     <>
+      <link rel="icon" href="favicon.svg" />
+      <link rel="mask-icon" href="favicon.svg" color="#000000" />
+      <link rel="apple-touch-icon" href="favicon.svg" />
       <div
         className="hero h-[90vh] !min-h-[90vh] md:bg-fixed bg-center bg-cover"
         style={{
@@ -22,10 +25,16 @@ function App() {
       >
         <div className="hero-overlay"></div>
         <div className="hero-content text-neutral-content text-center">
-          <div className="max-w-md">
-            <h1 className="mb-1 text-5xl font-bold">{resume.name}</h1>
-            <p className="mb-1 text-2xl font-bold">{resume.title}</p>
-          </div>
+          <Reveal>
+            <div className="max-w-md">
+              <h1 className="mb-1 text-5xl font-semibold tracking-tight text-pretty">
+                {resume.name}
+              </h1>
+              <p className="mb-1 text-2xl font-semibold tracking-tight text-pretty">
+                {resume.title}
+              </p>
+            </div>
+          </Reveal>
         </div>
       </div>
       <div className="relative isolate overflow-hidden bg-gray-900 px-6 py-24 sm:py-32 lg:overflow-visible lg:px-0">
@@ -84,11 +93,26 @@ function App() {
           </div>
           <div className="mx-auto p-6 sm:p-12 lg:sticky lg:top-4 lg:col-start-2 lg:row-span-2 lg:row-start-1">
             <Reveal>
-              <img
-                alt="biking"
-                src={biking}
-                className="w-full max-w-full h-auto rounded-xl bg-gray-800 shadow-xl ring-1 ring-white/10"
-              />
+              <div class="relative inline-block">
+                <img
+                  alt="Cycling in New Zealand"
+                  src={biking}
+                  className="w-full max-w-full h-auto rounded-xl bg-gray-800 shadow-xl ring-1 ring-white/10"
+                />
+
+                <div
+                  class="absolute bottom-3 right-3
+                        px-3 py-1 rounded-full
+                        bg-white/15
+                        backdrop-blur-md
+                        border border-white/30
+                        text-white text-xs font-medium tracking-tight
+                        shadow-[0_4px_20px_rgba(255,255,255,0.15)]
+                        pointer-events-none"
+                >
+                  Lake Wakatipu near Walter Peak, New Zealand
+                </div>
+              </div>
             </Reveal>
           </div>
 
@@ -104,12 +128,17 @@ function App() {
                   {resume.skills.map((skills, i) => (
                     <Reveal>
                       <div key={i}>
-                        <p class="text-lg mt-8 font-bold bg-gradient-to-r from-purple-500 via-indigo-500 to-blue-500 bg-clip-text text-transparent">
+                        <p class="text-lg mt-8 mb-2 font-bold bg-gradient-to-r from-purple-500 via-indigo-500 to-blue-500 bg-clip-text text-transparent">
                           {skills.theme}
                         </p>
-                        <ul class="skills">
+                        <ul>
                           {skills.items.map((item, j) => (
-                            <li key={j}>{item}</li>
+                            <li
+                              class="tracking-tight inline-flex items-center m-0.5 px-3 py-1 rounded-full bg-gray-800 text-gray-200 text-md"
+                              key={j}
+                            >
+                              {item}
+                            </li>
                           ))}
                         </ul>
                       </div>
@@ -130,10 +159,13 @@ function App() {
                   key={stat.id}
                   className="mx-auto flex max-w-xs flex-col gap-y-4"
                 >
-                  <dt className="text-base/7 text-gray-400">{stat.name}</dt>
+                  <dt className="text-base/7 text-gray-400 tracking-tight text-lg">
+                    {stat.name}
+                  </dt>
                   <dd className="order-first text-3xl font-semibold tracking-tight text-white sm:text-5xl">
                     {stat.value}
                   </dd>
+                  <br />
                 </div>
               </Reveal>
             ))}
@@ -143,7 +175,7 @@ function App() {
 
       <ResumeSection>
         <Reveal>
-          <div class="mb-6  bg-gray-900">
+          <div class="mb-6 bg-gray-900">
             <p>
               <h2 className="mt-16 text-2xl font-bold tracking-tight text-white">
                 Experience
@@ -154,14 +186,14 @@ function App() {
         <br />
 
         {resume.experience.map((experience, i) => (
-          <ul className="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical  bg-gray-900 text-white">
+          <ul className="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical bg-gray-900 text-white/70">
             <li>
-              <hr className="bg-white" />
+              <hr className="bg-gray-700" />
               <div className="timeline-middle ">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 20 20"
-                  fill="currentColor"
+                  fill="grey"
                   className="h-5 w-5 "
                 >
                   <path
@@ -177,13 +209,17 @@ function App() {
               >
                 <Reveal>
                   <time className="font-mono">{experience.year}</time>
-                  <div className="text-lg font-black">{experience.role}</div>
-                  {experience.company}
-                  <br />
-                  {experience.location}
+                  <div className="text-lg font-semibold tracking-tight text-pretty">
+                    {experience.role}
+                  </div>
+                  <span className="tracking-tight text-pretty">
+                    {experience.company}
+                    <br />
+                    {experience.location}
+                  </span>
                 </Reveal>
               </div>
-              <hr className="bg-white" />
+              <hr className="bg-gray-700" />
             </li>
           </ul>
         ))}
@@ -224,11 +260,26 @@ function App() {
         <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 lg:mx-0 lg:max-w-none lg:grid-cols-2 lg:items-start lg:gap-y-10">
           <div className="mx-auto p-6 sm:p-12 lg:sticky lg:top-4 lg:col-start-2 lg:row-span-2 lg:row-start-1">
             <Reveal>
-              <img
-                alt="diving"
-                src={diving}
-                className="w-full max-w-full h-auto rounded-xl bg-gray-800 shadow-xl ring-1 ring-white/10"
-              />
+              <div class="relative inline-block">
+                <img
+                  alt="Diving in Thailand"
+                  src={diving}
+                  className="w-full max-w-full h-auto rounded-xl bg-gray-800 shadow-xl ring-1 ring-white/10"
+                />
+
+                <div
+                  class="absolute bottom-3 right-3
+                        px-3 py-1 rounded-full
+                        bg-white/15
+                        backdrop-blur-md
+                        border border-white/30
+                        text-white text-xs font-medium tracking-tight
+                        shadow-[0_4px_20px_rgba(255,255,255,0.15)]
+                        pointer-events-none"
+                >
+                  Koh Phi Phi Leh, Thailand
+                </div>
+              </div>
             </Reveal>
           </div>
 
@@ -239,9 +290,14 @@ function App() {
                   <h2 className="m-16 text-2xl font-bold tracking-tight text-white">
                     Industries
                   </h2>
-                  <ul class="industries">
+                  <ul>
                     {resume.industries.map((s, i) => (
-                      <li key={i}>{s}</li>
+                      <li
+                        class="tracking-tight inline-flex items-center m-1 px-3 py-1 rounded-full bg-gray-800 text-gray-200 text-xl"
+                        key={i}
+                      >
+                        {s}
+                      </li>
                     ))}
                   </ul>
                 </Reveal>
@@ -252,11 +308,14 @@ function App() {
                   </h2>
                   {resume.certifications.map((certifications, i) => (
                     <a
-                      href="https://www.credly.com/users/mattryanyu"
+                      href={certifications.url}
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      <div class="certifications" key={i}>
+                      <div
+                        class="certifications text-white/70 bg-gray-800"
+                        key={i}
+                      >
                         <div>
                           <FontAwesomeIcon icon={faMedal} size="2x" />
                           <h2 className="text-1xl font-bold tracking-tight">
@@ -273,9 +332,14 @@ function App() {
                   <h2 className="m-16 text-2xl font-bold tracking-tight text-white">
                     Interests
                   </h2>
-                  <ul class="interests">
+                  <ul>
                     {resume.interests.map((s, i) => (
-                      <li key={i}>{s}</li>
+                      <li
+                        key={i}
+                        class="tracking-tight inline-flex items-center m-1 px-3 py-1 rounded-full bg-gray-800 text-gray-200 text-xl"
+                      >
+                        {s}
+                      </li>
                     ))}
                   </ul>
                 </Reveal>
@@ -297,17 +361,21 @@ function App() {
           </Reveal>
           <Reveal>
             {resume.education.map((education, i) => (
-              <div class="education text-white" key={i}>
+              <div
+                class="education text-white border p-12 bg-gray-800/50"
+                key={i}
+              >
                 <div>
-                  <FontAwesomeIcon icon={faGraduationCap} size="2x" />
-                  <br />
-                  <br />
-                  <h2 className="mt-0 text-1xl font-bold tracking-tight text-white">
+                  <h2 className="mt-0 text-1xl font-semibold tracking-tight text-white text-xl">
                     {education.school}
                   </h2>
-                  {education.degree} | {education.major}
+                  <span className="tracking-tight text-white/70 font-semibold">
+                    {education.degree} | {education.major}
+                  </span>
                   <br />
-                  {education.to}
+                  <span class="tracking-tight text-white/70 text-md">
+                    {education.to}
+                  </span>
                 </div>
               </div>
             ))}
@@ -319,20 +387,26 @@ function App() {
         <div class="max-w-6xl mx-auto flex flex-col items-center gap-4 md:flex-row md:justify-between md:items-center">
           <div class="text-center md:text-left">
             <div>
-              <h6 className="footer-title">MATTYUNIVERSE</h6>
+              <h6 className="footer-title font-bold bg-gradient-to-r from-purple-500 via-indigo-500 to-blue-500 bg-clip-text text-transparent">MATT YUNIVERSE</h6>
+          
             </div>
 
-            <div class="flex">
+            <div className="flex items-center gap-4 mt-2">
+              {/* React */}
               <FontAwesomeIcon
                 icon={faReact}
-                size="2x"
-                className="text-cyan-400"
+                className="text-cyan-400 text-[32px]"
+                fixedWidth
               />
-              <img src="/vite.svg"></img>
+
+              {/* Vite */}
+              <img src="/vite.svg" className="h-8 w-auto" alt="Vite logo" />
+
+              {/* Tailwind */}
               <svg
-                class="w-10"
+                className="h-6 w-auto"
                 xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 54 33"
+                viewBox="0 0 56 34"
               >
                 <path
                   fill="#38BDF8"
