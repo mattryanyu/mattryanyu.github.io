@@ -36,17 +36,6 @@
   border: 1px solid grey;
   border-radius: 8px;
 }
-.industries {
-  list-style-type: none;
-  padding-left: 0;
-}
-.industries li {
-  display: inline-block;
-  margin: 4px;
-  padding: 6px 10px;
-  border: 1px solid grey;
-  border-radius: 8px;
-}
 .experience {
   margin: 4px;
   margin-bottom: 20px;

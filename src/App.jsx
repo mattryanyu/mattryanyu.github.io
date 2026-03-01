@@ -6,7 +6,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faReact } from "@fortawesome/free-brands-svg-icons";
 import { faMedal } from "@fortawesome/free-solid-svg-icons";
-import { faGraduationCap } from "@fortawesome/free-solid-svg-icons";
 import cover from "./assets/img/cover.jpg";
 import diving from "./assets/img/diving.png";
 import biking from "./assets/img/biking.jpg";
@@ -14,9 +13,9 @@ import biking from "./assets/img/biking.jpg";
 function App() {
   return (
     <>
-      <link rel="icon" href="favicon.svg" />
-      <link rel="mask-icon" href="favicon.svg" color="#000000" />
-      <link rel="apple-touch-icon" href="favicon.svg" />
+      <link rel="icon" href="favicon-clr.svg" />
+      <link rel="mask-icon" href="favicon-clr.svg" color="#000000" />
+      <link rel="apple-touch-icon" href="favicon-clr.svg" />
       <div
         className="hero h-[90vh] !min-h-[90vh] md:bg-fixed bg-center bg-cover"
         style={{
@@ -74,6 +73,12 @@ function App() {
             <div className="lg:pr-4">
               <div className="lg:max-w-lg">
                 <Reveal>
+                  <div className="flex justify-center">
+                    {" "}
+                    <span>
+                      <img src="/favicon-clr.svg" className="h-20" alt="logo" />
+                    </span>
+                  </div>
                   <p className="text-base/7 font-semibold text-indigo-400">
                     {resume.location}
                   </p>
@@ -286,21 +291,7 @@ function App() {
           <div className="lg:col-span-2 lg:col-start-1 lg:row-start-2 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
             <div className="lg:pr-4">
               <div className="max-w-xl text-base/7 text-gray-400 lg:max-w-lg">
-                <Reveal>
-                  <h2 className="m-16 text-2xl font-bold tracking-tight text-white">
-                    Industries
-                  </h2>
-                  <ul>
-                    {resume.industries.map((s, i) => (
-                      <li
-                        class="tracking-tight inline-flex items-center m-1 px-3 py-1 rounded-full bg-gray-800 text-gray-200 text-xl"
-                        key={i}
-                      >
-                        {s}
-                      </li>
-                    ))}
-                  </ul>
-                </Reveal>
+
 
                 <Reveal>
                   <h2 className="m-16 text-2xl font-bold tracking-tight text-white">
@@ -387,23 +378,52 @@ function App() {
         <div class="max-w-6xl mx-auto flex flex-col items-center gap-4 md:flex-row md:justify-between md:items-center">
           <div class="text-center md:text-left">
             <div>
-              <h6 className="footer-title font-bold bg-gradient-to-r from-purple-500 via-indigo-500 to-blue-500 bg-clip-text text-transparent">MATT YUNIVERSE</h6>
-          
+              <h6 className="footer-title font-bold bg-gradient-to-r from-purple-500 via-indigo-500 to-blue-500 bg-clip-text text-transparent">
+                MATT YUNIVERSE
+              </h6>
             </div>
 
             <div className="flex items-center gap-4 mt-2">
+
               {/* React */}
-              <FontAwesomeIcon
-                icon={faReact}
-                className="text-cyan-400 text-[32px]"
-                fixedWidth
-              />
+              <div className="relative group inline-block">
+                <FontAwesomeIcon
+                  icon={faReact}
+                  className="text-cyan-400 text-[32px]"
+                  fixedWidth
+                />
+
+                <div
+                  className="absolute left-1/2 -translate-x-1/2 -bottom-5
+               opacity-0 group-hover:opacity-50
+               transition bg-black text-white text-sm
+               px-2 py-1 rounded pointer-events-none"
+                >
+                  React
+                </div>
+              </div>
 
               {/* Vite */}
-              <img src="/vite.svg" className="h-8 w-auto" alt="Vite logo" />
+     
+
+                            <div className="relative group inline-block">
+          <img src="/vite.svg" className="h-8 w-auto" alt="Vite logo" />
+
+                <div
+                  className="absolute left-1/2 -translate-x-1/2 -bottom-5
+               opacity-0 group-hover:opacity-50
+               transition bg-black text-white text-sm
+               px-2 py-1 rounded pointer-events-none"
+                >
+                  Vite
+                </div>
+              </div>
 
               {/* Tailwind */}
-              <svg
+ 
+
+                        <div className="relative group inline-block">
+         <svg
                 className="h-6 w-auto"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 56 34"
@@ -413,6 +433,19 @@ function App() {
                   d="M27 0c-7.5 0-12.2 3.7-14 11.1 2.8-3.7 6.1-5.1 10-4.2 2.2.5 3.8 2 5.6 3.8 2.9 2.9 6.3 6.3 13.4 6.3 7.5 0 12.2-3.7 14-11.1-2.8 3.7-6.1 5.1-10 4.2-2.2-.5-3.8-2-5.6-3.8C37.5 3.4 34.1 0 27 0zm-14 16.8c-7.5 0-12.2 3.7-14 11.1 2.8-3.7 6.1-5.1 10-4.2 2.2.5 3.8 2 5.6 3.8 2.9 2.9 6.3 6.3 13.4 6.3 7.5 0 12.2-3.7 14-11.1-2.8 3.7-6.1 5.1-10 4.2-2.2-.5-3.8-2-5.6-3.8-2.9-2.9-6.3-6.3-13.4-6.3z"
                 />
               </svg>
+
+                <div
+                  className="absolute left-1/2 -translate-x-1/2 -bottom-6
+               opacity-0 group-hover:opacity-50
+               transition bg-black text-white text-sm
+               px-2 py-1 rounded pointer-events-none"
+                >
+                  Tailwind
+                </div>
+              </div>
+
+
+
             </div>
           </div>
 
