@@ -9,6 +9,7 @@ import { faMedal } from "@fortawesome/free-solid-svg-icons";
 import cover from "./assets/img/cover.jpg";
 import diving from "./assets/img/diving.png";
 import biking from "./assets/img/biking.jpg";
+import robot from "./assets/img/robot.jpg";
 
 function App() {
   return (
@@ -18,24 +19,38 @@ function App() {
       <link rel="apple-touch-icon" href="favicon-clr.svg" />
       <div
         className="hero h-[90vh] !min-h-[90vh] md:bg-fixed bg-center bg-cover"
-        style={{
-          backgroundImage: `url(${cover})`,
-        }}
+        style={{ backgroundImage: `url(${cover})` }}
       >
         <div className="hero-overlay"></div>
+
         <div className="hero-content text-neutral-content text-center">
           <Reveal>
-            <div className="max-w-md">
-              <h1 className="mb-1 text-5xl font-semibold tracking-tight text-pretty">
+            <div className="max-w-2xl">
+              <h1 className="mb-6 font-semibold tracking-tight text-pretty">
                 {resume.name}
               </h1>
-              <p className="mb-1 text-2xl font-semibold tracking-tight text-pretty">
-                {resume.title}
-              </p>
+<div className="flex flex-col md:flex-row flex-wrap justify-center gap-4">
+  <div className="border-8 border-white/40 rounded-3xl text-center break-words p-4 w-64 h-24 md:w-48 md:h-48 flex items-center justify-center flex-shrink-0">
+    <p className="text-lg font-semibold tracking-tight text-pretty">
+      Business Transformation & Operations Leader
+    </p>
+  </div>
+  <div className="h-12 md:h-48 flex items-center justify-center">
+    <p className="text-3xl font-semibold tracking-tight text-pretty">
+      x
+    </p>
+  </div>
+  <div className="border-8 border-white/40 rounded-3xl text-center break-words p-4 w-64 h-24 md:w-48 md:h-48 flex items-center justify-center flex-shrink-0">
+    <p className="text-lg font-semibold tracking-tight text-pretty">
+      Intelligent Automation Solutions Architect
+    </p>
+  </div>
+</div>
             </div>
           </Reveal>
         </div>
       </div>
+
       <div className="relative isolate overflow-hidden bg-gray-900 px-6 py-24 sm:py-32 lg:overflow-visible lg:px-0">
         <div className="absolute inset-0 -z-10 overflow-hidden">
           <svg
@@ -101,6 +116,89 @@ function App() {
               <div class="relative inline-block">
                 <img
                   alt="Cycling in New Zealand"
+                  src={robot}
+                  className="w-120 max-w-full h-auto rounded-xl bg-gray-800 shadow-xl ring-1 ring-white/10"
+                />
+
+                <div
+                  class="absolute bottom-3 right-3
+                        px-3 py-1 rounded-full
+                        bg-white/15
+                        backdrop-blur-md
+                        border border-white/30
+                        text-white text-xs font-medium tracking-tight
+                        shadow-[0_4px_20px_rgba(255,255,255,0.15)]
+                        pointer-events-none"
+                >
+                  UiPath conference in Las Vegas, Nevada
+                </div>
+              </div>
+            </Reveal>
+          </div>
+        </div>
+      </div>
+
+      <div className="bg-gray-800 py-24 sm:py-32">
+        <div className="mx-auto max-w-7xl px-6 lg:px-8">
+          <dl className="grid grid-cols-1 gap-x-8 gap-y-16 text-center lg:grid-cols-3">
+            {resume.stats.map((stat) => (
+              <Reveal>
+                <div
+                  key={stat.id}
+                  className="mx-auto flex max-w-xs flex-col gap-y-4"
+                >
+                  <dt className="text-base/7 text-gray-400 tracking-tight text-lg">
+                    {stat.name}
+                  </dt>
+                  <dd className="order-first text-3xl font-semibold tracking-tight text-white sm:text-5xl">
+                    {stat.value}
+                  </dd>
+                  <br />
+                </div>
+              </Reveal>
+            ))}
+          </dl>
+        </div>
+      </div>
+
+      <div className="relative isolate overflow-hidden bg-gray-900 px-6 py-24 sm:py-32 lg:overflow-visible lg:px-0">
+        <div className="absolute inset-0 -z-10 overflow-hidden">
+          <svg
+            aria-hidden="true"
+            className="absolute top-0 left-[max(50%,25rem)] h-256 w-512 -translate-x-1/2 mask-[radial-gradient(64rem_64rem_at_top,white,transparent)] stroke-gray-800"
+          >
+            <defs>
+              <pattern
+                x="50%"
+                y={-1}
+                id="e813992c-7d03-4cc4-a2bd-151760b470a0"
+                width={200}
+                height={200}
+                patternUnits="userSpaceOnUse"
+              >
+                <path d="M100 200V.5M.5 .5H200" fill="none" />
+              </pattern>
+            </defs>
+            <svg x="50%" y={-1} className="overflow-visible fill-gray-800/50">
+              <path
+                d="M-100.5 0h201v201h-201Z M699.5 0h201v201h-201Z M499.5 400h201v201h-201Z M-300.5 600h201v201h-201Z"
+                strokeWidth={0}
+              />
+            </svg>
+            <rect
+              fill="url(#e813992c-7d03-4cc4-a2bd-151760b470a0)"
+              width="100%"
+              height="100%"
+              strokeWidth={0}
+            />
+          </svg>
+        </div>
+        <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 lg:mx-0 lg:max-w-none lg:grid-cols-2 lg:items-start lg:gap-y-10">
+          <div className="mx-auto p-6 sm:p-12 lg:sticky lg:top-4 lg:col-start-2 lg:row-span-2 lg:row-start-1">
+            <Reveal>
+              <div class="relative inline-block">
+                <img
+                  alt="Cycling in New Zealand"
                   src={biking}
                   className="w-full max-w-full h-auto rounded-xl bg-gray-800 shadow-xl ring-1 ring-white/10"
                 />
@@ -155,28 +253,6 @@ function App() {
           </div>
         </div>
       </div>
-      <div className="bg-gray-800 py-24 sm:py-32">
-        <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <dl className="grid grid-cols-1 gap-x-8 gap-y-16 text-center lg:grid-cols-3">
-            {resume.stats.map((stat) => (
-              <Reveal>
-                <div
-                  key={stat.id}
-                  className="mx-auto flex max-w-xs flex-col gap-y-4"
-                >
-                  <dt className="text-base/7 text-gray-400 tracking-tight text-lg">
-                    {stat.name}
-                  </dt>
-                  <dd className="order-first text-3xl font-semibold tracking-tight text-white sm:text-5xl">
-                    {stat.value}
-                  </dd>
-                  <br />
-                </div>
-              </Reveal>
-            ))}
-          </dl>
-        </div>
-      </div>
 
       <ResumeSection>
         <Reveal>
@@ -191,7 +267,7 @@ function App() {
         <br />
 
         {resume.experience.map((experience, i) => (
-          <ul className="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical bg-gray-900 text-white/70">
+          <ul className="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical bg-gray-900 text-white/80">
             <li>
               <hr className="bg-gray-700" />
               <div className="timeline-middle ">
@@ -291,8 +367,6 @@ function App() {
           <div className="lg:col-span-2 lg:col-start-1 lg:row-start-2 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
             <div className="lg:pr-4">
               <div className="max-w-xl text-base/7 text-gray-400 lg:max-w-lg">
-
-
                 <Reveal>
                   <h2 className="m-16 text-2xl font-bold tracking-tight text-white">
                     Certifications
@@ -353,7 +427,7 @@ function App() {
           <Reveal>
             {resume.education.map((education, i) => (
               <div
-                class="education text-white border p-12 bg-gray-800/50"
+                class="education text-white border-2 border-white/40 rounded-3xl p-12 backdrop-blur-md bg-gray-800/50 shadow-l"
                 key={i}
               >
                 <div>
@@ -384,7 +458,6 @@ function App() {
             </div>
 
             <div className="flex items-center gap-4 mt-2">
-
               {/* React */}
               <div className="relative group inline-block">
                 <FontAwesomeIcon
@@ -404,10 +477,9 @@ function App() {
               </div>
 
               {/* Vite */}
-     
 
-                            <div className="relative group inline-block">
-          <img src="/vite.svg" className="h-8 w-auto" alt="Vite logo" />
+              <div className="relative group inline-block">
+                <img src="/vite.svg" className="h-8 w-auto" alt="Vite logo" />
 
                 <div
                   className="absolute left-1/2 -translate-x-1/2 -bottom-5
@@ -420,19 +492,18 @@ function App() {
               </div>
 
               {/* Tailwind */}
- 
 
-                        <div className="relative group inline-block">
-         <svg
-                className="h-6 w-auto"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 56 34"
-              >
-                <path
-                  fill="#38BDF8"
-                  d="M27 0c-7.5 0-12.2 3.7-14 11.1 2.8-3.7 6.1-5.1 10-4.2 2.2.5 3.8 2 5.6 3.8 2.9 2.9 6.3 6.3 13.4 6.3 7.5 0 12.2-3.7 14-11.1-2.8 3.7-6.1 5.1-10 4.2-2.2-.5-3.8-2-5.6-3.8C37.5 3.4 34.1 0 27 0zm-14 16.8c-7.5 0-12.2 3.7-14 11.1 2.8-3.7 6.1-5.1 10-4.2 2.2.5 3.8 2 5.6 3.8 2.9 2.9 6.3 6.3 13.4 6.3 7.5 0 12.2-3.7 14-11.1-2.8 3.7-6.1 5.1-10 4.2-2.2-.5-3.8-2-5.6-3.8-2.9-2.9-6.3-6.3-13.4-6.3z"
-                />
-              </svg>
+              <div className="relative group inline-block">
+                <svg
+                  className="h-6 w-auto"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 56 34"
+                >
+                  <path
+                    fill="#38BDF8"
+                    d="M27 0c-7.5 0-12.2 3.7-14 11.1 2.8-3.7 6.1-5.1 10-4.2 2.2.5 3.8 2 5.6 3.8 2.9 2.9 6.3 6.3 13.4 6.3 7.5 0 12.2-3.7 14-11.1-2.8 3.7-6.1 5.1-10 4.2-2.2-.5-3.8-2-5.6-3.8C37.5 3.4 34.1 0 27 0zm-14 16.8c-7.5 0-12.2 3.7-14 11.1 2.8-3.7 6.1-5.1 10-4.2 2.2.5 3.8 2 5.6 3.8 2.9 2.9 6.3 6.3 13.4 6.3 7.5 0 12.2-3.7 14-11.1-2.8 3.7-6.1 5.1-10 4.2-2.2-.5-3.8-2-5.6-3.8-2.9-2.9-6.3-6.3-13.4-6.3z"
+                  />
+                </svg>
 
                 <div
                   className="absolute left-1/2 -translate-x-1/2 -bottom-6
@@ -443,9 +514,6 @@ function App() {
                   Tailwind
                 </div>
               </div>
-
-
-
             </div>
           </div>
 

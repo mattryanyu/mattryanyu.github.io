@@ -1,12 +1,14 @@
 {
   "name": "Matt Yu",
-  "title": "Intelligent Automation Solutions Architect + Digital Transformation Leader",
+  "title": "[Business Transformation & Operations Leader] + [Intelligent Automation Solutions Architect]",
   "location": "Seattle, WA",
   "headline": "Transforming business operations through intelligent automation and AI",
   "summaries": [
-    "Based in Seattle now, but originally born and raised in New York City. I’ve also had the chance to live and work abroad for more than eight years across Australia, Malaysia, and Brazil.",
-    "I’m a results‑driven, people‑focused senior leader with 15+ years of experience transforming Operations and designing IT solutions across a wide range of industries. My core strength is leading strategic automation and digital transformation programs, especially those powered by low‑code automation and AI platforms. My hands‑on automation background includes UiPath, Power Platform, Celonis, Automation Anywhere, and Blue Prism.",
-    "I spent nearly a decade at AIG in a variety of operations positions, including leading a 100+ FTE Claims Operations team. Earlier in my career, I supported senior executives by developing board‑level strategic plans, scorecards, and presentations for Global Operations & Systems."
+"I’m a results driven, people focused senior leader with 15+ years of experience transforming operations and designing IT solutions across a wide range of industries.",
+"Born and raised in NYC, I am now based in Seattle, but I’ve also had the unforgettable opportunity to live and work in Australia, Malaysia and Brazil for 8+ years.",
+"Currently, I am the General Manager (North America) for Blackbook.ai, an Australia-based tech consulting company, and I am responsible for building our Automation & AI capabilities in US, Canada and Costa Rica.",
+"Throughout my career, I have developed a unique combination of operations leadership experience and IT development expertise. I started off my career in NYC working for a multinational insurer as a Business Analyst in their Operations & Systems division. From there, I had the chance to work in Malaysia for many years in their offshore captive shared services center as Head of Automation and as Claims Operations Manager. ",
+"As a self-taught automation engineer and architect, I’ve helped build bots, roadmaps and strategies for over 40 companies supporting their automation journey and aligning to their strategic vision."
   ],
   "skills": [
     {
@@ -95,8 +97,7 @@
         "Dataverse",
         "Azure",
         "SharePoint",
-        "AI Builder",
-        "Copilot Studio"
+        "AI Builder"
       ]
     },
         {
