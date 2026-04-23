@@ -29,9 +29,14 @@ function App() {
         <div className="hero-content text-neutral-content text-center">
           <Reveal>
             <div className="max-w-2xl flex flex-col items-center gap-8">
-              <h1 className="font-semibold tracking-tight text-pretty">
-                {resume.name}
-              </h1>
+              <div className="flex flex-col gap-2">
+                <h1 className="font-semibold tracking-tight text-pretty">
+                  Hi, I'm Matt.
+                </h1>
+                <p className="text-lg md:text-xl text-white/80 font-medium tracking-tight text-pretty">
+                  I turn operational complexity into intelligent, automated solutions.
+                </p>
+              </div>
 
               <div className="flex flex-col md:flex-row items-center justify-center gap-4">
                 <div className="bg-white/10 backdrop-blur-md border border-white/25 rounded-2xl text-center p-5 w-64 md:w-52 shadow-lg">
@@ -50,10 +55,10 @@ function App() {
               </div>
 
               <a
-                href="#contact"
+                href="#about"
                 className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-white/10 backdrop-blur-md border border-white/25 !text-white/90 text-sm font-medium tracking-wide hover:bg-white/20 transition-all shadow-lg"
               >
-                Let's connect ↓
+                Explore my work ↓
               </a>
             </div>
           </Reveal>
