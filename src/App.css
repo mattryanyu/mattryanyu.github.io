@@ -8,41 +8,6 @@
   text-align: center;
 }
 
-.app {
-  display: flex;
-  justify-content: center;
-  padding: 20px;
-}
-
-.skills {
-  list-style-type: none;
-  padding-left: 0;
-}
-.skills li {
-  display: inline-block;
-  margin: 4px;
-  padding: 6px 10px;
-  border: 1px solid grey;
-  border-radius: 8px;
-}
-.interests {
-  list-style-type: none;
-  padding-left: 0;
-}
-.interests li {
-  display: inline-block;
-  margin: 4px;
-  padding: 6px 10px;
-  border: 1px solid grey;
-  border-radius: 8px;
-}
-.experience {
-  margin: 4px;
-  margin-bottom: 20px;
-  padding: 6px 10px;
-  border: 1px solid grey;
-  border-radius: 8px;
-}
 .education {
   width: 360px;
   justify-content: center;
@@ -66,23 +31,6 @@
 }
 
 .certifications:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-
-button {
-  margin: 4px;
-}
-button:hover {
   filter: drop-shadow(0 0 2em #646cffaa);
 }
 
