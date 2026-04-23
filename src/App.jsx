@@ -28,27 +28,33 @@ function App() {
 
         <div className="hero-content text-neutral-content text-center">
           <Reveal>
-            <div className="max-w-2xl">
-              <h1 className="mb-6 font-semibold tracking-tight text-pretty">
+            <div className="max-w-2xl flex flex-col items-center gap-8">
+              <h1 className="font-semibold tracking-tight text-pretty">
                 {resume.name}
               </h1>
-<div className="flex flex-col md:flex-row flex-wrap justify-center gap-4">
-  <div className="border-8 border-white/40 rounded-3xl text-center break-words p-4 w-64 h-24 md:w-48 md:h-48 flex items-center justify-center flex-shrink-0">
-    <p className="text-lg font-semibold tracking-tight text-pretty">
-      Business Transformation & Operations Leader
-    </p>
-  </div>
-  <div className="h-12 md:h-48 flex items-center justify-center">
-    <p className="text-3xl font-semibold tracking-tight text-pretty">
-      x
-    </p>
-  </div>
-  <div className="border-8 border-white/40 rounded-3xl text-center break-words p-4 w-64 h-24 md:w-48 md:h-48 flex items-center justify-center flex-shrink-0">
-    <p className="text-lg font-semibold tracking-tight text-pretty">
-      Intelligent Automation Solutions Architect
-    </p>
-  </div>
-</div>
+
+              <div className="flex flex-col md:flex-row items-center justify-center gap-4">
+                <div className="bg-white/10 backdrop-blur-md border border-white/25 rounded-2xl text-center p-5 w-64 md:w-52 shadow-lg">
+                  <p className="text-base font-semibold tracking-tight leading-snug">
+                    Business Transformation &amp; Operations Leader
+                  </p>
+                </div>
+
+                <span className="text-2xl font-light text-white/60 select-none">+</span>
+
+                <div className="bg-white/10 backdrop-blur-md border border-white/25 rounded-2xl text-center p-5 w-64 md:w-52 shadow-lg">
+                  <p className="text-base font-semibold tracking-tight leading-snug">
+                    Intelligent Automation Solutions Architect
+                  </p>
+                </div>
+              </div>
+
+              <a
+                href="#contact"
+                className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-white/10 backdrop-blur-md border border-white/25 text-white/90 text-sm font-medium tracking-wide hover:bg-white/20 transition-all shadow-lg"
+              >
+                Let's connect ↓
+              </a>
             </div>
           </Reveal>
         </div>
@@ -466,7 +472,7 @@ function App() {
               href="https://www.linkedin.com/in/mattryanyu/"
               target="_blank"
               rel="noopener noreferrer"
-              className="mt-10 inline-flex items-center gap-3 px-8 py-4 rounded-full bg-gradient-to-r from-purple-500 via-indigo-500 to-blue-500 text-white font-semibold text-lg shadow-lg hover:opacity-90 hover:scale-105 transition-all"
+              className="mt-10 inline-flex items-center gap-3 px-8 py-4 rounded-full bg-gradient-to-r from-purple-500 via-indigo-500 to-blue-500 !text-white font-semibold text-lg shadow-lg hover:opacity-90 hover:scale-105 transition-all"
             >
               <FontAwesomeIcon icon={faLinkedin} />
               Connect on LinkedIn

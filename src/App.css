@@ -11,6 +11,10 @@
   color: #1e1b4b; /* indigo-950 */
 }
 
+body {
+  font-family: 'Inter', sans-serif;
+}
+
 #root {
   width: 100%;
   margin: 0;
