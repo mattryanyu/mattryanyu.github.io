@@ -237,7 +237,7 @@ function App() {
             <div className="lg:pr-4">
               <div className="max-w-xl text-base/7 text-base-content/60 lg:max-w-lg">
                 <Reveal>
-                  <h2 className="mt-16 text-2xl font-bold tracking-tight text-base-content">
+                  <h2 className="mb-6 text-2xl font-bold tracking-tight text-base-content">
                     Skills
                   </h2>
                 </Reveal>
@@ -267,18 +267,13 @@ function App() {
 
       <ResumeSection id="experience">
         <Reveal>
-          <div class="mb-6 bg-base-200">
-            <p>
-              <h2 className="mt-16 text-2xl font-bold tracking-tight text-base-content">
-                Experience
-              </h2>
-            </p>
-          </div>
+          <h2 className="mb-6 text-2xl font-bold tracking-tight text-base-content">
+            Experience
+          </h2>
         </Reveal>
-        <br />
 
         {resume.experience.map((experience, i) => (
-          <ul className="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical bg-base-200 text-base-content/80">
+          <ul className="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical bg-base-200 text-base-content/80 pt-2">
             <li>
               <hr className="bg-base-content/20" />
               <div className="timeline-middle ">
@@ -379,7 +374,7 @@ function App() {
             <div className="lg:pr-4">
               <div className="max-w-xl text-base/7 text-base-content/60 lg:max-w-lg">
                 <Reveal>
-                  <h2 className="mt-16 mb-4 text-2xl font-bold tracking-tight text-base-content">
+                  <h2 className="mb-6 text-2xl font-bold tracking-tight text-base-content">
                     Certifications
                   </h2>
                   <div className="flex flex-col gap-4">
@@ -425,7 +420,7 @@ function App() {
                 </Reveal>
 
                 <Reveal>
-                  <h2 className="m-16 text-2xl font-bold tracking-tight text-base-content">
+                  <h2 className="mt-10 mb-6 text-2xl font-bold tracking-tight text-base-content">
                     Interests
                   </h2>
                   <ul>
@@ -450,7 +445,7 @@ function App() {
 
         <div className="mx-auto max-w-3xl">
           <Reveal>
-            <h2 className="mb-8 text-2xl font-bold tracking-tight text-base-content">
+            <h2 className="mb-6 text-2xl font-bold tracking-tight text-base-content">
               Education
             </h2>
             {resume.education.map((education, i) => (
