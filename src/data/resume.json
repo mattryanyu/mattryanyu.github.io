@@ -161,16 +161,16 @@
 
   "stats": [
     {
-      "name": "Size of operations led",
+      "name": "Years of Experience",
+      "value": "15"
+    },
+    {
+      "name": "Companies Served",
+      "value": "40+"
+    },
+    {
+      "name": "Operations Led",
       "value": "100+ FTE"
-    },
-    {
-      "name": "Across various industries",
-      "value": "40 companies"
-    },
-    {
-      "name": "Experience",
-      "value": "15 years"
     }
   ],
 

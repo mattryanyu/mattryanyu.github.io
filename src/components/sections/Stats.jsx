@@ -2,16 +2,16 @@ import Reveal from "../Reveal";
 
 export default function Stats({ resume }) {
   return (
-    <div className="bg-base-300 py-24 sm:py-32">
-      <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        <dl className="grid grid-cols-1 gap-x-8 gap-y-16 text-center lg:grid-cols-3">
+    <div className="bg-base-300 py-16">
+      <div className="mx-auto max-w-4xl px-6 lg:px-8">
+        <dl className="flex flex-col lg:flex-row divide-y lg:divide-y-0 lg:divide-x divide-base-content/10 text-center">
           {resume.stats.map((stat, i) => (
-            <Reveal key={i}>
-              <div className="mx-auto flex max-w-xs flex-col gap-y-4">
-                <dt className="text-base/7 text-base-content/60 tracking-tight text-lg">{stat.name}</dt>
-                <dd className="order-first text-3xl font-semibold tracking-tight text-base-content sm:text-5xl">
+            <Reveal key={i} className="flex-1">
+              <div className="flex flex-col gap-y-3 py-10 lg:py-0 lg:px-12">
+                <dd className="text-5xl font-semibold tracking-tight bg-gradient-to-r from-purple-500 via-indigo-500 to-blue-500 bg-clip-text text-transparent">
                   {stat.value}
                 </dd>
+                <dt className="text-base text-base-content/60 tracking-tight">{stat.name}</dt>
               </div>
             </Reveal>
           ))}
