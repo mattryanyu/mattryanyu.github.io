@@ -15,9 +15,7 @@ export default function Education({ resume }) {
                 <p className="text-xs text-base-content/40 mt-1">{ed.to}</p>
               </div>
               <div className="flex-1 flex items-center">
-                <p className="text-base text-base-content/70 leading-relaxed">
-                  Most automation practitioners come from engineering. I came from Finance — which means I've always led with ROI, cost modeling, and operational efficiency. The automation and AI layer came later, but the business lens was there from day one.
-                </p>
+                <p className="text-base text-base-content/70 leading-relaxed">{ed.narrative}</p>
               </div>
             </div>
           ))}

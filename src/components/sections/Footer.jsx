@@ -1,7 +1,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedin, faReact } from "@fortawesome/free-brands-svg-icons";
 
-export default function Footer() {
+export default function Footer({ resume }) {
   return (
     <footer className="bg-base-200 border-t border-base-content/10 text-left">
 
@@ -16,7 +16,7 @@ export default function Footer() {
         <div className="flex flex-col items-start sm:items-end gap-2">
           <p className="text-xs font-semibold uppercase tracking-widest text-base-content/40">Connect</p>
           <a
-            href="https://www.linkedin.com/in/mattryanyu/"
+            href={resume.linkedin}
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-2 text-sm font-medium text-base-content/70 hover:text-primary transition-colors"

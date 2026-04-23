@@ -26,8 +26,8 @@ function App() {
         <Experience resume={resume} />
         <Certifications resume={resume} />
         <Education resume={resume} />
-        <Contact />
-        <Footer />
+        <Contact resume={resume} />
+        <Footer resume={resume} />
       </div>
     </>
   );

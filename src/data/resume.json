@@ -1,14 +1,14 @@
 {
   "name": "Matt Yu",
-  "title": "[Business Transformation & Operations Leader] + [Intelligent Automation Solutions Architect]",
   "location": "Seattle, WA",
+  "linkedin": "https://www.linkedin.com/in/mattryanyu/",
   "headline": "Transforming business operations through intelligent automation and AI",
   "summaries": [
-"I’m a results driven, people focused senior leader with 15+ years of experience transforming operations and designing IT solutions across a wide range of industries.",
-"Born and raised in NYC, I am now based in Seattle, but I’ve also had the unforgettable opportunity to live and work in Australia, Malaysia and Brazil for 8+ years.",
-"Currently, I am the General Manager (North America) for Blackbook.ai, an Australia-based tech consulting company, and I am responsible for building our Automation & AI capabilities in US, Canada and Costa Rica.",
-"Throughout my career, I have developed a unique combination of operations leadership experience and IT development expertise. I started off my career in NYC working for a multinational insurer as a Business Analyst in their Operations & Systems division. From there, I had the chance to work in Malaysia for many years in their offshore captive shared services center as Head of Automation and as Claims Operations Manager. ",
-"As a self-taught automation engineer and architect, I’ve helped build bots, roadmaps and strategies for over 40 companies supporting their automation journey and aligning to their strategic vision."
+    "I'm a results driven, people focused senior leader with 15+ years of experience transforming operations and designing IT solutions across a wide range of industries.",
+    "Born and raised in NYC, I am now based in Seattle, but I've also had the unforgettable opportunity to live and work in Australia, Malaysia and Brazil for 8+ years.",
+    "Currently, I am the General Manager (North America) for Blackbook.ai, an Australia-based tech consulting company, and I am responsible for building our Automation & AI capabilities in US, Canada and Costa Rica.",
+    "Throughout my career, I have developed a unique combination of operations leadership experience and IT development expertise. I started off my career in NYC working for a multinational insurer as a Business Analyst in their Operations & Systems division. From there, I had the chance to work in Malaysia for many years in their offshore captive shared services center as Head of Automation and as Claims Operations Manager. ",
+    "As a self-taught automation engineer and architect, I've helped build bots, roadmaps and strategies for over 40 companies supporting their automation journey and aligning to their strategic vision."
   ],
   "skills": [
     {
@@ -100,7 +100,7 @@
         "AI Builder"
       ]
     },
-        {
+    {
       "theme": "Industries",
       "items": [
         "Insurance",
@@ -179,83 +179,84 @@
       "company": "Blackbook.ai",
       "role": "General Manager, North America",
       "location": "Seattle, USA",
-      "duration": "2 years 11 months",
+      "duration": "2 yr 11 mo",
       "year": "2023 - Present"
     },
     {
       "company": "Avanade",
       "role": "Senior Consultant, Intelligent Automation",
       "location": "Seattle, USA",
-      "duration": "1 yrs 5 mos",
+      "duration": "1 yr 5 mo",
       "year": "2021"
     },
     {
       "company": "Relocation & Full-time Parenting",
       "role": "Stay-at-home Dad",
       "location": "Kuala Lumpur, Malaysia",
-      "duration": "2 yrs 4 mos",
+      "duration": "2 yr 4 mo",
       "year": "2019"
     },
     {
       "company": "Blackbook.ai",
       "role": "Senior Automation Engineer",
       "location": "Brisbane, Australia",
-      "duration": "1 yrs 5 mos",
+      "duration": "1 yr 5 mo",
       "year": "2017"
     },
     {
       "company": "AIG",
       "role": "Head of Desktop Automation",
       "location": "Kuala Lumpur, Malaysia",
-      "duration": "1 yrs 9 mos",
+      "duration": "1 yr 9 mo",
       "year": "2015"
     },
     {
       "company": "AIG",
       "role": "Claims Operations Manager",
       "location": "Kuala Lumpur, Malaysia",
-      "duration": "1 yrs 4 mos",
+      "duration": "1 yr 4 mo",
       "year": "2014"
     },
     {
       "company": "AIG",
       "role": "Project Manager",
       "location": "Kuala Lumpur, Malaysia",
-      "duration": "1 yrs 2 mos",
+      "duration": "1 yr 2 mo",
       "year": "2013"
     },
     {
       "company": "AIG",
       "role": "Senior Business Analyst",
       "location": "New York, USA",
-      "duration": "2 yrs 5 mos",
+      "duration": "2 yr 5 mo",
       "year": "2010"
     },
     {
       "company": "AIG",
       "role": "Senior Business Analyst",
       "location": "Sao Paulo, Brazil",
-      "duration": "10 mos",
+      "duration": "10 mo",
       "year": "2009"
     },
     {
       "company": "AIG",
       "role": "Business Analyst",
       "location": "New York, USA",
-      "duration": "1 yrs 11 mos",
+      "duration": "1 yr 11 mo",
       "year": "2008"
     }
   ],
+
   "education": [
     {
       "school": "NYU Stern",
-      "location": "New York, USA",
       "degree": "Bachelor of Science",
       "major": "Finance",
-      "from": "September 2004",
-      "to": "Class of '08"
+      "to": "Class of '08",
+      "narrative": "Most automation practitioners come from engineering. I came from Finance — which means I've always led with ROI, cost modeling, and operational efficiency. The automation and AI layer came later, but the business lens was there from day one."
     }
   ],
+
   "certifications": [
     {
       "group": "Cloud Platforms",
@@ -284,6 +285,7 @@
       ]
     }
   ],
+
   "interests": [
     "Traveling",
     "Pickleball",
