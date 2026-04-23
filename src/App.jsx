@@ -481,7 +481,7 @@ function App() {
         </div>
       </section>
 
-      <footer className="bg-base-200 border-t border-base-content/10">
+      <footer className="bg-base-200 border-t border-base-content/10 text-left">
 
         {/* Main row */}
         <div className="max-w-6xl mx-auto px-6 py-10 flex flex-col sm:flex-row justify-between items-start gap-8">
@@ -489,7 +489,7 @@ function App() {
           {/* Brand */}
           <div>
             <p className="text-lg font-bold bg-gradient-to-r from-purple-500 via-indigo-500 to-blue-500 bg-clip-text text-transparent">
-              Matt Yuniverse
+              MATT YUNIVERSE
             </p>
             <p className="mt-1 text-sm text-base-content/50">Seattle, WA</p>
           </div>
@@ -517,7 +517,7 @@ function App() {
           <div className="max-w-6xl mx-auto px-6 py-4 flex flex-col sm:flex-row justify-between items-center gap-4">
 
             <p className="text-xs text-base-content/40">
-              © {new Date().getFullYear()} Matt Yuniverse. All rights reserved.
+              © {new Date().getFullYear()} Matt Yuniverse
             </p>
 
             <div className="flex items-center gap-3">
