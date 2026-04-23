@@ -2,7 +2,7 @@ import "./App.css";
 import resume from "./data/resume.json";
 import ResumeSection from "./components/ResumeSection";
 import Reveal from "./components/Reveal";
-import ThemeToggle from "./components/ThemeToggle";
+import NavBar from "./components/NavBar";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faReact } from "@fortawesome/free-brands-svg-icons";
@@ -15,10 +15,11 @@ import robot from "./assets/img/robot.jpg";
 function App() {
   return (
     <>
-      <ThemeToggle />
+      <NavBar />
       <link rel="icon" href="favicon-clr.svg" />
       <link rel="mask-icon" href="favicon-clr.svg" color="#000000" />
       <link rel="apple-touch-icon" href="favicon-clr.svg" />
+      <div className="pt-14">
       <div
         className="hero h-[90vh] !min-h-[90vh] md:bg-fixed bg-center bg-cover"
         style={{ backgroundImage: `url(${cover})` }}
@@ -53,7 +54,7 @@ function App() {
         </div>
       </div>
 
-      <div className="relative isolate overflow-hidden bg-base-200 px-6 py-24 sm:py-32 lg:overflow-visible lg:px-0">
+      <div id="about" className="relative isolate overflow-hidden bg-base-200 px-6 py-24 sm:py-32 lg:overflow-visible lg:px-0 scroll-mt-14">
         <div className="absolute inset-0 -z-10 overflow-hidden">
           <svg
             aria-hidden="true"
@@ -63,7 +64,7 @@ function App() {
               <pattern
                 x="50%"
                 y={-1}
-                id="e813992c-7d03-4cc4-a2bd-151760b470a0"
+                id="about-grid"
                 width={200}
                 height={200}
                 patternUnits="userSpaceOnUse"
@@ -78,7 +79,7 @@ function App() {
               />
             </svg>
             <rect
-              fill="url(#e813992c-7d03-4cc4-a2bd-151760b470a0)"
+              fill="url(#about-grid)"
               width="100%"
               height="100%"
               strokeWidth={0}
@@ -163,7 +164,7 @@ function App() {
         </div>
       </div>
 
-      <div className="relative isolate overflow-hidden bg-base-200 px-6 py-24 sm:py-32 lg:overflow-visible lg:px-0">
+      <div id="skills" className="relative isolate overflow-hidden bg-base-200 px-6 py-24 sm:py-32 lg:overflow-visible lg:px-0 scroll-mt-14">
         <div className="absolute inset-0 -z-10 overflow-hidden">
           <svg
             aria-hidden="true"
@@ -173,7 +174,7 @@ function App() {
               <pattern
                 x="50%"
                 y={-1}
-                id="e813992c-7d03-4cc4-a2bd-151760b470a0"
+                id="skills-grid"
                 width={200}
                 height={200}
                 patternUnits="userSpaceOnUse"
@@ -188,7 +189,7 @@ function App() {
               />
             </svg>
             <rect
-              fill="url(#e813992c-7d03-4cc4-a2bd-151760b470a0)"
+              fill="url(#skills-grid)"
               width="100%"
               height="100%"
               strokeWidth={0}
@@ -256,7 +257,7 @@ function App() {
         </div>
       </div>
 
-      <ResumeSection>
+      <ResumeSection id="experience">
         <Reveal>
           <div class="mb-6 bg-base-200">
             <p>
@@ -308,7 +309,7 @@ function App() {
         ))}
       </ResumeSection>
 
-      <div className="relative isolate overflow-hidden bg-base-200 px-6 py-24 sm:py-32 lg:overflow-visible lg:px-0">
+      <div id="certifications" className="relative isolate overflow-hidden bg-base-200 px-6 py-24 sm:py-32 lg:overflow-visible lg:px-0 scroll-mt-14">
         <div className="absolute inset-0 -z-10 overflow-hidden">
           <svg
             aria-hidden="true"
@@ -318,7 +319,7 @@ function App() {
               <pattern
                 x="50%"
                 y={-1}
-                id="e813992c-7d03-4cc4-a2bd-151760b470a0"
+                id="certs-grid"
                 width={200}
                 height={200}
                 patternUnits="userSpaceOnUse"
@@ -333,7 +334,7 @@ function App() {
               />
             </svg>
             <rect
-              fill="url(#e813992c-7d03-4cc4-a2bd-151760b470a0)"
+              fill="url(#certs-grid)"
               width="100%"
               height="100%"
               strokeWidth={0}
@@ -416,7 +417,7 @@ function App() {
         </div>
       </div>
 
-      <section class="relative isolate overflow-hidden bg-base-200 px-6 py-24 sm:py-32 lg:px-8">
+      <section id="education" class="relative isolate overflow-hidden bg-base-200 px-6 py-24 sm:py-32 lg:px-8 scroll-mt-14">
         <div class="absolute inset-0 -z-10 bg-[radial-gradient(45rem_50rem_at_top,var(--color-indigo-500),transparent)] opacity-10"></div>
         <div class="absolute inset-y-0 right-1/2 -z-10 mr-16 w-[200%] origin-bottom-left skew-x-[-30deg] bg-base-200 shadow-xl ring-1 shadow-indigo-500/5 ring-base-content/5 sm:mr-28 lg:mr-0 xl:mr-16 xl:origin-center"></div>
 
@@ -446,6 +447,30 @@ function App() {
                 </div>
               </div>
             ))}
+          </Reveal>
+        </div>
+      </section>
+
+      <section id="contact" className="relative isolate overflow-hidden bg-base-200 px-6 py-24 sm:py-32 lg:px-8 scroll-mt-14">
+        <div className="absolute inset-0 -z-10 bg-[radial-gradient(45rem_50rem_at_top,var(--color-indigo-500),transparent)] opacity-10" />
+        <div className="mx-auto max-w-2xl text-center">
+          <Reveal>
+            <p className="text-base font-semibold text-primary tracking-widest uppercase">Get in touch</p>
+            <h2 className="mt-2 text-4xl font-semibold tracking-tight text-base-content sm:text-5xl">
+              Let's connect
+            </h2>
+            <p className="mt-6 text-lg text-base-content/70">
+              I'm always open to new opportunities, partnerships, and conversations about automation, AI, and business transformation.
+            </p>
+            <a
+              href="https://www.linkedin.com/in/mattryanyu/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-10 inline-flex items-center gap-3 px-8 py-4 rounded-full bg-gradient-to-r from-purple-500 via-indigo-500 to-blue-500 text-white font-semibold text-lg shadow-lg hover:opacity-90 hover:scale-105 transition-all"
+            >
+              <FontAwesomeIcon icon={faLinkedin} />
+              Connect on LinkedIn
+            </a>
           </Reveal>
         </div>
       </section>
@@ -536,6 +561,7 @@ function App() {
           </div>
         </div>
       </footer>
+      </div>
     </>
   );
 }
