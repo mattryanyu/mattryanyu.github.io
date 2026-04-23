@@ -287,13 +287,25 @@
   ],
 
   "interests": [
-    "Traveling",
-    "Pickleball",
-    "Badminton",
-    "Skiing",
-    "Scuba Diving",
-    "Tennis",
-    "Nintendo Switch",
-    "Ice Skating"
+    {
+      "emoji": "🌏",
+      "title": "Flavor Chaser",
+      "description": "The best part of living abroad? The flavors! From hawker stalls in KL to food stalls in Japan and street food in Vietnam — satisfying the foodie in me, one bite at a time."
+    },
+    {
+      "emoji": "🎾",
+      "title": "Racket Sports",
+      "description": "Pickleball, badminton, and tennis — why pick one when you can play all three?"
+    },
+    {
+      "emoji": "⛷️🤿",
+      "title": "Do This More",
+      "description": "A month diving the reefs of Thailand is something I'll always treasure. Skiing has that same magic — both are firmly on the 'do this more' list."
+    },
+    {
+      "emoji": "🎮",
+      "title": "Nintendo Switch",
+      "description": "A Yu family staple for Seattle's rainy days — couch co-op, shared victories, and the occasional friendly argument. Highly recommend."
+    }
   ]
 }

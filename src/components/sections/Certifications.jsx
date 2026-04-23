@@ -81,14 +81,18 @@ export default function Certifications({ resume }) {
               </Reveal>
 
               <Reveal>
-                <h2 className="mt-10 mb-6 text-2xl font-bold tracking-tight text-base-content">Interests</h2>
-                <ul>
-                  {resume.interests.map((s, i) => (
-                    <li key={i} className="tracking-tight inline-flex items-center m-1 px-3 py-1 rounded-full bg-base-300 text-base-content/90 text-xl">
-                      {s}
-                    </li>
+                <h2 className="mt-10 mb-6 text-2xl font-bold tracking-tight text-base-content">Beyond Work</h2>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  {resume.interests.map((item, i) => (
+                    <div key={i} className="card bg-base-300 border border-base-content/10">
+                      <div className="card-body p-5 gap-2 text-left">
+                        <span className="text-3xl">{item.emoji}</span>
+                        <p className="text-sm font-bold text-base-content">{item.title}</p>
+                        <p className="text-sm text-base-content/60 leading-snug">{item.description}</p>
+                      </div>
+                    </div>
                   ))}
-                </ul>
+                </div>
               </Reveal>
             </div>
           </div>
