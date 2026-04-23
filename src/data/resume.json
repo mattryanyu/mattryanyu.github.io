@@ -258,60 +258,30 @@
   ],
   "certifications": [
     {
-      "name": "Azure Fundamentals (AZ-900)",
-      "issuer": "Microsoft",
-      "url": "https://learn.microsoft.com/api/credentials/share/en-us/mattryanyu/FF0FE1E3F181E6B2?sharingId=F9FDC245EF5DD87C"
+      "group": "Cloud Platforms",
+      "items": [
+        { "name": "Azure Fundamentals (AZ-900)", "issuer": "Microsoft", "url": "https://learn.microsoft.com/api/credentials/share/en-us/mattryanyu/FF0FE1E3F181E6B2?sharingId=F9FDC245EF5DD87C" },
+        { "name": "AWS Certified Cloud Practitioner", "issuer": "AWS", "url": "https://www.credly.com/badges/ebb6285e-8f23-4ef9-817a-5f802c82f61d/public_url" },
+        { "name": "Google Cloud Platform Fundamentals: Core Infrastructure", "issuer": "Coursera", "url": "https://www.coursera.org/account/accomplishments/verify/NE8YXC5GAFH5" }
+      ]
     },
     {
-      "name": "Power Platform Fundamentals (PL-900)",
-      "issuer": "Microsoft",
-      "url": "https://www.credly.com/badges/a0808f3c-7fc1-444d-9960-dbab2527e779/public_url"
+      "group": "Intelligent Automation",
+      "items": [
+        { "name": "Power Platform Fundamentals (PL-900)", "issuer": "Microsoft", "url": "https://www.credly.com/badges/a0808f3c-7fc1-444d-9960-dbab2527e779/public_url" },
+        { "name": "Make Foundation", "issuer": "Make", "url": "https://www.credly.com/badges/e0414891-a983-4d26-9c81-1177654a88e2/public_url" },
+        { "name": "RPA Developer Foundation Training", "issuer": "UiPath" },
+        { "name": "RPA Infrastructure Engineer Foundation", "issuer": "UiPath" },
+        { "name": "RPA Business Analyst Foundation", "issuer": "UiPath" },
+        { "name": "RPA Implementation Manager Foundation", "issuer": "UiPath" }
+      ]
     },
     {
-      "name": "AWS Certified Cloud Practitioner",
-      "issuer": "AWS",
-      "url": "https://www.credly.com/badges/ebb6285e-8f23-4ef9-817a-5f802c82f61d/public_url"
-    },
-    {
-      "name": "Make Foundation",
-      "issuer": "Make",
-      "url": "https://www.credly.com/badges/e0414891-a983-4d26-9c81-1177654a88e2/public_url"
-    },
-    {
-      "name": "Celonis Analyst",
-      "issuer": "Celonis",
-      "url": "https://www.credly.com/badges/aa4596fa-b356-4591-bb68-a3a82e1f2247/public_url"
-    },
-    {
-      "name": "Celonis Data Engineer",
-      "issuer": "Celonis",
-      "url": "https://www.credly.com/badges/f011bd2d-411c-4373-9084-b77b78c33da2/public_url"
-    },
-    {
-      "name": "Open Water Diver",
-      "issuer": "PADI",
-      "url": "https://store.padi.com/en-us/courses/open-water-diver/p/60462-1B2C/"
-    },
-    {
-      "name": "Google Cloud Platform Fundamentals: Core Infrastructure",
-      "issuer": "Coursera",
-      "url": "https://www.coursera.org/account/accomplishments/verify/NE8YXC5GAFH5"
-    },
-    {
-      "name": "RPA Developer Foundation Training",
-      "issuer": "UiPath"
-    },
-    {
-      "name": "RPA Infrastructure Engineer Foundation",
-      "issuer": "UiPath"
-    },
-    {
-      "name": "RPA Business Analyst Foundation",
-      "issuer": "UiPath"
-    },
-    {
-      "name": "RPA Implementation Manager Foundation",
-      "issuer": "UiPath"
+      "group": "Process Intelligence",
+      "items": [
+        { "name": "Celonis Analyst", "issuer": "Celonis", "url": "https://www.credly.com/badges/aa4596fa-b356-4591-bb68-a3a82e1f2247/public_url" },
+        { "name": "Celonis Data Engineer", "issuer": "Celonis", "url": "https://www.credly.com/badges/f011bd2d-411c-4373-9084-b77b78c33da2/public_url" }
+      ]
     }
   ],
   "interests": [

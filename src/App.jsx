@@ -6,11 +6,11 @@ import NavBar from "./components/NavBar";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faReact } from "@fortawesome/free-brands-svg-icons";
-import { faMedal } from "@fortawesome/free-solid-svg-icons";
 import cover from "./assets/img/cover.jpg";
 import diving from "./assets/img/diving.png";
 import biking from "./assets/img/biking.jpg";
 import robot from "./assets/img/robot.jpg";
+
 
 function App() {
   return (
@@ -248,16 +248,13 @@ function App() {
                         <p class="text-lg mt-8 mb-2 font-bold bg-gradient-to-r from-purple-500 via-indigo-500 to-blue-500 bg-clip-text text-transparent">
                           {skills.theme}
                         </p>
-                        <ul>
+                        <div className="flex flex-wrap gap-2">
                           {skills.items.map((item, j) => (
-                            <li
-                              class="tracking-tight inline-flex items-center m-0.5 px-3 py-1 rounded-full bg-base-300 text-base-content/90 text-md"
-                              key={j}
-                            >
+                            <span className="badge badge-ghost badge-md" key={j}>
                               {item}
-                            </li>
+                            </span>
                           ))}
-                        </ul>
+                        </div>
                       </div>
                     </Reveal>
                   ))}
@@ -382,29 +379,49 @@ function App() {
             <div className="lg:pr-4">
               <div className="max-w-xl text-base/7 text-base-content/60 lg:max-w-lg">
                 <Reveal>
-                  <h2 className="m-16 text-2xl font-bold tracking-tight text-base-content">
+                  <h2 className="mt-16 mb-4 text-2xl font-bold tracking-tight text-base-content">
                     Certifications
                   </h2>
-                  {resume.certifications.map((certifications, i) => (
-                    <a
-                      href={certifications.url}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <div
-                        class="certifications text-base-content/70 bg-base-300"
-                        key={i}
-                      >
-                        <div>
-                          <FontAwesomeIcon icon={faMedal} size="2x" />
-                          <h2 className="text-1xl font-bold tracking-tight">
-                            {certifications.name}
-                          </h2>
-                          {certifications.issuer}
+                  <div className="flex flex-col gap-4">
+                    {resume.certifications.map((group) => (
+                      <div key={group.group} className="card bg-base-300 border border-base-content/10">
+                        <div className="card-body p-4 gap-3">
+                          <p className="text-xs font-bold uppercase tracking-widest bg-gradient-to-r from-purple-500 via-indigo-500 to-blue-500 bg-clip-text text-transparent">
+                            {group.group}
+                          </p>
+                          <div className="divide-y divide-base-content/10">
+                            {group.items.map((cert, i) => {
+                              const Tag = cert.url ? "a" : "div";
+                              const linkProps = cert.url
+                                ? { href: cert.url, target: "_blank", rel: "noopener noreferrer" }
+                                : {};
+                              return (
+                                <Tag
+                                  key={i}
+                                  {...linkProps}
+                                  className={`flex items-center justify-between gap-3 py-2.5 text-left group ${cert.url ? "cursor-pointer" : ""}`}
+                                >
+                                  <div>
+                                    <p className={`text-sm font-medium text-base-content leading-snug ${cert.url ? "group-hover:text-primary transition-colors" : ""}`}>
+                                      {cert.name}
+                                    </p>
+                                    <p className="text-xs text-base-content/40 mt-0.5">
+                                      {cert.issuer}
+                                    </p>
+                                  </div>
+                                  {cert.url && (
+                                    <span className="text-base-content/20 group-hover:text-primary transition-colors text-xs shrink-0 select-none">
+                                      ↗
+                                    </span>
+                                  )}
+                                </Tag>
+                              );
+                            })}
+                          </div>
                         </div>
                       </div>
-                    </a>
-                  ))}
+                    ))}
+                  </div>
                 </Reveal>
 
                 <Reveal>
