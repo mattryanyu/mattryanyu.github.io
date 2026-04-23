@@ -440,7 +440,7 @@ function App() {
         </div>
       </div>
 
-      <section id="education" className="relative isolate overflow-hidden bg-base-200 px-6 py-16 sm:py-20 lg:px-8 scroll-mt-14">
+      <section id="education" className="relative isolate overflow-hidden bg-base-300 px-6 py-16 sm:py-20 lg:px-8 scroll-mt-14">
         <div className="absolute inset-0 -z-10 bg-[radial-gradient(45rem_50rem_at_top,var(--color-indigo-500),transparent)] opacity-10" />
 
         <div className="mx-auto max-w-3xl">
