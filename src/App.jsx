@@ -2,6 +2,7 @@ import "./App.css";
 import resume from "./data/resume.json";
 import ResumeSection from "./components/ResumeSection";
 import Reveal from "./components/Reveal";
+import ThemeToggle from "./components/ThemeToggle";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faReact } from "@fortawesome/free-brands-svg-icons";
@@ -14,6 +15,7 @@ import robot from "./assets/img/robot.jpg";
 function App() {
   return (
     <>
+      <ThemeToggle />
       <link rel="icon" href="favicon-clr.svg" />
       <link rel="mask-icon" href="favicon-clr.svg" color="#000000" />
       <link rel="apple-touch-icon" href="favicon-clr.svg" />
@@ -51,11 +53,11 @@ function App() {
         </div>
       </div>
 
-      <div className="relative isolate overflow-hidden bg-gray-900 px-6 py-24 sm:py-32 lg:overflow-visible lg:px-0">
+      <div className="relative isolate overflow-hidden bg-base-200 px-6 py-24 sm:py-32 lg:overflow-visible lg:px-0">
         <div className="absolute inset-0 -z-10 overflow-hidden">
           <svg
             aria-hidden="true"
-            className="absolute top-0 left-[max(50%,25rem)] h-256 w-512 -translate-x-1/2 mask-[radial-gradient(64rem_64rem_at_top,white,transparent)] stroke-gray-800"
+            className="absolute top-0 left-[max(50%,25rem)] h-256 w-512 -translate-x-1/2 mask-[radial-gradient(64rem_64rem_at_top,white,transparent)] stroke-base-content/20"
           >
             <defs>
               <pattern
@@ -69,7 +71,7 @@ function App() {
                 <path d="M100 200V.5M.5 .5H200" fill="none" />
               </pattern>
             </defs>
-            <svg x="50%" y={-1} className="overflow-visible fill-gray-800/50">
+            <svg x="50%" y={-1} className="overflow-visible fill-base-content/10">
               <path
                 d="M-100.5 0h201v201h-201Z M699.5 0h201v201h-201Z M499.5 400h201v201h-201Z M-300.5 600h201v201h-201Z"
                 strokeWidth={0}
@@ -94,17 +96,17 @@ function App() {
                       <img src="/favicon-clr.svg" className="h-20" alt="logo" />
                     </span>
                   </div>
-                  <p className="text-base/7 font-semibold text-indigo-400">
+                  <p className="text-base/7 font-semibold text-primary">
                     {resume.location}
                   </p>
-                  <h1 className="mt-2 text-4xl font-semibold tracking-tight text-pretty text-white sm:text-5xl">
+                  <h1 className="mt-2 text-4xl font-semibold tracking-tight text-pretty text-base-content sm:text-5xl">
                     {resume.headline}
                   </h1>
                 </Reveal>
                 {resume.summaries.map((sections, i) => (
                   <Reveal>
                     <div key={i}>
-                      <p className="mt-6 text-xl/8 text-gray-300">{sections}</p>
+                      <p className="mt-6 text-xl/8 text-base-content/80">{sections}</p>
                     </div>
                   </Reveal>
                 ))}
@@ -117,7 +119,7 @@ function App() {
                 <img
                   alt="Cycling in New Zealand"
                   src={robot}
-                  className="w-120 max-w-full h-auto rounded-xl bg-gray-800 shadow-xl ring-1 ring-white/10"
+                  className="w-120 max-w-full h-auto rounded-xl bg-base-300 shadow-xl ring-1 ring-base-content/10"
                 />
 
                 <div
@@ -138,7 +140,7 @@ function App() {
         </div>
       </div>
 
-      <div className="bg-gray-800 py-24 sm:py-32">
+      <div className="bg-base-300 py-24 sm:py-32">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <dl className="grid grid-cols-1 gap-x-8 gap-y-16 text-center lg:grid-cols-3">
             {resume.stats.map((stat) => (
@@ -147,10 +149,10 @@ function App() {
                   key={stat.id}
                   className="mx-auto flex max-w-xs flex-col gap-y-4"
                 >
-                  <dt className="text-base/7 text-gray-400 tracking-tight text-lg">
+                  <dt className="text-base/7 text-base-content/60 tracking-tight text-lg">
                     {stat.name}
                   </dt>
-                  <dd className="order-first text-3xl font-semibold tracking-tight text-white sm:text-5xl">
+                  <dd className="order-first text-3xl font-semibold tracking-tight text-base-content sm:text-5xl">
                     {stat.value}
                   </dd>
                   <br />
@@ -161,11 +163,11 @@ function App() {
         </div>
       </div>
 
-      <div className="relative isolate overflow-hidden bg-gray-900 px-6 py-24 sm:py-32 lg:overflow-visible lg:px-0">
+      <div className="relative isolate overflow-hidden bg-base-200 px-6 py-24 sm:py-32 lg:overflow-visible lg:px-0">
         <div className="absolute inset-0 -z-10 overflow-hidden">
           <svg
             aria-hidden="true"
-            className="absolute top-0 left-[max(50%,25rem)] h-256 w-512 -translate-x-1/2 mask-[radial-gradient(64rem_64rem_at_top,white,transparent)] stroke-gray-800"
+            className="absolute top-0 left-[max(50%,25rem)] h-256 w-512 -translate-x-1/2 mask-[radial-gradient(64rem_64rem_at_top,white,transparent)] stroke-base-content/20"
           >
             <defs>
               <pattern
@@ -179,7 +181,7 @@ function App() {
                 <path d="M100 200V.5M.5 .5H200" fill="none" />
               </pattern>
             </defs>
-            <svg x="50%" y={-1} className="overflow-visible fill-gray-800/50">
+            <svg x="50%" y={-1} className="overflow-visible fill-base-content/10">
               <path
                 d="M-100.5 0h201v201h-201Z M699.5 0h201v201h-201Z M499.5 400h201v201h-201Z M-300.5 600h201v201h-201Z"
                 strokeWidth={0}
@@ -200,7 +202,7 @@ function App() {
                 <img
                   alt="Cycling in New Zealand"
                   src={biking}
-                  className="w-full max-w-full h-auto rounded-xl bg-gray-800 shadow-xl ring-1 ring-white/10"
+                  className="w-full max-w-full h-auto rounded-xl bg-base-300 shadow-xl ring-1 ring-base-content/10"
                 />
 
                 <div
@@ -221,9 +223,9 @@ function App() {
 
           <div className="lg:col-span-2 lg:col-start-1 lg:row-start-2 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
             <div className="lg:pr-4">
-              <div className="max-w-xl text-base/7 text-gray-400 lg:max-w-lg">
+              <div className="max-w-xl text-base/7 text-base-content/60 lg:max-w-lg">
                 <Reveal>
-                  <h2 className="mt-16 text-2xl font-bold tracking-tight text-white">
+                  <h2 className="mt-16 text-2xl font-bold tracking-tight text-base-content">
                     Skills
                   </h2>
                 </Reveal>
@@ -237,7 +239,7 @@ function App() {
                         <ul>
                           {skills.items.map((item, j) => (
                             <li
-                              class="tracking-tight inline-flex items-center m-0.5 px-3 py-1 rounded-full bg-gray-800 text-gray-200 text-md"
+                              class="tracking-tight inline-flex items-center m-0.5 px-3 py-1 rounded-full bg-base-300 text-base-content/90 text-md"
                               key={j}
                             >
                               {item}
@@ -256,9 +258,9 @@ function App() {
 
       <ResumeSection>
         <Reveal>
-          <div class="mb-6 bg-gray-900">
+          <div class="mb-6 bg-base-200">
             <p>
-              <h2 className="mt-16 text-2xl font-bold tracking-tight text-white">
+              <h2 className="mt-16 text-2xl font-bold tracking-tight text-base-content">
                 Experience
               </h2>
             </p>
@@ -267,9 +269,9 @@ function App() {
         <br />
 
         {resume.experience.map((experience, i) => (
-          <ul className="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical bg-gray-900 text-white/80">
+          <ul className="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical bg-base-200 text-base-content/80">
             <li>
-              <hr className="bg-gray-700" />
+              <hr className="bg-base-content/20" />
               <div className="timeline-middle ">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -300,17 +302,17 @@ function App() {
                   </span>
                 </Reveal>
               </div>
-              <hr className="bg-gray-700" />
+              <hr className="bg-base-content/20" />
             </li>
           </ul>
         ))}
       </ResumeSection>
 
-      <div className="relative isolate overflow-hidden bg-gray-900 px-6 py-24 sm:py-32 lg:overflow-visible lg:px-0">
+      <div className="relative isolate overflow-hidden bg-base-200 px-6 py-24 sm:py-32 lg:overflow-visible lg:px-0">
         <div className="absolute inset-0 -z-10 overflow-hidden">
           <svg
             aria-hidden="true"
-            className="absolute top-0 left-[max(50%,25rem)] h-256 w-512 -translate-x-1/2 mask-[radial-gradient(64rem_64rem_at_top,white,transparent)] stroke-gray-800"
+            className="absolute top-0 left-[max(50%,25rem)] h-256 w-512 -translate-x-1/2 mask-[radial-gradient(64rem_64rem_at_top,white,transparent)] stroke-base-content/20"
           >
             <defs>
               <pattern
@@ -324,7 +326,7 @@ function App() {
                 <path d="M100 200V.5M.5 .5H200" fill="none" />
               </pattern>
             </defs>
-            <svg x="50%" y={-1} className="overflow-visible fill-gray-800/50">
+            <svg x="50%" y={-1} className="overflow-visible fill-base-content/10">
               <path
                 d="M-100.5 0h201v201h-201Z M699.5 0h201v201h-201Z M499.5 400h201v201h-201Z M-300.5 600h201v201h-201Z"
                 strokeWidth={0}
@@ -345,7 +347,7 @@ function App() {
                 <img
                   alt="Diving in Thailand"
                   src={diving}
-                  className="w-full max-w-full h-auto rounded-xl bg-gray-800 shadow-xl ring-1 ring-white/10"
+                  className="w-full max-w-full h-auto rounded-xl bg-base-300 shadow-xl ring-1 ring-base-content/10"
                 />
 
                 <div
@@ -366,9 +368,9 @@ function App() {
 
           <div className="lg:col-span-2 lg:col-start-1 lg:row-start-2 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
             <div className="lg:pr-4">
-              <div className="max-w-xl text-base/7 text-gray-400 lg:max-w-lg">
+              <div className="max-w-xl text-base/7 text-base-content/60 lg:max-w-lg">
                 <Reveal>
-                  <h2 className="m-16 text-2xl font-bold tracking-tight text-white">
+                  <h2 className="m-16 text-2xl font-bold tracking-tight text-base-content">
                     Certifications
                   </h2>
                   {resume.certifications.map((certifications, i) => (
@@ -378,7 +380,7 @@ function App() {
                       rel="noopener noreferrer"
                     >
                       <div
-                        class="certifications text-white/70 bg-gray-800"
+                        class="certifications text-base-content/70 bg-base-300"
                         key={i}
                       >
                         <div>
@@ -394,14 +396,14 @@ function App() {
                 </Reveal>
 
                 <Reveal>
-                  <h2 className="m-16 text-2xl font-bold tracking-tight text-white">
+                  <h2 className="m-16 text-2xl font-bold tracking-tight text-base-content">
                     Interests
                   </h2>
                   <ul>
                     {resume.interests.map((s, i) => (
                       <li
                         key={i}
-                        class="tracking-tight inline-flex items-center m-1 px-3 py-1 rounded-full bg-gray-800 text-gray-200 text-xl"
+                        class="tracking-tight inline-flex items-center m-1 px-3 py-1 rounded-full bg-base-300 text-base-content/90 text-xl"
                       >
                         {s}
                       </li>
@@ -414,31 +416,31 @@ function App() {
         </div>
       </div>
 
-      <section class="relative isolate overflow-hidden bg-gray-900 px-6 py-24 sm:py-32 lg:px-8">
+      <section class="relative isolate overflow-hidden bg-base-200 px-6 py-24 sm:py-32 lg:px-8">
         <div class="absolute inset-0 -z-10 bg-[radial-gradient(45rem_50rem_at_top,var(--color-indigo-500),transparent)] opacity-10"></div>
-        <div class="absolute inset-y-0 right-1/2 -z-10 mr-16 w-[200%] origin-bottom-left skew-x-[-30deg] bg-gray-900 shadow-xl ring-1 shadow-indigo-500/5 ring-white/5 sm:mr-28 lg:mr-0 xl:mr-16 xl:origin-center"></div>
+        <div class="absolute inset-y-0 right-1/2 -z-10 mr-16 w-[200%] origin-bottom-left skew-x-[-30deg] bg-base-200 shadow-xl ring-1 shadow-indigo-500/5 ring-base-content/5 sm:mr-28 lg:mr-0 xl:mr-16 xl:origin-center"></div>
 
         <div class="mx-auto max-w-2xl lg:max-w-4xl">
           <Reveal>
-            <h2 className="mb-6 text-2xl font-bold tracking-tight text-white">
+            <h2 className="mb-6 text-2xl font-bold tracking-tight text-base-content">
               Education
             </h2>
           </Reveal>
           <Reveal>
             {resume.education.map((education, i) => (
               <div
-                class="education text-white border-2 border-white/40 rounded-3xl p-12 backdrop-blur-md bg-gray-800/50 shadow-l"
+                class="education text-base-content border-2 border-base-content/40 rounded-3xl p-12 backdrop-blur-md bg-base-300/50 shadow-l"
                 key={i}
               >
                 <div>
-                  <h2 className="mt-0 text-1xl font-semibold tracking-tight text-white text-xl">
+                  <h2 className="mt-0 text-1xl font-semibold tracking-tight text-base-content text-xl">
                     {education.school}
                   </h2>
-                  <span className="tracking-tight text-white/70 font-semibold">
+                  <span className="tracking-tight text-base-content/70 font-semibold">
                     {education.degree} | {education.major}
                   </span>
                   <br />
-                  <span class="tracking-tight text-white/70 text-md">
+                  <span class="tracking-tight text-base-content/70 text-md">
                     {education.to}
                   </span>
                 </div>
@@ -448,7 +450,7 @@ function App() {
         </div>
       </section>
 
-      <footer class="w-full px-4 py-6 bg-neutral text-white">
+      <footer class="w-full px-4 py-6 bg-neutral text-neutral-content">
         <div class="max-w-6xl mx-auto flex flex-col items-center gap-4 md:flex-row md:justify-between md:items-center">
           <div class="text-center md:text-left">
             <div>
