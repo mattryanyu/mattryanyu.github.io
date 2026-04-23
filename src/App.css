@@ -6,6 +6,11 @@
 [data-theme="light"] { color-scheme: light; }
 [data-theme="dark"]  { color-scheme: dark; }
 
+[data-theme="light"] footer {
+  background-color: #c7d2fe; /* indigo-200 */
+  color: #1e1b4b; /* indigo-950 */
+}
+
 #root {
   width: 100%;
   margin: 0;
