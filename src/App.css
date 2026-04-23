@@ -17,13 +17,6 @@ body {
   text-align: center;
 }
 
-.education {
-  width: 360px;
-  justify-content: center;
-  border: 0px solid grey;
-  display: inline-flex;
-}
-
 
 .hero {
   max-height: 600px;

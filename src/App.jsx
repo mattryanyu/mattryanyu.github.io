@@ -445,33 +445,25 @@ function App() {
         </div>
       </div>
 
-      <section id="education" class="relative isolate overflow-hidden bg-base-200 px-6 py-24 sm:py-32 lg:px-8 scroll-mt-14">
-        <div class="absolute inset-0 -z-10 bg-[radial-gradient(45rem_50rem_at_top,var(--color-indigo-500),transparent)] opacity-10"></div>
-        <div class="absolute inset-y-0 right-1/2 -z-10 mr-16 w-[200%] origin-bottom-left skew-x-[-30deg] bg-base-200 shadow-xl ring-1 shadow-indigo-500/5 ring-base-content/5 sm:mr-28 lg:mr-0 xl:mr-16 xl:origin-center"></div>
+      <section id="education" className="relative isolate overflow-hidden bg-base-200 px-6 py-16 sm:py-20 lg:px-8 scroll-mt-14">
+        <div className="absolute inset-0 -z-10 bg-[radial-gradient(45rem_50rem_at_top,var(--color-indigo-500),transparent)] opacity-10" />
 
-        <div class="mx-auto max-w-2xl lg:max-w-4xl">
+        <div className="mx-auto max-w-3xl">
           <Reveal>
-            <h2 className="mb-6 text-2xl font-bold tracking-tight text-base-content">
+            <h2 className="mb-8 text-2xl font-bold tracking-tight text-base-content">
               Education
             </h2>
-          </Reveal>
-          <Reveal>
             {resume.education.map((education, i) => (
-              <div
-                class="education text-base-content border-2 border-base-content/40 rounded-3xl p-12 backdrop-blur-md bg-base-300/50 shadow-l"
-                key={i}
-              >
-                <div>
-                  <h2 className="mt-0 text-1xl font-semibold tracking-tight text-base-content text-xl">
-                    {education.school}
-                  </h2>
-                  <span className="tracking-tight text-base-content/70 font-semibold">
-                    {education.degree} | {education.major}
-                  </span>
-                  <br />
-                  <span class="tracking-tight text-base-content/70 text-md">
-                    {education.to}
-                  </span>
+              <div key={i} className="flex flex-col sm:flex-row gap-6 sm:gap-10 items-start text-left">
+                <div className="shrink-0 border border-base-content/10 rounded-2xl bg-base-300/60 px-7 py-5">
+                  <p className="text-base font-semibold text-base-content">{education.school}</p>
+                  <p className="text-sm text-base-content/60 mt-1">{education.degree} · {education.major}</p>
+                  <p className="text-xs text-base-content/40 mt-1">{education.to}</p>
+                </div>
+                <div className="flex-1 flex items-center">
+                  <p className="text-base text-base-content/70 leading-relaxed">
+                    Most automation practitioners come from engineering. I came from Finance — which means I've always led with ROI, cost modeling, and operational efficiency. The automation and AI layer came later, but the business lens was there from day one.
+                  </p>
                 </div>
               </div>
             ))}
