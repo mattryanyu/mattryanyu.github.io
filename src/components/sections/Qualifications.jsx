@@ -14,9 +14,6 @@ export default function Certifications({ resume }) {
               <path d="M100 200V.5M.5 .5H200" fill="none" />
             </pattern>
           </defs>
-          <svg x="50%" y={-1} className="overflow-visible fill-base-content/10">
-            <path d="M-100.5 0h201v201h-201Z M699.5 0h201v201h-201Z M499.5 400h201v201h-201Z M-300.5 600h201v201h-201Z" strokeWidth={0} />
-          </svg>
           <rect fill="url(#certs-grid)" width="100%" height="100%" strokeWidth={0} />
         </svg>
       </div>

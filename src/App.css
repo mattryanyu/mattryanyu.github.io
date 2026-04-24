@@ -3,7 +3,7 @@
   themes: light --default, dark;
 }
 
-[data-theme="light"] { color-scheme: light; }
+[data-theme="light"] { color-scheme: light; --color-base-100: oklch(98% 0 0); }
 [data-theme="dark"]  { color-scheme: dark; }
 
 body {

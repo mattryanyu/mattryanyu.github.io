@@ -7,7 +7,7 @@ export default function Stats({ resume }) {
         <dl className="flex flex-col lg:flex-row divide-y lg:divide-y-0 lg:divide-x divide-base-content/10 text-center">
           {resume.stats.map((stat, i) => (
             <Reveal key={i} className="flex-1">
-              <div className="flex flex-col gap-y-3 py-10 lg:py-0 lg:px-12">
+              <div className="flex flex-col gap-y-3 py-10 lg:py-0 lg:px-12 lg:h-full lg:justify-center">
                 <dd className="text-5xl font-semibold tracking-tight bg-gradient-to-r from-purple-500 via-indigo-500 to-blue-500 bg-clip-text text-transparent">
                   {stat.value}
                 </dd>
