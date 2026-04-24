@@ -41,24 +41,30 @@ export default function Skills({ resume }) {
           <div className="lg:pr-4">
             <div className="max-w-xl text-base/7 text-base-content/60 lg:max-w-lg">
               <Reveal>
-                <h2 className="mb-6 text-2xl font-bold tracking-tight text-base-content">Skills</h2>
+                <h2 className="mb-2 text-2xl font-bold tracking-tight text-base-content">Skills</h2>
+                <p className="mb-8 text-sm text-base-content/50"></p>
               </Reveal>
-              <p>
-                {resume.skills.map((group, i) => (
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                {resume.skills.map((pillar, i) => (
                   <Reveal key={i}>
-                    <div>
-                      <p className="text-lg mt-8 mb-2 font-bold bg-gradient-to-r from-purple-500 via-indigo-500 to-blue-500 bg-clip-text text-transparent">
-                        {group.theme}
-                      </p>
-                      <div className="flex flex-wrap gap-2">
-                        {group.items.map((item, j) => (
-                          <span className="badge badge-ghost badge-md" key={j}>{item}</span>
-                        ))}
+                    <div className="card bg-base-300 border border-base-content/10 h-full">
+                      <div className="card-body p-6 text-left gap-3">
+                        <p className="text-lg font-bold bg-gradient-to-r from-purple-500 via-indigo-500 to-blue-500 bg-clip-text text-transparent">
+                          {pillar.title}
+                        </p>
+                        <p className="text-sm text-base-content/60 leading-relaxed">
+                          {pillar.description}
+                        </p>
+                        <div className="flex flex-wrap gap-2 mt-1">
+                          {pillar.highlights.map((h, j) => (
+                            <span className="badge badge-ghost badge-md" key={j}>{h}</span>
+                          ))}
+                        </div>
                       </div>
                     </div>
                   </Reveal>
                 ))}
-              </p>
+              </div>
             </div>
           </div>
         </div>

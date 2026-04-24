@@ -12,81 +12,14 @@
   ],
   "skills": [
     {
-      "theme": "UiPath",
-      "items": [
-        "Document Understanding",
-        "AI Center",
-        "REFramework",
-        "Unattended Bots",
-        "Orchestrator",
-        "Action Center"
-      ]
+      "title": "I Lead",
+      "description": "Operations transformation, target operating models, and change management — the business layer that makes automation stick long-term.",
+      "highlights": ["Operations", "Target Operating Models", "Change Management", "Presales Consulting", "Shared Services"]
     },
     {
-      "theme": "Microsoft Power Platform",
-      "items": [
-        "Power Platform",
-        "Power Automate",
-        "Power Apps",
-        "Power BI",
-        "Dataverse",
-        "Azure",
-        "SharePoint",
-        "AI Builder"
-      ]
-    },
-    {
-      "theme": "Automation & Delivery",
-      "items": [
-        "Intelligent Automation",
-        "Robotic Process Automation (RPA)",
-        "Solutions Architecture",
-        "Automation Delivery",
-        "Development",
-        "Agile",
-        "Pipeline Management",
-        "Bot Monitoring",
-        "Automation Code Reviews",
-        "Automation Quality Assurance (QA)",
-        "Opportunity Assessments"
-      ]
-    },
-    {
-      "theme": "Operations & Transformation",
-      "items": [
-        "Operations Transformation",
-        "Business Transformation",
-        "Digital Transformation",
-        "Shared Services",
-        "Claims Operations",
-        "Insurance Operations",
-        "Finance Operations",
-        "Target Operating Models",
-        "Operations Excellence",
-        "Business Process Reengineering",
-        "Outsourcing",
-        "Service Level Agreements (SLAs)",
-        "Capacity Planning",
-        "Change Management",
-        "Automation Roadmaps",
-        "Strategic Roadmaps",
-        "Cloud Adoption",
-        "Presales Consulting",
-        "Global Business Services"
-      ]
-    },
-    {
-      "theme": "Technical Toolkit",
-      "items": [
-        "Jira",
-        "Azure DevOps",
-        "GitHub",
-        "APIs",
-        "SQL",
-        "Power FX",
-        "D365",
-        "Guidewire"
-      ]
+      "title": "I Build",
+      "description": "Self-taught automation architect across UiPath, Power Platform, and Azure — having designed and delivered for 40+ companies.",
+      "highlights": ["UiPath", "Power Automate", "Azure", "APIs", "SQL", "Celonis"]
     }
   ],
 
