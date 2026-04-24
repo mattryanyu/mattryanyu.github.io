@@ -31,14 +31,14 @@ export default function Skills({ resume }) {
           {resume.skills.map((pillar, i) => (
             <Reveal key={i}>
               <div className="card bg-base-300 border border-base-content/10 h-full">
-                <div className="card-body p-6 text-left gap-3">
-                  <p className="text-lg font-bold bg-gradient-to-r from-purple-500 via-indigo-500 to-blue-500 bg-clip-text text-transparent">
+                <div className="card-body p-6 text-left gap-0">
+                  <p className="text-lg font-bold bg-gradient-to-r from-purple-500 via-indigo-500 to-blue-500 bg-clip-text text-transparent mb-2">
                     {pillar.title}
                   </p>
                   <p className="text-sm text-base-content/60 leading-relaxed">
                     {pillar.description}
                   </p>
-                  <div className="flex flex-wrap gap-2 mt-1">
+                  <div className="flex flex-wrap gap-2 mt-3">
                     {pillar.highlights.map((h, j) => (
                       <span className="badge badge-ghost badge-md" key={j}>{h}</span>
                     ))}
