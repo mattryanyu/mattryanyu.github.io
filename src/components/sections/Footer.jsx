@@ -5,27 +5,7 @@ export default function Footer({ resume }) {
   return (
     <footer className="bg-base-200 border-t border-base-content/10 text-left">
 
-      <div className="max-w-6xl mx-auto px-6 py-10 flex flex-col sm:flex-row justify-between items-start gap-8">
-        <div>
-          <p className="text-lg font-bold bg-gradient-to-r from-purple-500 via-indigo-500 to-blue-500 bg-clip-text text-transparent">
-            Matt Yuniverse
-          </p>
-          <p className="mt-1 text-sm text-base-content/50">Seattle, WA</p>
-        </div>
 
-        <div className="flex flex-col items-start sm:items-end gap-2">
-          <p className="text-xs font-semibold uppercase tracking-widest text-base-content/40">Connect</p>
-          <a
-            href={resume.linkedin}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center gap-2 text-sm font-medium text-base-content/70 hover:text-primary transition-colors"
-          >
-            <FontAwesomeIcon icon={faLinkedin} className="text-[18px]" />
-            linkedin.com/in/mattryanyu
-          </a>
-        </div>
-      </div>
 
       <div className="border-t border-base-content/10">
         <div className="max-w-6xl mx-auto px-6 py-4 flex flex-col sm:flex-row justify-between items-center gap-4">
