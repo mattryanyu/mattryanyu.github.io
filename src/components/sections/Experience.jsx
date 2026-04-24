@@ -84,6 +84,9 @@ export default function Skills({ resume }) {
                     <br />
                     {item.location}
                   </span>
+                  {item.tagline && (
+                    <p className="mt-2 text-sm text-base-content/50 leading-snug">{item.tagline}</p>
+                  )}
                 </Reveal>
               </div>
               <hr className="bg-base-content/20" />
