@@ -12,71 +12,6 @@
   ],
   "skills": [
     {
-      "theme": "Tech Delivery & Execution",
-      "items": [
-        "Intelligent Automation",
-        "Robotic Process Automation (RPA)",
-        "Solutions Architecture",
-        "Automation Delivery",
-        "Development",
-        "Agile",
-        "Process Design Documents (PDDs)",
-        "Solution Design Documents (SDDs)",
-        "Runbooks",
-        "Business Requirements Documents (BRDs)",
-        "Pipeline Management",
-        "Bot Monitoring",
-        "Automation Code Reviews",
-        "Automation Quality Assurance (QA)",
-        "Opportunity Assessments",
-        "Product Experience Engineering (PXE) Collaboration"
-      ]
-    },
-    {
-      "theme": "Operations & Process Excellence",
-      "items": [
-        "Shared Services",
-        "Operations Transformation",
-        "Claims Operations",
-        "Insurance Operations",
-        "First Notice of Loss (FNOL)",
-        "Business Operations",
-        "Business Transformation",
-        "Finance Operations",
-        "Target Operating Models",
-        "Operations Excellence",
-        "Business Process Reengineering",
-        "Business Analysis",
-        "Outsourcing",
-        "Service Level Agreements (SLAs)",
-        "Backlog Remediation",
-        "Capacity Planning",
-        "Recruitment & Training",
-        "Team Leadership",
-        "Project Management",
-        "Process Migration",
-        "Teambuilding",
-        "Call Center Operations",
-        "Change Management"
-      ]
-    },
-    {
-      "theme": "Strategy & Consulting",
-      "items": [
-        "Business Transformation",
-        "Digital Transformation",
-        "Presales Consulting",
-        "Automation Roadmaps",
-        "Scorecards",
-        "Cloud Adoption",
-        "Strategic Roadmaps",
-        "Outsourcing Strategy",
-        "Global Business Services",
-        "Strategic Planning",
-        "Strategy & Execution"
-      ]
-    },
-    {
       "theme": "UiPath",
       "items": [
         "Document Understanding",
@@ -88,7 +23,7 @@
       ]
     },
     {
-      "theme": "Microsoft",
+      "theme": "Microsoft Power Platform",
       "items": [
         "Power Platform",
         "Power Automate",
@@ -101,60 +36,56 @@
       ]
     },
     {
-      "theme": "Industries",
+      "theme": "Automation & Delivery",
       "items": [
-        "Insurance",
-        "Financial Services",
-        "Healthcare",
-        "Aviation",
-        "Travel",
-        "Education",
-        "Big Tech",
-        "Consulting",
-        "F&B",
-        "Retail",
-        "Rail Transport",
-        "Industrial Equipment",
-        "Automotive Equipment",
-        "Retirement Services"
+        "Intelligent Automation",
+        "Robotic Process Automation (RPA)",
+        "Solutions Architecture",
+        "Automation Delivery",
+        "Development",
+        "Agile",
+        "Pipeline Management",
+        "Bot Monitoring",
+        "Automation Code Reviews",
+        "Automation Quality Assurance (QA)",
+        "Opportunity Assessments"
       ]
     },
     {
-      "theme": "Soft Skills",
+      "theme": "Operations & Transformation",
       "items": [
-        "Team Collaboration",
-        "Business Communication",
-        "Dealing with Ambiguity",
-        "Team Leadership",
-        "Stakeholder Management"
+        "Operations Transformation",
+        "Business Transformation",
+        "Digital Transformation",
+        "Shared Services",
+        "Claims Operations",
+        "Insurance Operations",
+        "Finance Operations",
+        "Target Operating Models",
+        "Operations Excellence",
+        "Business Process Reengineering",
+        "Outsourcing",
+        "Service Level Agreements (SLAs)",
+        "Capacity Planning",
+        "Change Management",
+        "Automation Roadmaps",
+        "Strategic Roadmaps",
+        "Cloud Adoption",
+        "Presales Consulting",
+        "Global Business Services"
       ]
     },
     {
-      "theme": "Tools, etc.",
+      "theme": "Technical Toolkit",
       "items": [
         "Jira",
-        "Trello",
         "Azure DevOps",
         "GitHub",
-        "Bitbucket",
         "APIs",
-        "VB.net",
         "SQL",
         "Power FX",
-        "Regex",
-        "HTML",
-        "CSS"
-      ]
-    },
-    {
-      "theme": "App Automation",
-      "items": [
         "D365",
-        "Guidewire",
-        "Marketo",
-        "Availity",
-        "EviCore",
-        "Dynamics SL"
+        "Guidewire"
       ]
     }
   ],
@@ -261,27 +192,76 @@
     {
       "group": "Cloud Platforms",
       "items": [
-        { "name": "Azure Fundamentals (AZ-900)", "issuer": "Microsoft", "url": "https://learn.microsoft.com/api/credentials/share/en-us/mattryanyu/FF0FE1E3F181E6B2?sharingId=F9FDC245EF5DD87C" },
-        { "name": "AWS Certified Cloud Practitioner", "issuer": "AWS", "url": "https://www.credly.com/badges/ebb6285e-8f23-4ef9-817a-5f802c82f61d/public_url" },
-        { "name": "Google Cloud Platform Fundamentals: Core Infrastructure", "issuer": "Coursera", "url": "https://www.coursera.org/account/accomplishments/verify/NE8YXC5GAFH5" }
+        {
+          "name": "Azure Fundamentals (AZ-900)",
+          "issuer": "Microsoft",
+          "url": "https://learn.microsoft.com/api/credentials/share/en-us/mattryanyu/FF0FE1E3F181E6B2?sharingId=F9FDC245EF5DD87C"
+        },
+        {
+          "name": "AWS Certified Cloud Practitioner",
+          "issuer": "AWS",
+          "url": "https://www.credly.com/badges/ebb6285e-8f23-4ef9-817a-5f802c82f61d/public_url"
+        },
+        {
+          "name": "Google Cloud Platform Fundamentals: Core Infrastructure",
+          "issuer": "Coursera",
+          "url": "https://www.coursera.org/account/accomplishments/verify/NE8YXC5GAFH5"
+        }
       ]
     },
     {
-      "group": "Intelligent Automation",
+      "group": "Intelligent Automation & AI",
       "items": [
-        { "name": "Power Platform Fundamentals (PL-900)", "issuer": "Microsoft", "url": "https://www.credly.com/badges/a0808f3c-7fc1-444d-9960-dbab2527e779/public_url" },
-        { "name": "Make Foundation", "issuer": "Make", "url": "https://www.credly.com/badges/e0414891-a983-4d26-9c81-1177654a88e2/public_url" },
-        { "name": "RPA Developer Foundation Training", "issuer": "UiPath" },
-        { "name": "RPA Infrastructure Engineer Foundation", "issuer": "UiPath" },
-        { "name": "RPA Business Analyst Foundation", "issuer": "UiPath" },
-        { "name": "RPA Implementation Manager Foundation", "issuer": "UiPath" }
+        {
+          "name": "Power Platform Fundamentals (PL-900)",
+          "issuer": "Microsoft",
+          "url": "https://www.credly.com/badges/a0808f3c-7fc1-444d-9960-dbab2527e779/public_url"
+        },
+        {
+          "name": "Make Foundation",
+          "issuer": "Make",
+          "url": "https://www.credly.com/badges/e0414891-a983-4d26-9c81-1177654a88e2/public_url"
+        },
+        {
+          "name": "Claude Code 101",
+          "issuer": "Anthropic",
+          "url": "https://verify.skilljar.com/c/ar2jbcvbo759"
+        },
+        {
+          "name": "RPA Developer Foundation Training",
+          "issuer": "UiPath",
+          "url": "https://www.linkedin.com/in/mattryanyu/overlay/Certifications/804434909/treasury/?profileId=ACoAAAL01qIBYnqExPSSmQ0L18gWAqxE5c6dwmA"
+        },
+        {
+          "name": "RPA Infrastructure Engineer Foundation",
+          "issuer": "UiPath",
+          "url": "https://www.linkedin.com/in/mattryanyu/overlay/Certifications/1061373655/treasury/?profileId=ACoAAAL01qIBYnqExPSSmQ0L18gWAqxE5c6dwmA"
+        },
+        {
+          "name": "RPA Business Analyst Foundation",
+          "issuer": "UiPath",
+          "url": "https://www.linkedin.com/in/mattryanyu/overlay/Certifications/804319272/treasury/?profileId=ACoAAAL01qIBYnqExPSSmQ0L18gWAqxE5c6dwmA"
+        },
+        {
+          "name": "RPA Automation Project Manager",
+          "issuer": "UiPath",
+          "url": "https://www.linkedin.com/in/mattryanyu/overlay/Certifications/804291119/treasury/?profileId=ACoAAAL01qIBYnqExPSSmQ0L18gWAqxE5c6dwmA"
+        }
       ]
     },
     {
       "group": "Process Intelligence",
       "items": [
-        { "name": "Celonis Analyst", "issuer": "Celonis", "url": "https://www.credly.com/badges/aa4596fa-b356-4591-bb68-a3a82e1f2247/public_url" },
-        { "name": "Celonis Data Engineer", "issuer": "Celonis", "url": "https://www.credly.com/badges/f011bd2d-411c-4373-9084-b77b78c33da2/public_url" }
+        {
+          "name": "Celonis Analyst",
+          "issuer": "Celonis",
+          "url": "https://www.credly.com/badges/aa4596fa-b356-4591-bb68-a3a82e1f2247/public_url"
+        },
+        {
+          "name": "Celonis Data Engineer",
+          "issuer": "Celonis",
+          "url": "https://www.credly.com/badges/f011bd2d-411c-4373-9084-b77b78c33da2/public_url"
+        }
       ]
     }
   ],

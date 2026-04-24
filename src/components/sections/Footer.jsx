@@ -8,7 +8,7 @@ export default function Footer({ resume }) {
       <div className="max-w-6xl mx-auto px-6 py-10 flex flex-col sm:flex-row justify-between items-start gap-8">
         <div>
           <p className="text-lg font-bold bg-gradient-to-r from-purple-500 via-indigo-500 to-blue-500 bg-clip-text text-transparent">
-            MATT YUNIVERSE
+            Matt Yuniverse
           </p>
           <p className="mt-1 text-sm text-base-content/50">Seattle, WA</p>
         </div>
