@@ -3,7 +3,7 @@ import diving from "../../assets/img/diving.png";
 
 export default function Certifications({ resume }) {
   return (
-    <div id="certifications" className="relative isolate overflow-hidden bg-base-200 px-6 py-24 sm:py-32 lg:overflow-visible lg:px-0 scroll-mt-14">
+    <div id="qualifications" className="relative isolate overflow-hidden bg-base-200 px-6 py-24 sm:py-32 lg:overflow-visible lg:px-0 scroll-mt-14">
       <div className="absolute inset-0 -z-10 overflow-hidden">
         <svg
           aria-hidden="true"
@@ -41,7 +41,29 @@ export default function Certifications({ resume }) {
           <div className="lg:pr-4">
             <div className="max-w-xl text-base/7 text-base-content/60 lg:max-w-lg">
               <Reveal>
-                <h2 className="mb-6 text-2xl font-bold tracking-tight text-base-content">Certifications</h2>
+                <h2 className="mb-6 text-2xl font-bold tracking-tight text-base-content">Qualifications</h2>
+
+                <p className="text-xs font-bold uppercase tracking-widest mb-3 bg-gradient-to-r from-purple-500 via-indigo-500 to-blue-500 bg-clip-text text-transparent">
+                  Education
+                </p>
+                {resume.education.map((ed, i) => (
+                  <div key={i} className="flex flex-col sm:flex-row gap-4 sm:gap-6 items-start text-left mb-6">
+                    <div className="shrink-0 border border-base-content/10 rounded-2xl bg-base-300/60 px-5 py-4">
+                      <p className="text-base font-semibold text-base-content">{ed.school}</p>
+                      <p className="text-sm text-base-content/60 mt-1">{ed.degree} · {ed.major}</p>
+                      <p className="text-xs text-base-content/40 mt-1">{ed.to}</p>
+                    </div>
+                    <div className="flex-1 flex items-center">
+                      <p className="text-sm text-base-content/70 leading-relaxed">{ed.narrative}</p>
+                    </div>
+                  </div>
+                ))}
+              </Reveal>
+
+              <Reveal>
+                <p className="text-xs font-bold uppercase tracking-widest mt-10 mb-3 bg-gradient-to-r from-purple-500 via-indigo-500 to-blue-500 bg-clip-text text-transparent">
+                  Certifications
+                </p>
                 <div className="flex flex-col gap-4">
                   {resume.certifications.map((group) => (
                     <div key={group.group} className="card bg-base-300 border border-base-content/10">
@@ -74,21 +96,6 @@ export default function Certifications({ resume }) {
                             );
                           })}
                         </div>
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              </Reveal>
-
-              <Reveal>
-                <h2 className="mt-10 mb-6 text-2xl font-bold tracking-tight text-base-content">Beyond Work</h2>
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                  {resume.interests.map((item, i) => (
-                    <div key={i} className="card bg-base-300 border border-base-content/10">
-                      <div className="card-body p-5 gap-2 text-left">
-                        <span className="text-3xl">{item.emoji}</span>
-                        <p className="text-sm font-bold text-base-content">{item.title}</p>
-                        <p className="text-sm text-base-content/60 leading-snug">{item.description}</p>
                       </div>
                     </div>
                   ))}

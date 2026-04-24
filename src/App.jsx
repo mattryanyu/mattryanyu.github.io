@@ -4,10 +4,9 @@ import NavBar from "./components/NavBar";
 import Hero from "./components/sections/Hero";
 import About from "./components/sections/About";
 import Stats from "./components/sections/Stats";
-import Skills from "./components/sections/Skills";
 import Experience from "./components/sections/Experience";
-import Certifications from "./components/sections/Certifications";
-import Education from "./components/sections/Education";
+import Qualifications from "./components/sections/Qualifications";
+import BeyondWork from "./components/sections/BeyondWork";
 import Contact from "./components/sections/Contact";
 import Footer from "./components/sections/Footer";
 
@@ -22,10 +21,9 @@ function App() {
         <Hero />
         <About resume={resume} />
         <Stats resume={resume} />
-        <Skills resume={resume} />
         <Experience resume={resume} />
-        <Certifications resume={resume} />
-        <Education resume={resume} />
+        <Qualifications resume={resume} />
+        <BeyondWork resume={resume} />
         <Contact resume={resume} />
         <Footer resume={resume} />
       </div>
