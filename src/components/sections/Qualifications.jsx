@@ -45,7 +45,7 @@ export default function Certifications({ resume }) {
                 </p>
                 {resume.education.map((ed, i) => (
                   <div key={i} className="flex flex-col sm:flex-row gap-4 sm:gap-6 items-start text-left mb-6">
-                    <div className="card bg-base-300 border border-base-content/10 shrink-0">
+                    <div className="card bg-base-300 border border-base-content/10 shrink-0 w-full sm:w-auto">
                       <div className="card-body p-4 gap-1 text-left">
                         <p className="text-base font-semibold text-base-content">{ed.school}</p>
                         <p className="text-sm text-base-content/60">{ed.degree} · {ed.major}</p>
