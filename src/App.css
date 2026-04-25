@@ -76,12 +76,12 @@ body {
 }
 
 .switch input:checked + .slider {
-  background-color: #00a6ff;
+  background-color: #9ca3af;
 }
 
 .switch input:checked + .slider:before {
   transform: translateX(1.8em);
-  box-shadow: inset 15px -4px 0px 15px #ffcf48;
+  box-shadow: inset 15px -4px 0px 15px #e5e7eb;
 }
 
 .star {
