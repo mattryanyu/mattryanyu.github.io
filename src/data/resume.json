@@ -56,83 +56,61 @@
   "experience": [
     {
       "company": "Blackbook.ai",
+      "url": "https://blackbook.ai",
       "role": "General Manager, North America",
-      "location": "Seattle, USA",
-      "duration": "2 yr 11 mo",
+      "locations": [{ "city": "Seattle, USA", "flagCode": "US" }],
       "year": "2023 - Present",
-      "tagline": "Built and led a US RPA service delivery partnership, architecting 50+ enterprise automations across UiPath, Power Automate, and Automation Anywhere."
+      "tagline": "Built a US RPA service delivery partnership, architecting & delivering 50+ enterprise automations across UiPath, Power Automate, and Automation Anywhere."
     },
     {
       "company": "Avanade",
+      "url": "https://www.avanade.com",
       "role": "Senior Consultant, Intelligent Automation",
-      "location": "Seattle, USA",
-      "duration": "1 yr 5 mo",
+      "locations": [{ "city": "Seattle, USA", "flagCode": "US" }],
       "year": "2021",
-      "tagline": "Designed and delivered intelligent automation solutions using Microsoft Power Platform for enterprise clients across multiple industries."
+      "tagline": "Created intelligent automation solutions using Microsoft Power Platform for enterprise clients across multiple industries."
     },
     {
-      "company": "Relocation & Full-time Parenting",
-      "role": "Stay-at-home Dad",
-      "location": "Kuala Lumpur, Malaysia",
-      "duration": "2 yr 4 mo",
+      "company": "Career Break - Family Relocation & Caregiving",
+      "role": "",
+      "locations": [{ "city": "Kuala Lumpur, Malaysia", "flagCode": "MY" }],
       "year": "2019",
-      "tagline": "Took time away from work to care for family while navigating international relocation during the COVID pandemic."
+      "tagline": "Full time dad to infant while abroad during spouse's green card process; managed relocation to US the during the COVID pandemic."
     },
     {
       "company": "Blackbook.ai",
+      "url": "https://blackbook.ai",
       "role": "Senior Automation Engineer",
-      "location": "Brisbane, Australia",
-      "duration": "1 yr 5 mo",
+      "locations": [{ "city": "Brisbane, Australia", "flagCode": "AU" }],
       "year": "2017",
       "tagline": "Developed and deployed UiPath RPA bots at 20+ major Australian companies spanning financial services, insurance, and more."
     },
     {
       "company": "AIG",
-      "role": "Head of Desktop Automation",
-      "location": "Kuala Lumpur, Malaysia",
-      "duration": "1 yr 9 mo",
-      "year": "2015",
-      "tagline": "Launched AIG's RPA Center of Excellence between Kuala Lumpur and Manila, leading 14 analysts and delivering automation savings of 7+ FTEs."
+      "url": "https://www.aig.com",
+      "role": "Multiple Operations & Tech roles",
+      "locations": [
+        { "city": "New York, USA", "flagCode": "US" },
+        { "city": "Kuala Lumpur, Malaysia", "flagCode": "MY" },
+        { "city": "Sao Paulo, Brazil", "flagCode": "BR" }
+      ],
+      "year": "2008 - 2017",
+      "tagline": "Held multiple roles including Head of Desktop Automation, Claims Operations Manager, Project Manager and Senior Business Analyst"
     },
     {
-      "company": "AIG",
-      "role": "Claims Operations Manager",
-      "location": "Kuala Lumpur, Malaysia",
-      "duration": "1 yr 4 mo",
-      "year": "2014",
-      "tagline": "Managed a 100+ FTE claims and contact center team across South Africa and the US, driving large-scale operational transformation."
+      "company": "NYU Stern",
+      "url": "https://www.stern.nyu.edu",
+      "role": "Bachelors in Finance",
+      "locations": [{ "city": "New York, USA", "flagCode": "US" }],
+      "year": "",
+      "tagline": ""
     },
     {
-      "company": "AIG",
-      "role": "Project Manager",
-      "location": "Kuala Lumpur, Malaysia",
-      "duration": "1 yr 2 mo",
-      "year": "2013",
-      "tagline": "Restored and improved service levels through successful backlog remediation plans."
-    },
-    {
-      "company": "AIG",
-      "role": "Senior Business Analyst",
-      "location": "New York, USA",
-      "duration": "2 yr 5 mo",
-      "year": "2010",
-      "tagline": "Tracked and reported on a $300M global IT transformation program"
-    },
-    {
-      "company": "AIG",
-      "role": "Senior Business Analyst",
-      "location": "Sao Paulo, Brazil",
-      "duration": "10 mo",
-      "year": "2009",
-      "tagline": "Responsible for the launch planning for AIG's Brazil insurance operations."
-    },
-    {
-      "company": "AIG",
-      "role": "Business Analyst",
-      "location": "New York, USA",
-      "duration": "1 yr 11 mo",
-      "year": "2008",
-      "tagline": "Produced executive-level financial and operational reporting across AIG's global operations portfolio."
+      "company": "Born and raised in Queens",
+      "role": "",
+      "locations": [{ "city": "New York, USA", "flagCode": "US" }],
+      "year": "",
+      "tagline": ""
     }
   ],
 
@@ -141,7 +119,7 @@
       "school": "NYU Stern",
       "degree": "Bachelor of Science",
       "major": "Finance",
-      "to": "Class of '08",
+
       "narrative": "Most automation practitioners come from engineering. I came from Finance — which means I've always led with ROI, cost modeling, and operational efficiency. The automation and AI layer came later, but the business lens was there from day one."
     }
   ],

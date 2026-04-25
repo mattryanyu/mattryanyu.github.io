@@ -1,5 +1,6 @@
 import Reveal from "../Reveal";
 import biking from "../../assets/img/biking.jpg";
+import ReactCountryFlag from "react-country-flag";
 
 export default function Skills({ resume }) {
   return (
@@ -77,9 +78,20 @@ export default function Skills({ resume }) {
                   <time className="font-mono">{item.year}</time>
                   <div className="text-lg font-semibold tracking-tight text-pretty">{item.role}</div>
                   <span className="tracking-tight text-pretty">
-                    {item.company}
+                    {item.url ? (
+                      <a href={item.url} target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors group">
+                        {item.company}
+                        <span className="ml-1 text-base-content/30 group-hover:text-primary transition-colors text-xs">↗</span>
+                      </a>
+                    ) : item.company}
                     <br />
-                    {item.location}
+                    {item.locations.map((loc, j) => (
+                      <span key={j}>
+                        {j > 0 && <span className="mx-1.5 text-base-content/30">·</span>}
+                        <ReactCountryFlag countryCode={loc.flagCode} svg className="mr-1 align-middle" style={{ width: "1.1em", height: "1.1em" }} />
+                        {loc.city}
+                      </span>
+                    ))}
                   </span>
                   {item.tagline && (
                     <p className="mt-2 text-sm text-base-content/50 leading-snug">{item.tagline}</p>
