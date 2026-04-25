@@ -20,19 +20,8 @@ export default function Hero() {
               </p>
             </div>
 
-            <div className="flex flex-col md:flex-row items-center justify-center gap-4">
-              <div className="bg-white/10 backdrop-blur-md border border-white/25 rounded-2xl text-center p-5 w-64 md:w-52 shadow-lg">
-                <p className="text-base font-semibold tracking-tight leading-snug">
-                  Business Transformation &amp; Operations Leader
-                </p>
-              </div>
-              <span className="text-2xl font-light text-white/60 select-none">+</span>
-              <div className="bg-white/10 backdrop-blur-md border border-white/25 rounded-2xl text-center p-5 w-64 md:w-52 shadow-lg">
-                <p className="text-base font-semibold tracking-tight leading-snug">
-                  Intelligent Automation Solutions Architect
-                </p>
-              </div>
-            </div>
+
+
 
             <a
               href="#about"
