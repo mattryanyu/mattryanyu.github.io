@@ -10,6 +10,10 @@ body {
   font-family: 'Inter', sans-serif;
 }
 
+*, *::before, *::after {
+  transition: background-color 0.3s ease, color 0.2s ease, border-color 0.2s ease;
+}
+
 #root {
   width: 100%;
   margin: 0;
