@@ -25,7 +25,8 @@ export default function Reveal({ children, className = "" }) {
   return (
     <div
       ref={ref}
-      className={`opacity-0 translate-y-6 transition-all duration-1500 ${className}`}
+      style={{ transition: "opacity 1.5s ease, transform 1.5s ease" }}
+      className={`opacity-0 translate-y-6 ${className}`}
     >
       {children}
     </div>

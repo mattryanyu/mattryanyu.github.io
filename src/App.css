@@ -56,7 +56,7 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #2a2a2a;
+  background-color: #2a2e35;
   transition: 0.4s;
   border-radius: 30px;
   overflow: hidden;
@@ -76,12 +76,12 @@ body {
 }
 
 .switch input:checked + .slider {
-  background-color: #9ca3af;
+  background-color: #dbdbdb;
 }
 
 .switch input:checked + .slider:before {
   transform: translateX(1.8em);
-  box-shadow: inset 15px -4px 0px 15px #e5e7eb;
+  box-shadow: inset 15px -4px 0px 15px #ffffff;
 }
 
 .star {
