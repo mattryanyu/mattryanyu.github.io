@@ -76,15 +76,18 @@ export default function Skills({ resume }) {
               <div className="timeline-start mb-10 text-left md:text-end">
                 <Reveal>
                   <time className="font-mono">{item.year}</time>
-                  <div className="text-lg font-semibold tracking-tight text-pretty">{item.role}</div>
-                  <span className="tracking-tight text-pretty">
+                  <div className="tracking-tight text-pretty font-semibold">
                     {item.url ? (
                       <a href={item.url} target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors group">
                         {item.company}
                         <span className="ml-1 text-base-content/30 group-hover:text-primary transition-colors text-xs">↗</span>
                       </a>
                     ) : item.company}
-                    <br />
+                  </div>
+                  {item.role && (
+                    <div className="text-sm tracking-tight text-pretty text-base-content/70">{item.role}</div>
+                  )}
+                  <span className="tracking-tight text-pretty text-sm">
                     {item.locations.map((loc, j) => (
                       <span key={j}>
                         {j > 0 && <span className="mx-1.5 text-base-content/30">·</span>}
