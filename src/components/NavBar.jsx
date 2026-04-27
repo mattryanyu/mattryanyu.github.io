@@ -92,7 +92,7 @@ const NavBar = () => {
       {/* Side drawer */}
       <div className={`fixed top-0 right-0 h-full w-64 z-50 bg-base-100 shadow-xl flex flex-col transition-transform duration-300 md:hidden ${isOpen ? "translate-x-0" : "translate-x-full"}`}>
         <div className="flex items-center justify-between px-6 h-14 border-b border-base-content/10">
-          <span className="font-semibold text-sm text-base-content">Menu</span>
+          <span className="font-semibold text-sm text-base-content"></span>
           <button
             onClick={() => setIsOpen(false)}
             aria-label="Close menu"
