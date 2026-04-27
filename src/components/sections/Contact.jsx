@@ -13,7 +13,7 @@ export default function Contact({ resume }) {
             Let's connect
           </h2>
           <p className="mt-6 text-lg text-base-content/70">
-            I'm always open to new opportunities, partnerships, and conversations about automation, AI, and business transformation.
+            I'm always open to new opportunities, partnerships, and conversations about business transformation, operations, automation and AI.
           </p>
           <a
             href={resume.linkedin}
