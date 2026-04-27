@@ -84,16 +84,16 @@
       "tagline": "Designed & developed UiPath RPA bots at 20+ major Australian companies spanning financial services, insurance, and more."
     },
     {
-      "company": "AIG",
+      "company": "American International Group | AIG",
       "url": "https://www.aig.com",
-      "role": "Multiple Operations & Tech roles",
+      "role": "Multiple roles",
       "locations": [
         { "city": "New York, USA", "flagCode": "US" },
         { "city": "Kuala Lumpur, Malaysia", "flagCode": "MY" },
         { "city": "Sao Paulo, Brazil", "flagCode": "BR" }
       ],
       "year": "2008 - 2017",
-      "tagline": "Held multiple roles including Head of Desktop Automation, Claims Operations Manager, Project Manager and Senior Business Analyst"
+      "tagline": "Held multiple operations & systems roles including Head of Desktop Automation, Claims Operations Manager, Project Manager and Senior Business Analyst"
     },
     {
       "company": "NYU Stern",
