@@ -2,9 +2,9 @@
   "name": "Matt Yu",
   "location": "Seattle, WA",
   "linkedin": "https://www.linkedin.com/in/mattryanyu/",
-  "headline": "Business Transformation & Global Operations Leader",
+  "headline": "Business Transformation & Operations Leader",
   "summaries": [
-    "I lead large‑scale transformation programs grounded in operations, focused on ROI, and accelerated by automation and AI. My background spans business operations, shared services, and enterprise transformation with global experience including US, Canada, APAC and Australia.",
+    "I help companies transform their businesses grounded in operations, focused on ROI, and accelerated by automation and AI. My background spans business operations, shared services, and enterprise transformation with global experience including US, Canada, APAC and Australia.",
 
     "As General Manager for Blackbook.ai, I built our Automation & AI capability for our North America operations from the ground up — becoming the primary service‑delivery partner for a U.S.-based RPA firm. I designed a repeatable delivery model (sizing, requirements gathering, solution design, QA, handover), served as the lead architect for all UiPath and Power Platform solutions, and oversaw the build and maintenance of 50+ automations across multiple industries. I also managed pipeline prioritization, scoped new opportunities, and led client‑facing delivery to ensure quality, timelines, and change control.",
 
@@ -65,7 +65,7 @@
       "url": "https://www.avanade.com",
       "role": "Senior Consultant, Intelligent Automation",
       "locations": [{ "city": "Seattle, USA", "flagCode": "US" }],
-      "year": "2021",
+      "year": "2021 - 2023",
       "tagline": "Architected intelligent automation solutions using Microsoft Power Platform for enterprise clients across multiple industries."
     },
     {
@@ -80,7 +80,7 @@
       "url": "https://blackbook.ai",
       "role": "Senior Automation Engineer",
       "locations": [{ "city": "Brisbane, Australia", "flagCode": "AU" }],
-      "year": "2017",
+      "year": "2017 - 2019",
       "tagline": "Designed & developed UiPath RPA bots at 20+ major Australian companies spanning financial services, insurance, and more."
     },
     {
