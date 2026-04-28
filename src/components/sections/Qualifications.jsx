@@ -36,7 +36,7 @@ export default function Certifications({ resume }) {
 
         <div className="lg:col-span-2 lg:col-start-1 lg:row-start-2 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
           <div className="lg:pr-4">
-            <div className="max-w-xl text-base/7 text-base-content/60 lg:max-w-lg">
+            <div className="mx-auto max-w-xl text-base/7 text-base-content/60 lg:max-w-lg">
               <Reveal>
                 <h2 className="mb-6 text-2xl font-bold tracking-tight text-base-content">Qualifications</h2>
 

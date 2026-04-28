@@ -161,6 +161,11 @@
           "issuer": "Anthropic",
           "url": "https://verify.skilljar.com/c/ar2jbcvbo759"
         },
+                {
+          "name": "AI Fluency: Framework & Foundations",
+          "issuer": "Anthropic",
+          "url": "https://verify.skilljar.com/c/ptbgfdoouvqh"
+        },
         {
           "name": "RPA Developer Foundation Training",
           "issuer": "UiPath",
