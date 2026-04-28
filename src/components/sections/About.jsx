@@ -29,7 +29,7 @@ export default function About({ resume }) {
                   </span>
                 </div>
                 <p className="text-base/7 font-semibold text-primary">{resume.location}</p>
-                <h1 className="mt-2 text-4xl font-semibold tracking-tight text-pretty text-base-content sm:text-5xl">
+                <h1 className="mt-2 text-3xl font-semibold tracking-tight text-pretty text-base-content sm:text-4xl">
                   {resume.headline}
                 </h1>
               </Reveal>
