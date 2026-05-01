@@ -1,5 +1,6 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedin, faReact } from "@fortawesome/free-brands-svg-icons";
+import claudeLogo from "../../assets/svg/claude.svg";
 
 export default function Footer({ resume }) {
   return (
@@ -34,6 +35,11 @@ export default function Footer({ resume }) {
             <div className="relative group inline-block">
               <img src="/daisyui-logo.svg" className="h-5 w-auto" alt="DaisyUI" />
               <div className="absolute left-1/2 -translate-x-1/2 -bottom-5 opacity-0 group-hover:opacity-70 transition bg-black text-white text-xs px-2 py-0.5 rounded pointer-events-none whitespace-nowrap">DaisyUI</div>
+            </div>
+
+            <div className="relative group inline-block">
+              <img src={claudeLogo} className="h-4 w-auto" alt="Claude Code" />
+              <div className="absolute left-1/2 -translate-x-1/2 -bottom-5 opacity-0 group-hover:opacity-70 transition bg-black text-white text-xs px-2 py-0.5 rounded pointer-events-none whitespace-nowrap">Claude Code</div>
             </div>
           </div>
         </div>
