@@ -97,7 +97,7 @@ export default function Skills({ resume }) {
                     ))}
                   </span>
                   {item.tagline && (
-                    <p className="mt-2 text-sm text-base-content/50 leading-snug">{item.tagline}</p>
+                    <p className="mt-2 text-sm text-base-content/50 leading-snug max-w-sm md:ml-auto">{item.tagline}</p>
                   )}
                 </Reveal>
               </div>
