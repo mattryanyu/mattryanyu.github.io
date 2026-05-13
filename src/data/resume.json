@@ -2,7 +2,7 @@
   "name": "Matt Yu",
   "location": "Seattle, WA",
   "linkedin": "https://www.linkedin.com/in/mattryanyu/",
-  "headline": "Business Transformation & Operations Leader | Solutions Architect",
+  "headline": "Business Transformation & Automation Leader",
   "summaries": [
     "I help companies transform their businesses grounded in operations best practices, focused on ROI, and fueled by automation and AI. My background spans business operations, shared services, and enterprise transformation with global experience including US, Canada, APAC and Australia.",
 
@@ -55,7 +55,7 @@
     {
       "company": "Blackbook AI",
       "url": "https://blackbookai.com",
-      "role": "General Manager, North America",
+      "role": "Director, Intelligent AUtomation",
       "locations": [{ "city": "Seattle, USA", "flagCode": "US" }],
       "year": "2023 - Present",
       "tagline": "Built a US RPA service delivery partnership, architecting & delivering 50+ enterprise automations across UiPath, Power Automate, and Automation Anywhere."
@@ -93,7 +93,7 @@
         { "city": "Sao Paulo, Brazil", "flagCode": "BR" }
       ],
       "year": "2008 - 2017",
-      "tagline": "Held multiple operations & systems roles including Head of Desktop Automation, Claims Operations Manager, Project Manager and Senior Business Analyst"
+      "tagline": "Held multiple operations & systems roles including Head of Desktop Automation (Director), Claims Operations Manager, Project Manager and Senior Business Analyst"
     },
     {
       "company": "NYU Stern",
@@ -165,6 +165,11 @@
           "name": "AI Fluency: Framework & Foundations",
           "issuer": "Anthropic",
           "url": "https://verify.skilljar.com/c/ptbgfdoouvqh"
+        },
+                        {
+          "name": "Introduction to subagents",
+          "issuer": "Anthropic",
+          "url": "https://verify.skilljar.com/c/yj4dzh25ridt"
         },
         {
           "name": "RPA Developer Foundation Training",
