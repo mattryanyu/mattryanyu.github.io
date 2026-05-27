@@ -171,6 +171,16 @@
           "issuer": "Anthropic",
           "url": "https://verify.skilljar.com/c/yj4dzh25ridt"
         },
+                                {
+          "name": "AI Capabilities and Limitations",
+          "issuer": "Anthropic",
+          "url": "https://verify.skilljar.com/c/2kbu4gxcqu24"
+        },
+        {
+          "name": "Introduction to Model Context Protocol",
+          "issuer": "Anthropic",
+          "url": "https://verify.skilljar.com/c/wt4spqi772z5"
+        },
         {
           "name": "RPA Developer Foundation Training",
           "issuer": "UiPath",
@@ -190,6 +200,11 @@
           "name": "RPA Automation Project Manager",
           "issuer": "UiPath",
           "url": "https://www.linkedin.com/in/mattryanyu/overlay/Certifications/804291119/treasury/?profileId=ACoAAAL01qIBYnqExPSSmQ0L18gWAqxE5c6dwmA"
+        }        ,
+        {
+          "name": "Vantage Intermediate",
+          "issuer": "ABBYY",
+          "url": "https://www.linkedin.com/in/mattryanyu/overlay/Certifications/1287299852/treasury/?profileId=ACoAAAL01qIBYnqExPSSmQ0L18gWAqxE5c6dwmA"
         }
       ]
     },
