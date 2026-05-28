@@ -3,18 +3,33 @@ import robot from "../../assets/img/robot.jpg";
 
 export default function About({ resume }) {
   return (
-    <div id="about" className="relative isolate overflow-hidden bg-base-200 px-6 py-24 sm:py-32 lg:overflow-visible lg:px-0 scroll-mt-14">
+    <div
+      id="about"
+      className="relative isolate overflow-hidden bg-base-200 px-6 py-24 sm:py-32 lg:overflow-visible lg:px-0 scroll-mt-14"
+    >
       <div className="absolute inset-0 -z-10 overflow-hidden">
         <svg
           aria-hidden="true"
           className="absolute top-0 left-[max(50%,25rem)] h-256 w-512 -translate-x-1/2 mask-[radial-gradient(64rem_64rem_at_top,white,transparent)] stroke-base-content/20"
         >
           <defs>
-            <pattern x="50%" y={-1} id="about-grid" width={200} height={200} patternUnits="userSpaceOnUse">
+            <pattern
+              x="50%"
+              y={-1}
+              id="about-grid"
+              width={200}
+              height={200}
+              patternUnits="userSpaceOnUse"
+            >
               <path d="M100 200V.5M.5 .5H200" fill="none" />
             </pattern>
           </defs>
-          <rect fill="url(#about-grid)" width="100%" height="100%" strokeWidth={0} />
+          <rect
+            fill="url(#about-grid)"
+            width="100%"
+            height="100%"
+            strokeWidth={0}
+          />
         </svg>
       </div>
 
@@ -28,14 +43,18 @@ export default function About({ resume }) {
                     <img src="/favicon-clr.svg" className="h-20" alt="logo" />
                   </span>
                 </div>
-                <p className="text-lg/7 font-semibold text-primary">{resume.location}</p>
+                <p className="text-lg/7 font-semibold text-primary">
+                  {resume.location}
+                </p>
                 <h1 className="mt-2 text-4xl font-semibold tracking-tight text-pretty text-base-content sm:text-5xl">
                   {resume.headline}
                 </h1>
               </Reveal>
               {resume.summaries.map((summary, i) => (
                 <Reveal key={i}>
-                  <p className="mt-6 text-2xl/8 text-base-content/80">{summary}</p>
+                  <p className="mt-6 text-2xl/8 text-base-content/80">
+                    {summary}
+                  </p>
                 </Reveal>
               ))}
             </div>

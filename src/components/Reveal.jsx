@@ -9,9 +9,11 @@ export default function Reveal({ children, className = "" }) {
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
-          element.classList.add("show");
+          element.style.opacity = "1";
+          element.style.translate = "0 0";
         } else {
-          element.classList.remove("show");
+          element.style.opacity = "0";
+          element.style.translate = "0 1.5rem";
         }
       },
       { threshold: 0.2 }
@@ -25,8 +27,12 @@ export default function Reveal({ children, className = "" }) {
   return (
     <div
       ref={ref}
-      style={{ transition: "opacity 1.5s ease, transform 1.5s ease" }}
-      className={`opacity-0 translate-y-6 ${className}`}
+      style={{
+        opacity: 0,
+        translate: "0 1.5rem",
+        transition: "opacity 1.5s ease, translate 1.5s ease",
+      }}
+      className={className}
     >
       {children}
     </div>

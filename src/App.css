@@ -1,17 +1,29 @@
 @import "tailwindcss";
 @plugin "daisyui" {
-  themes: light --default, dark;
+  themes:
+    light --default,
+    dark;
 }
 
-[data-theme="light"] { color-scheme: light; --color-base-100: oklch(98% 0 0); }
-[data-theme="dark"]  { color-scheme: dark; }
+[data-theme="light"] {
+  color-scheme: light;
+  --color-base-100: oklch(98% 0 0);
+}
+[data-theme="dark"] {
+  color-scheme: dark;
+}
 
 body {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
-*, *::before, *::after {
-  transition: background-color 0.3s ease, color 0.2s ease, border-color 0.2s ease;
+*,
+*::before,
+*::after {
+  transition:
+    background-color 0.3s ease,
+    color 0.2s ease,
+    border-color 0.2s ease;
 }
 
 #root {
@@ -21,15 +33,9 @@ body {
   text-align: center;
 }
 
-
 .hero {
   max-height: 600px;
   background-position: center center;
-}
-
-.show {
-  opacity: 1;
-  transform: translateY(0);
 }
 
 /* Theme toggle switch — credit: https://uiverse.io/JustCode14/red-dingo-61 */
@@ -40,7 +46,7 @@ body {
   width: 4em;
   height: 2.2em;
   border-radius: 30px;
-  
+
   /*box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);*/
 }
 
@@ -61,7 +67,6 @@ body {
   transition: 0.4s;
   border-radius: 30px;
   overflow: hidden;
-
 }
 
 .slider:before {
