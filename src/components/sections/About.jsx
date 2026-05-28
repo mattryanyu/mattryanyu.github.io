@@ -28,14 +28,14 @@ export default function About({ resume }) {
                     <img src="/favicon-clr.svg" className="h-20" alt="logo" />
                   </span>
                 </div>
-                <p className="text-base/7 font-semibold text-primary">{resume.location}</p>
-                <h1 className="mt-2 text-3xl font-semibold tracking-tight text-pretty text-base-content sm:text-4xl">
+                <p className="text-lg/7 font-semibold text-primary">{resume.location}</p>
+                <h1 className="mt-2 text-4xl font-semibold tracking-tight text-pretty text-base-content sm:text-5xl">
                   {resume.headline}
                 </h1>
               </Reveal>
               {resume.summaries.map((summary, i) => (
                 <Reveal key={i}>
-                  <p className="mt-6 text-xl/8 text-base-content/80">{summary}</p>
+                  <p className="mt-6 text-2xl/8 text-base-content/80">{summary}</p>
                 </Reveal>
               ))}
             </div>
@@ -50,7 +50,7 @@ export default function About({ resume }) {
                 src={robot}
                 className="w-120 max-w-full h-auto rounded-xl bg-base-300 shadow-xl ring-1 ring-base-content/10"
               />
-              <div className="absolute bottom-3 right-3 px-3 py-1 rounded-full bg-white/15 backdrop-blur-md border border-white/30 text-white text-xs font-medium tracking-tight shadow-[0_4px_20px_rgba(255,255,255,0.15)] pointer-events-none">
+              <div className="absolute bottom-3 right-3 px-3 py-1 rounded-full bg-white/15 backdrop-blur-md border border-white/30 text-white text-sm font-medium tracking-tight shadow-[0_4px_20px_rgba(255,255,255,0.15)] pointer-events-none">
                 UiPath conference in Las Vegas, Nevada
               </div>
             </div>

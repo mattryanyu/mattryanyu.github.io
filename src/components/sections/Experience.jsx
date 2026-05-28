@@ -21,8 +21,8 @@ export default function Skills({ resume }) {
 
       <div className="mx-auto max-w-7xl px-4 lg:px-8">
         <Reveal>
-          <h2 className="mb-2 text-2xl font-bold tracking-tight text-base-content">Experience</h2>
-          <p className="mb-8 text-sm text-base-content/50"></p>
+          <h2 className="mb-2 text-3xl font-bold tracking-tight text-base-content">Experience</h2>
+          <p className="mb-8 text-base text-base-content/50"></p>
         </Reveal>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-16 max-w-3xl mx-auto">
@@ -30,10 +30,10 @@ export default function Skills({ resume }) {
             <Reveal key={i}>
               <div className="card bg-base-300 border border-base-content/10 h-full">
                 <div className="card-body p-6 text-left gap-0">
-                  <p className="text-lg font-bold bg-gradient-to-r from-purple-500 via-indigo-500 to-blue-500 bg-clip-text text-transparent mb-2">
+                  <p className="text-xl font-bold bg-gradient-to-r from-purple-500 via-indigo-500 to-blue-500 bg-clip-text text-transparent mb-2">
                     {pillar.title}
                   </p>
-                  <p className="text-sm text-base-content/60 leading-relaxed">
+                  <p className="text-base text-base-content/60 leading-relaxed">
                     {pillar.description}
                   </p>
                   <div className="flex flex-wrap gap-2 mt-3">
@@ -54,7 +54,7 @@ export default function Skills({ resume }) {
               src={biking}
               className="w-full h-64 sm:h-80 object-cover object-center"
             />
-            <div className="absolute bottom-3 right-3 px-3 py-1 rounded-full bg-white/15 backdrop-blur-md border border-white/30 text-white text-xs font-medium tracking-tight shadow-[0_4px_20px_rgba(255,255,255,0.15)] pointer-events-none">
+            <div className="absolute bottom-3 right-3 px-3 py-1 rounded-full bg-white/15 backdrop-blur-md border border-white/30 text-white text-sm font-medium tracking-tight shadow-[0_4px_20px_rgba(255,255,255,0.15)] pointer-events-none">
               Lake Wakatipu near Walter Peak, New Zealand
             </div>
           </div>
@@ -80,14 +80,14 @@ export default function Skills({ resume }) {
                     {item.url ? (
                       <a href={item.url} target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors group">
                         {item.company}
-                        <span className="ml-1 text-base-content/30 group-hover:text-primary transition-colors text-xs">↗</span>
+                        <span className="ml-1 text-base-content/30 group-hover:text-primary transition-colors text-sm">↗</span>
                       </a>
                     ) : item.company}
                   </div>
                   {item.role && (
-                    <div className="text-sm tracking-tight text-pretty text-base-content/70">{item.role}</div>
+                    <div className="text-base tracking-tight text-pretty text-base-content/70">{item.role}</div>
                   )}
-                  <span className="tracking-tight text-pretty text-sm">
+                  <span className="tracking-tight text-pretty text-base">
                     {item.locations.map((loc, j) => (
                       <span key={j}>
                         {j > 0 && <span className="mx-1.5 text-base-content/30">·</span>}
@@ -97,7 +97,7 @@ export default function Skills({ resume }) {
                     ))}
                   </span>
                   {item.tagline && (
-                    <p className="mt-2 text-sm text-base-content/50 leading-snug max-w-sm md:ml-auto">{item.tagline}</p>
+                    <p className="mt-2 text-base text-base-content/50 leading-snug max-w-sm md:ml-auto">{item.tagline}</p>
                   )}
                 </Reveal>
               </div>

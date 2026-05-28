@@ -27,7 +27,7 @@ export default function Certifications({ resume }) {
                 src={diving}
                 className="w-full max-w-full h-auto rounded-xl bg-base-300 shadow-xl ring-1 ring-base-content/10"
               />
-              <div className="absolute bottom-3 right-3 px-3 py-1 rounded-full bg-white/15 backdrop-blur-md border border-white/30 text-white text-xs font-medium tracking-tight shadow-[0_4px_20px_rgba(255,255,255,0.15)] pointer-events-none">
+              <div className="absolute bottom-3 right-3 px-3 py-1 rounded-full bg-white/15 backdrop-blur-md border border-white/30 text-white text-sm font-medium tracking-tight shadow-[0_4px_20px_rgba(255,255,255,0.15)] pointer-events-none">
                 Koh Phi Phi Leh, Thailand
               </div>
             </div>
@@ -38,37 +38,37 @@ export default function Certifications({ resume }) {
           <div className="lg:pr-4">
             <div className="mx-auto max-w-xl text-base/7 text-base-content/60 lg:max-w-lg">
               <Reveal>
-                <h2 className="mb-6 text-2xl font-bold tracking-tight text-base-content">Qualifications</h2>
+                <h2 className="mb-6 text-3xl font-bold tracking-tight text-base-content">Qualifications</h2>
 
-                <p className="text-xs font-bold uppercase tracking-widest mb-3 bg-gradient-to-r from-purple-500 via-indigo-500 to-blue-500 bg-clip-text text-transparent">
+                <p className="text-sm font-bold uppercase tracking-widest mb-3 bg-gradient-to-r from-purple-500 via-indigo-500 to-blue-500 bg-clip-text text-transparent">
                   Education
                 </p>
                 {resume.education.map((ed, i) => (
                   <div key={i} className="flex flex-col sm:flex-row gap-4 sm:gap-6 items-start text-left mb-6">
                     <div className="card bg-base-300 border border-base-content/10 shrink-0 w-full sm:w-auto">
                       <div className="card-body p-4 gap-1 text-left">
-                        <p className="text-base font-semibold text-base-content">{ed.school}</p>
-                        <p className="text-sm text-base-content/60">{ed.degree} · {ed.major}</p>
-                        <p className="text-xs text-base-content/40">{ed.to}</p>
-                        <p className="text-xs text-base-content/40">New York City</p>
+                        <p className="text-lg font-semibold text-base-content">{ed.school}</p>
+                        <p className="text-base text-base-content/60">{ed.degree} · {ed.major}</p>
+                        <p className="text-sm text-base-content/40">{ed.to}</p>
+                        <p className="text-sm text-base-content/40">New York City</p>
                       </div>
                     </div>
                     <div className="flex-1 flex items-center">
-                      <p className="text-sm text-base-content/70 leading-relaxed">{ed.narrative}</p>
+                      <p className="text-base text-base-content/70 leading-relaxed">{ed.narrative}</p>
                     </div>
                   </div>
                 ))}
               </Reveal>
 
               <Reveal>
-                <p className="text-xs font-bold uppercase tracking-widest mt-10 mb-3 bg-gradient-to-r from-purple-500 via-indigo-500 to-blue-500 bg-clip-text text-transparent">
+                <p className="text-sm font-bold uppercase tracking-widest mt-10 mb-3 bg-gradient-to-r from-purple-500 via-indigo-500 to-blue-500 bg-clip-text text-transparent">
                   Certifications
                 </p>
                 <div className="flex flex-col gap-4">
                   {resume.certifications.map((group) => (
                     <div key={group.group} className="card bg-base-300 border border-base-content/10">
                       <div className="card-body p-4 gap-3">
-                        <p className="text-xs font-bold uppercase tracking-widest bg-gradient-to-r from-purple-500 via-indigo-500 to-blue-500 bg-clip-text text-transparent">
+                        <p className="text-sm font-bold uppercase tracking-widest bg-gradient-to-r from-purple-500 via-indigo-500 to-blue-500 bg-clip-text text-transparent">
                           {group.group}
                         </p>
                         <div className="divide-y divide-base-content/10">
@@ -84,13 +84,13 @@ export default function Certifications({ resume }) {
                                 className={`flex items-center justify-between gap-3 py-2.5 text-left group ${cert.url ? "cursor-pointer" : ""}`}
                               >
                                 <div>
-                                  <p className={`text-sm font-medium text-base-content leading-snug ${cert.url ? "group-hover:text-primary transition-colors" : ""}`}>
+                                  <p className={`text-base font-medium text-base-content leading-snug ${cert.url ? "group-hover:text-primary transition-colors" : ""}`}>
                                     {cert.name}
                                   </p>
-                                  <p className="text-xs text-base-content/40 mt-0.5">{cert.issuer}</p>
+                                  <p className="text-sm text-base-content/40 mt-0.5">{cert.issuer}</p>
                                 </div>
                                 {cert.url && (
-                                  <span className="text-base-content/20 group-hover:text-primary transition-colors text-xs shrink-0 select-none">↗</span>
+                                  <span className="text-base-content/20 group-hover:text-primary transition-colors text-sm shrink-0 select-none">↗</span>
                                 )}
                               </Tag>
                             );

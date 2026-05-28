@@ -8,18 +8,18 @@ export default function Contact({ resume }) {
       <div className="absolute inset-0 -z-10 bg-[radial-gradient(45rem_50rem_at_top,var(--color-indigo-500),transparent)] opacity-10" />
       <div className="mx-auto max-w-2xl text-center">
         <Reveal>
-          <p className="text-base font-semibold text-primary tracking-widest uppercase">Get in touch</p>
-          <h2 className="mt-2 text-4xl font-semibold tracking-tight text-base-content sm:text-5xl">
+          <p className="text-lg font-semibold text-primary tracking-widest uppercase">Get in touch</p>
+          <h2 className="mt-2 text-5xl font-semibold tracking-tight text-base-content sm:text-6xl">
             Let's connect
           </h2>
-          <p className="mt-6 text-lg text-base-content/70">
+          <p className="mt-6 text-xl text-base-content/70">
             I'm always open to new opportunities, partnerships, and conversations about business transformation, operations, automation and AI.
           </p>
           <a
             href={resume.linkedin}
             target="_blank"
             rel="noopener noreferrer"
-            className="mt-10 inline-flex items-center gap-3 px-8 py-4 rounded-full bg-gradient-to-r from-purple-500 via-indigo-500 to-blue-500 !text-white font-semibold text-lg shadow-lg hover:opacity-90 hover:scale-105 transition-all"
+            className="mt-10 inline-flex items-center gap-3 px-8 py-4 rounded-full bg-gradient-to-r from-purple-500 via-indigo-500 to-blue-500 !text-white font-semibold text-xl shadow-lg hover:opacity-90 hover:scale-105 transition-all"
           >
             <FontAwesomeIcon icon={faLinkedin} />
             Connect on LinkedIn

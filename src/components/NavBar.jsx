@@ -27,7 +27,7 @@ const NavBar = () => {
           {/* Logo + name */}
           <a href="#" className="flex items-center gap-2 shrink-0">
             <img src="/favicon-clr.svg" className="h-7 w-auto" alt="logo" />
-            <span className="font-semibold tracking-tight text-base-content text-sm">
+            <span className="font-semibold tracking-tight text-base-content text-base">
               Matt Yu
             </span>
           </a>
@@ -38,7 +38,7 @@ const NavBar = () => {
               <a
                 key={href}
                 href={href}
-                className="text-sm text-base-content/70 hover:text-primary transition-colors"
+                className="text-base text-base-content/70 hover:text-primary transition-colors"
               >
                 {label}
               </a>
@@ -92,7 +92,7 @@ const NavBar = () => {
       {/* Side drawer */}
       <div className={`fixed top-0 right-0 h-full w-64 z-50 bg-base-100 shadow-xl flex flex-col transition-transform duration-300 md:hidden ${isOpen ? "translate-x-0" : "translate-x-full"}`}>
         <div className="flex items-center justify-between px-6 h-14 border-b border-base-content/10">
-          <span className="font-semibold text-sm text-base-content"></span>
+          <span className="font-semibold text-base text-base-content"></span>
           <button
             onClick={() => setIsOpen(false)}
             aria-label="Close menu"
@@ -109,7 +109,7 @@ const NavBar = () => {
               key={href}
               href={href}
               onClick={() => setIsOpen(false)}
-              className="text-base text-base-content/70 hover:text-primary transition-colors"
+              className="text-lg text-base-content/70 hover:text-primary transition-colors"
             >
               {label}
             </a>
