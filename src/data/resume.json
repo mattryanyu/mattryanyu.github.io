@@ -152,26 +152,27 @@
           "url": "https://www.credly.com/badges/a0808f3c-7fc1-444d-9960-dbab2527e779/public_url"
         },
         {
-          "name": "Make Foundation",
-          "issuer": "Make",
-          "url": "https://www.credly.com/badges/e0414891-a983-4d26-9c81-1177654a88e2/public_url"
+          "name": "Microsoft AI-900 Cert Ready",
+          "issuer": "MeasureUp",
+          "url": "https://www.credly.com/badges/8f44fd3e-72a3-4280-8522-4e500a8b1065/public_url"
         },
+
         {
           "name": "Claude Code 101",
           "issuer": "Anthropic",
           "url": "https://verify.skilljar.com/c/ar2jbcvbo759"
         },
-                {
+        {
           "name": "AI Fluency: Framework & Foundations",
           "issuer": "Anthropic",
           "url": "https://verify.skilljar.com/c/ptbgfdoouvqh"
         },
-                        {
+        {
           "name": "Introduction to subagents",
           "issuer": "Anthropic",
           "url": "https://verify.skilljar.com/c/yj4dzh25ridt"
         },
-                                {
+        {
           "name": "AI Capabilities and Limitations",
           "issuer": "Anthropic",
           "url": "https://verify.skilljar.com/c/2kbu4gxcqu24"
@@ -180,6 +181,26 @@
           "name": "Introduction to Model Context Protocol",
           "issuer": "Anthropic",
           "url": "https://verify.skilljar.com/c/wt4spqi772z5"
+        },
+        {
+          "name": "Make Foundation",
+          "issuer": "Make",
+          "url": "https://www.credly.com/badges/e0414891-a983-4d26-9c81-1177654a88e2/public_url"
+        },
+        {
+          "name": "Building Basic Zaps",
+          "issuer": "Zapier",
+          "url": "https://www.linkedin.com/in/mattryanyu/overlay/Certifications/1753218135/treasury/?profileId=ACoAAAL01qIBYnqExPSSmQ0L18gWAqxE5c6dwmA"
+        },
+        {
+          "name": "Building Intermediate Zaps",
+          "issuer": "Zapier",
+          "url": "https://www.linkedin.com/in/mattryanyu/overlay/Certifications/1753278100/treasury/?profileId=ACoAAAL01qIBYnqExPSSmQ0L18gWAqxE5c6dwmA"
+        },
+        {
+          "name": "Building AI Agents",
+          "issuer": "Zapier",
+          "url": "https://www.linkedin.com/in/mattryanyu/overlay/Certifications/1751512467/treasury/?profileId=ACoAAAL01qIBYnqExPSSmQ0L18gWAqxE5c6dwmA"
         },
         {
           "name": "RPA Developer Foundation Training",
@@ -200,7 +221,7 @@
           "name": "RPA Automation Project Manager",
           "issuer": "UiPath",
           "url": "https://www.linkedin.com/in/mattryanyu/overlay/Certifications/804291119/treasury/?profileId=ACoAAAL01qIBYnqExPSSmQ0L18gWAqxE5c6dwmA"
-        }        ,
+        },
         {
           "name": "Vantage Intermediate",
           "issuer": "ABBYY",
