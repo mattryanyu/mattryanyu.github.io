@@ -45,7 +45,8 @@
       "title": "Org Chart App",
       "description": "An interactive org chart builder for visualizing and editing organizational hierarchies. Drag-and-drop nodes, add teammates, and export your structure — built entirely with Claude Code.",
       "url": "https://mattryanyu.github.io/org-chart-app/",
-      "tags": ["Claude Code", "React", "Vite", "GitHub Pages"]
+      "tags": ["Claude Code", "React", "Vite", "GitHub Pages"],
+      "thumbnail": "preview-org-chart-app.png"
     }
   ],
 
