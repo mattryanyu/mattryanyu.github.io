@@ -4,6 +4,7 @@ import NavBar from "./components/NavBar";
 import Hero from "./components/sections/Hero";
 import About from "./components/sections/About";
 import Stats from "./components/sections/Stats";
+import Projects from "./components/sections/Projects";
 import Experience from "./components/sections/Experience";
 import Qualifications from "./components/sections/Qualifications";
 import BeyondWork from "./components/sections/BeyondWork";
@@ -21,6 +22,7 @@ function App() {
         <Hero />
         <About resume={resume} />
         <Stats resume={resume} />
+        <Projects resume={resume} />
         <Experience resume={resume} />
         <Qualifications resume={resume} />
         <BeyondWork resume={resume} />
