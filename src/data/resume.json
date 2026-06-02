@@ -164,7 +164,11 @@
           "issuer": "Microsoft",
           "url": "https://www.credly.com/badges/a0808f3c-7fc1-444d-9960-dbab2527e779/public_url"
         },
-
+        {
+          "name": "Microsoft AB-900 Cert Ready",
+          "issuer": "MeasureUp",
+          "url": "https://www.credly.com/badges/4384815b-6db2-4073-b451-6e527109977d/public_url"
+        },
         {
           "name": "Claude Code 101",
           "issuer": "Anthropic",
