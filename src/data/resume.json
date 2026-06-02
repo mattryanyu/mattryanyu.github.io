@@ -194,6 +194,11 @@
           "issuer": "Anthropic",
           "url": "https://verify.skilljar.com/c/wt4spqi772z5"
         },
+                {
+          "name": "Introduction to Claude Cowork",
+          "issuer": "Anthropic",
+          "url": "https://verify.skilljar.com/c/5c2y8f68m9cx"
+        },
         {
           "name": "Make Foundation",
           "issuer": "Make",
