@@ -10,43 +10,65 @@ const NAV_LINKS = [
 ];
 
 const NavBar = () => {
-  const [theme, setTheme] = useState(
-    () => localStorage.getItem("theme") || "light"
-  );
+  const [theme, setTheme] = useState(() => {
+    const stored = localStorage.getItem("theme");
+    if (stored) return stored;
+    return window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+  });
   const [isOpen, setIsOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
     document.documentElement.setAttribute("data-theme", theme);
     localStorage.setItem("theme", theme);
   }, [theme]);
 
+  useEffect(() => {
+    const handleScroll = () => setScrolled(window.scrollY > 60);
+    handleScroll();
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  // Lock body scroll while menu is open
+  useEffect(() => {
+    document.body.style.overflow = isOpen ? "hidden" : "";
+    return () => { document.body.style.overflow = ""; };
+  }, [isOpen]);
+
   return (
     <>
-      <nav className="fixed top-0 left-0 right-0 z-50 bg-base-100/70 backdrop-blur-md border-b border-base-content/10">
+      <nav
+        className={`site-nav fixed top-0 left-0 right-0 z-50 border-b ${
+          scrolled
+            ? "bg-base-100/90 backdrop-blur-xl border-base-content/10 shadow-[0_2px_24px_rgba(0,0,0,0.06)]"
+            : "bg-base-100/60 backdrop-blur-md border-base-content/5"
+        }`}
+      >
         <div className="max-w-7xl mx-auto px-4 h-14 flex items-center justify-between gap-4">
 
-          {/* Logo + name */}
-          <a href="#" className="flex items-center gap-2 shrink-0">
+          {/* Logo */}
+          <a href="#" className="flex items-center gap-2 shrink-0 relative z-50">
             <img src="/favicon-clr.svg" className="h-7 w-auto" alt="logo" />
-            <span className="font-semibold tracking-tight text-base-content text-base">
+            <span className="font-semibold tracking-tight text-sm bg-gradient-to-r from-purple-500 via-indigo-500 to-blue-500 bg-clip-text text-transparent">
               Matt Yu
             </span>
           </a>
 
-          {/* Nav links — hidden on mobile */}
-          <div className="hidden md:flex items-center gap-6">
+          {/* Desktop nav links */}
+          <div className="hidden md:flex items-center gap-7">
             {NAV_LINKS.map(({ label, href }) => (
               <a
                 key={href}
                 href={href}
-                className="text-base text-base-content/70 hover:text-primary transition-colors"
+                className="nav-link text-base-content/60 hover:text-base-content transition-colors"
               >
                 {label}
               </a>
             ))}
           </div>
 
-          <div className="flex items-center gap-3">
+          <div className="flex items-center gap-3 relative z-50">
             {/* Theme toggle */}
             <label className="switch shrink-0" aria-label="Toggle theme">
               <input
@@ -67,55 +89,68 @@ const NavBar = () => {
                 </svg>
               </span>
             </label>
-            {/* Hamburger — mobile only */}
+
+            {/* Animated hamburger — mobile only */}
             <button
-              className="md:hidden p-1 text-base-content/70 hover:text-primary transition-colors"
-              onClick={() => setIsOpen(true)}
-              aria-label="Open menu"
+              className="md:hidden flex flex-col justify-center items-center w-8 h-8"
+              onClick={() => setIsOpen((o) => !o)}
+              aria-label={isOpen ? "Close menu" : "Open menu"}
             >
-              <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
-              </svg>
+              <span className={`menu-bar ${isOpen ? "bar-open-1" : ""}`} />
+              <span className={`menu-bar ${isOpen ? "bar-open-2" : ""}`} />
+              <span className={`menu-bar ${isOpen ? "bar-open-3" : ""}`} />
             </button>
           </div>
 
         </div>
       </nav>
 
-      {/* Backdrop */}
-      {isOpen && (
-        <div
-          className="fixed inset-0 z-40 bg-black/40 backdrop-blur-sm md:hidden"
-          onClick={() => setIsOpen(false)}
-        />
-      )}
+      {/* Full-screen overlay — always in DOM for smooth GPU animation */}
+      <div className={`fullscreen-menu md:hidden bg-base-100/96 backdrop-blur-2xl ${isOpen ? "menu-open" : ""}`}>
 
-      {/* Side drawer */}
-      <div className={`fixed top-0 right-0 h-full w-64 z-50 bg-base-100 shadow-xl flex flex-col transition-transform duration-300 md:hidden ${isOpen ? "translate-x-0" : "translate-x-full"}`}>
-        <div className="flex items-center justify-between px-6 h-14 border-b border-base-content/10">
-          <span className="font-semibold text-base text-base-content"></span>
-          <button
+        {/* Overlay header */}
+        <div className="flex items-center justify-between px-6 h-14 border-b border-base-content/8 shrink-0">
+          <a
+            href="#"
             onClick={() => setIsOpen(false)}
-            aria-label="Close menu"
-            className="p-1 text-base-content/70 hover:text-primary transition-colors"
+            className="flex items-center gap-2"
           >
-            <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-            </svg>
-          </button>
+            <img src="/favicon-clr.svg" className="h-6 w-auto" alt="logo" />
+            <span className="font-semibold text-sm bg-gradient-to-r from-purple-500 via-indigo-500 to-blue-500 bg-clip-text text-transparent">
+              Matt Yu
+            </span>
+          </a>
         </div>
-        <nav className="flex flex-col px-6 py-6 gap-5">
-          {NAV_LINKS.map(({ label, href }) => (
+
+        {/* Centered nav links */}
+        <nav className="flex-1 flex flex-col items-center justify-center gap-2 px-8 py-10">
+          {NAV_LINKS.map(({ label, href }, i) => (
             <a
               key={href}
               href={href}
               onClick={() => setIsOpen(false)}
-              className="text-lg text-base-content/70 hover:text-primary transition-colors"
+              className="fullscreen-link group flex items-baseline gap-4 py-3 w-full max-w-xs"
+              style={{ transitionDelay: isOpen ? `${i * 65 + 80}ms` : "0ms" }}
             >
-              {label}
+              <span
+                className="text-xs font-medium tabular-nums bg-gradient-to-r from-purple-400 to-blue-400 bg-clip-text text-transparent shrink-0"
+                style={{ letterSpacing: "0.08em" }}
+              >
+                0{i + 1}
+              </span>
+              <span className="font-display text-4xl font-semibold tracking-tight text-base-content group-hover:bg-gradient-to-r group-hover:from-purple-500 group-hover:via-indigo-500 group-hover:to-blue-500 group-hover:bg-clip-text group-hover:text-transparent transition-all duration-200">
+                {label}
+              </span>
             </a>
           ))}
         </nav>
+
+        {/* Footer strip */}
+        <div className="px-8 pb-10 shrink-0">
+          <p className="text-xs text-base-content/30 tracking-widest uppercase">
+            Seattle, WA · mattryanyu.github.io
+          </p>
+        </div>
       </div>
     </>
   );

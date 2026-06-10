@@ -11,7 +11,7 @@ export default function Projects({ resume }) {
         <Reveal>
           <h2 className="mb-2 text-3xl font-bold tracking-tight text-base-content">Projects</h2>
           <p className="mb-8 text-base text-base-content/50">Things I've built outside of work.</p>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+          <div className="grid grid-cols-1 gap-6">
             {resume.projects.map((project, i) => (
               <a
                 key={i}

@@ -7,10 +7,15 @@ export default function About({ resume }) {
       id="about"
       className="relative isolate overflow-hidden bg-base-200 px-6 py-24 sm:py-32 lg:overflow-visible lg:px-0 scroll-mt-14"
     >
+      {/* Gradient orbs for depth */}
+      <div className="absolute -top-32 right-0 w-96 h-96 rounded-full bg-gradient-to-br from-purple-500/8 via-indigo-500/4 to-transparent blur-3xl pointer-events-none" />
+      <div className="absolute bottom-0 left-10 w-72 h-72 rounded-full bg-gradient-to-tr from-blue-500/6 to-transparent blur-3xl pointer-events-none" />
+
+      {/* Grid background */}
       <div className="absolute inset-0 -z-10 overflow-hidden">
         <svg
           aria-hidden="true"
-          className="absolute top-0 left-[max(50%,25rem)] h-256 w-512 -translate-x-1/2 mask-[radial-gradient(64rem_64rem_at_top,white,transparent)] stroke-base-content/20"
+          className="absolute top-0 left-[max(50%,25rem)] h-256 w-512 -translate-x-1/2 mask-[radial-gradient(64rem_64rem_at_top,white,transparent)] stroke-base-content/15"
         >
           <defs>
             <pattern
@@ -43,16 +48,16 @@ export default function About({ resume }) {
                     <img src="/favicon-clr.svg" className="h-20" alt="logo" />
                   </span>
                 </div>
-                <p className="text-lg/7 font-semibold text-primary">
+                <p className="text-sm font-semibold tracking-widest uppercase text-primary/80 mt-1">
                   {resume.location}
                 </p>
-                <h1 className="mt-2 text-4xl font-semibold tracking-tight text-pretty text-base-content sm:text-5xl">
+                <h1 className="mt-3 font-display text-4xl font-semibold tracking-tight text-pretty text-base-content sm:text-5xl leading-tight">
                   {resume.headline}
                 </h1>
               </Reveal>
               {resume.summaries.map((summary, i) => (
-                <Reveal key={i}>
-                  <p className="mt-6 text-2xl/8 text-base-content/80">
+                <Reveal key={i} delay={i * 150}>
+                  <p className="mt-6 text-lg/8 text-base-content/65 font-light">
                     {summary}
                   </p>
                 </Reveal>

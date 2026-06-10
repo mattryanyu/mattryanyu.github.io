@@ -1,6 +1,6 @@
 import { useEffect, useRef } from "react";
 
-export default function Reveal({ children, className = "" }) {
+export default function Reveal({ children, className = "", delay = 0 }) {
   const ref = useRef(null);
 
   useEffect(() => {
@@ -16,7 +16,7 @@ export default function Reveal({ children, className = "" }) {
           element.style.translate = "0 1.5rem";
         }
       },
-      { threshold: 0.2 }
+      { threshold: 0.15 }
     );
 
     if (element) observer.observe(element);
@@ -30,7 +30,7 @@ export default function Reveal({ children, className = "" }) {
       style={{
         opacity: 0,
         translate: "0 1.5rem",
-        transition: "opacity 1.5s ease, translate 1.5s ease",
+        transition: `opacity 1.5s ease ${delay}ms, translate 1.5s ease ${delay}ms`,
       }}
       className={className}
     >

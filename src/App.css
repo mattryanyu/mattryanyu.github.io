@@ -14,7 +14,12 @@
 }
 
 body {
-  font-family: "Inter", sans-serif;
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+.font-display {
+  font-family: "Fraunces", serif;
+  font-optical-sizing: auto;
 }
 
 *,
@@ -33,21 +38,118 @@ body {
   text-align: center;
 }
 
+/* Hero — cinematic full height, no cap */
 .hero {
-  max-height: 600px;
   background-position: center center;
+}
+
+/* Scroll-aware nav shadow transition */
+.site-nav {
+  transition:
+    background-color 0.35s ease,
+    border-color 0.35s ease,
+    box-shadow 0.35s ease,
+    backdrop-filter 0.35s ease;
+}
+
+/* Animated hamburger bars */
+.menu-bar {
+  display: block;
+  width: 20px;
+  height: 2px;
+  min-height: 2px;
+  border-radius: 2px;
+  background-color: var(--color-base-content);
+  transform-origin: center;
+  will-change: transform;
+  transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1), opacity 0.25s ease;
+}
+.menu-bar + .menu-bar { margin-top: 5px; }
+.bar-open-1 { transform: translateY(6.5px) rotate(45deg); }
+.bar-open-2 { opacity: 0; transform: scaleX(0); }
+.bar-open-3 { transform: translateY(-6.5px) rotate(-45deg); }
+
+/* Full-screen overlay — always in DOM, toggled via opacity for smooth GPU animation */
+.fullscreen-menu {
+  position: fixed;
+  inset: 0;
+  z-index: 49;
+  display: flex;
+  flex-direction: column;
+  opacity: 0;
+  pointer-events: none;
+  will-change: opacity;
+  transition: opacity 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.fullscreen-menu.menu-open {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* Staggered link entrance — delay set inline per link */
+.fullscreen-link {
+  opacity: 0;
+  transform: translateY(1.25rem);
+  will-change: transform, opacity;
+  transition:
+    opacity 0.5s cubic-bezier(0.22, 1, 0.36, 1),
+    transform 0.5s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.menu-open .fullscreen-link {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Nav link underline — gradient sweep on hover */
+.nav-link {
+  position: relative;
+  font-size: 0.7rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 1.5px;
+  background: linear-gradient(90deg, #a855f7, #6366f1, #3b82f6);
+  border-radius: 1px;
+  transition: width 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+/* Hero staggered entrance animation */
+@keyframes heroFadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(1.75rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hero-animate {
+  animation: heroFadeUp 0.9s cubic-bezier(0.22, 1, 0.36, 1) both;
+  opacity: 0;
 }
 
 /* Theme toggle switch — credit: https://uiverse.io/JustCode14/red-dingo-61 */
 .switch {
-  font-size: 17px;
+  font-size: 11px;
   position: relative;
   display: inline-block;
   width: 4em;
   height: 2.2em;
   border-radius: 30px;
-
-  /*box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);*/
 }
 
 .switch input {
@@ -83,7 +185,7 @@ body {
 }
 
 .switch input:checked + .slider {
-  background-color: #e2e2e2;
+  background-color: #b8bec6;
 }
 
 .switch input:checked + .slider:before {
