@@ -36,6 +36,13 @@
 
   "projects": [
     {
+      "title": "Night Market",
+      "description": "A browser-based video game built from a single prompt using Claude Code in VS Code with Opus 4.8. Night Market 2 is next — built with Fable 5.",
+      "url": "https://mattryanyu.github.io/nightmarket-1/",
+      "tags": ["Claude Code", "Opus 4.8", "Game Dev", "GitHub Pages"],
+      "thumbnail": "/nightmarket-1-og.jpg"
+    },
+    {
       "title": "Org Chart App",
       "description": "An interactive org chart builder for visualizing and editing organizational hierarchies. Drag-and-drop nodes, add teammates, and export your structure — built entirely with Claude Code.",
       "url": "https://mattryanyu.github.io/org-chart-app/",
