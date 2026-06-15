@@ -10,26 +10,17 @@
   ],
   "skills": [
     {
-      "title": "I Lead",
-      "description": "Operations transformation, target operating models, and change management — the business layer that makes automation stick long-term.",
+      "title": "I lead",
+      "description": "Operations & process transformation, change management and user interaction — the business layer that makes automation & AI stick long-term.",
       "highlights": [
-        "Operations",
-        "Target Operating Models",
-        "Change Management",
-        "Presales Consulting",
-        "Shared Services"
+
       ]
     },
     {
-      "title": "I Build",
-      "description": "Self-taught automation architect across UiPath, Power Platform, and Azure — having designed and delivered for 40+ companies.",
+      "title": "I build",
+      "description": "Hands-on intelligent automation architect across UiPath, Power Platform, and Azure — having designed and delivered for 40+ companies.",
       "highlights": [
-        "UiPath",
-        "Power Automate",
-        "Azure",
-        "APIs",
-        "SQL",
-        "Celonis"
+
       ]
     }
   ],
