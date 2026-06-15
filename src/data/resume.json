@@ -171,6 +171,11 @@
           "issuer": "Microsoft",
           "url": "https://learn.microsoft.com/api/credentials/share/en-us/mattryanyu/7925F5CECEDE0519?sharingId=F9FDC245EF5DD87C"
         },
+                {
+          "name": "Generative AI Strategic Leader",
+          "issuer": "Vanderbilt University",
+          "url": "https://coursera.org/share/37947ae8f6e7adf77a0e3d7588018ba8"
+        },
         {
           "name": "Microsoft AB-900 Cert Ready",
           "issuer": "MeasureUp",
